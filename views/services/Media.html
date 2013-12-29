@@ -1,0 +1,67 @@
+﻿<!--<script src="../../js/Media.js" type="text/javascript" />-->
+
+<div id="mediaContainer" style="text-align: center">
+    <div style="float: left; width: 50%">
+        <h3 style="display: block; margin-bottom: 15px">Our Marketing Solutions</h3>
+        <p>Lorem ipsum dolor sit amet, modo vitae graeco qui no, ut eligendi epicurei iracundia nec, vel augue efficiendi necessitatibus at. At hinc aeque principes pro, his ei dicta nonumy. Velit doctus ne quo.</p>
+        <p>Eam ei alii esse, no labore probatus volutpat cum. Ei rebum intellegam constituam sed, ex cetero sententiae per, errem dignissim et quo. Vivendo atomorum et vim. Usu te molestiae concludaturque. In sed ferri adhuc, brute meliore vel ex.</p>
+        <p>An sed minim homero nostrud, sint perpetua usu in, vel legimus inimicus ad. Vix no viderer senserit, ex eum brute errem, sit facilisi suavitate id. Eu elit augue nostrum.</p>
+    </div>
+    <div style="float: left">
+        <img src="http://image.shutterstock.com/display_pic_with_logo/927376/112305572/stock-vector-social-network-background-of-the-icons-vector-112305572.jpg" alt="stock photo" />
+    </div>
+    <br style="clear: both" />
+
+    <h3 style="display: block; margin-top: 25px; margin-bottom: 15px">Packages</h3>
+    <div class="mediaTile" style="background-color: #a5d3ad">
+        <strong style="display: block">Basic - $25</strong>
+        <span>Lorem ipsum dolor sit amet, ad sed eripuit aliquid comprehensam. An viris decore mucius nam. Tota regione ne sit, adipisci pericula an mea, mei ad.</span>
+        <div id="try" onclick="toggleDeets($(this))" data-expanded="false">> show more</div>
+        <div class="packageDetails" style="display:none">...deets</div>
+    </div>
+    <div class="mediaTile" style="background-color: #91d1d3">
+        <strong style="display: block">Pro - $50</strong>
+        <span>Lorem ipsum dolor sit amet, ad sed eripuit aliquid comprehensam. An viris decore mucius nam. Tota regione ne sit, adipisci pericula an mea, mei ad.</span>
+        <div onclick="toggleDeets($(this))" data-expanded="false">> show more</div>
+        <div class="packageDetails" style="display:none">...deets</div>
+    </div>
+    <div class="mediaTile" style="background-color: #ff7a7a">
+        <strong style="display: block">Delux - $75</strong>
+        <span>Lorem ipsum dolor sit amet, ad sed eripuit aliquid comprehensam. An viris decore mucius nam. Tota regione ne sit, adipisci pericula an mea, mei ad.</span>
+        <div onclick="toggleDeets($(this))" data-expanded="false">> show more</div>
+        <div class="packageDetails" style="display:none">...deets</div>
+    </div>
+    <div class="mediaTile" style="background-color: #f2bb49">
+        <strong style="display: block">Total - $100</strong>
+        <span>Lorem ipsum dolor sit amet, ad sed eripuit aliquid comprehensam. An viris decore mucius nam. Tota regione ne sit, adipisci pericula an mea, mei ad.</span>
+        <div onclick="toggleDeets($(this))" data-expanded="false">> show more</div>
+        <div class="packageDetails" style="display:none">...deets</div>
+    </div>
+    <br style="clear: both" />
+</div>
+
+<script type="text/javascript">
+    function toggleDeets(elm) {
+        var isExpanded = elm.attr("data-expanded");
+        console.log(isExpanded);
+        if (isExpanded === "false") {
+            elm.html("v show less");
+            elm.attr('data-expanded', 'true');
+        }
+        else {
+            elm.html("> show more");
+            elm.attr('data-expanded', 'false');
+        }
+
+        elm.parent().find("div.packageDetails").toggle(500);
+    }
+</script>
+
+<style>
+    .mediaTile
+    {
+        margin: 2.5%;
+        margin: 10px 2.5% 10px 2.5%;
+        padding: 10px;
+    }
+</style>

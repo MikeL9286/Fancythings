@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-language" content="en">
+    <meta content="Fashion,Food,Beauty,Style,Home,Blog,Fancy,Life,Miami,South,Florida,FancyThings,TheFancyThings" name="keywords">
+    <meta content="Life + Style website called fancy things blog. Contains articles all about fashion, beauty, home decor, round ups of coveted products, and more." name="description">
+    <title>Fancy things</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="/css/Site.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript" />
+    <script src="../../js/Blog.js" type="text/javascript"></script>
+    <script src="../../js/ContentLoader.js" type="text/javascript"></script>
+    <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../../js/Main.js" type="text/javascript"></script>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css' />
+    <link href='../../css/bootstrap.min.css' rel='stylesheet' type='text/css' />
+</head>
+<body>
+    <section class="SocialIcons">
+        <script type="text/javascript">$("section.SocialIcons").load("../views/shared/SocialIcons.html");</script>
+    </section>
+    <div class="ContentWrapper">
+        <div class="Content">
+            <header>
+                <div>
+                    <a href="/Index.html">
+                        <img alt="Fancy Things logo" class="logo" src="../../img/logo_site.png" />
+                    </a>
+                </div>
+                <nav>
+                    <!--<a href="http://www.fancythingsblog.com/" target="_blank">Blog</a>-->
+                    <a onclick="ContentLoader.Redirect('Blog')">Blog</a>
+                    <a href="http://www.etsy.com/shop/shopfancythings" target="_blank">Shop</a> 
+                    <!--<a href="http://www.instagram.com/fancythingsblog" target="_blank">Instagram</a> -->
+                    <a onclick="ContentLoader.Redirect('Design')">Design</a>
+                    <a onclick="ContentLoader.Redirect('Media')">Media</a>
+                    <a href="http://www.fancythingsblog.com/p/about.html" target="_blank">About</a>
+                </nav>
+            </header>
+            <div id="body">
+                <script type="text/javascript">
+                    ContentLoader.Load();
+                </script>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>
+            &copy; 2011 - Fancythings</p>
+    </footer>
+    <script src="/js/google.analytics.js" type="text/javascript" />
+</body>
+</html>

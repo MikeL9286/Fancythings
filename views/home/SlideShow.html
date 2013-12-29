@@ -1,0 +1,24 @@
+﻿
+    <div class="SlideContainer">
+        <div id="slide1" class="live">
+            <img src="http://placehold.it/1400x700" alt="Arm Party" />
+        </div>
+        <div id="slide2">
+            <img src="http://placehold.it/1400x700" alt="Arm Party" />
+        </div>
+        <div id="slide3">
+            <img src="http://placehold.it/1400x700" alt="Tulips" />
+        </div>
+        <section class="SlideToolbar">
+            <ul class="SlideBlobs">
+                <li data-slidefor="slide1" onclick="Slideshow.InitSlide($(this).attr('data-slideFor'))"
+                    style="background-color: #f9bac3"></li>
+                <li data-slidefor="slide2" onclick="Slideshow.InitSlide($(this).attr('data-slideFor'))">
+                </li>
+                <li data-slidefor="slide3" onclick="Slideshow.InitSlide($(this).attr('data-slideFor'))">
+                </li>
+            </ul>
+        </section>
+        <div class="SlideToolbarShadow">
+        </div>
+    </div>

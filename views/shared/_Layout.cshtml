@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-language" content="en">
+    <meta content="Fashion,Food,Beauty,Style,Home,Blog,Fancy,Life,Miami,South,Florida,FancyThings,TheFancyThings" name="keywords">
+    <meta content="Life + Style website called fancy things blog. Contains articles all about fashion, beauty, home decor, round ups of coveted products, and more." name="description">
+    <title>Fancy things</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="~/Content/bootstrap.min.css" rel="Stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="~/css/site.css" rel="Stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/x-javascript" />
+    <script src="~/js/moment.min.js" type="text/javascript"></script>
+    <script src="../../js/Blog.js" type="text/javascript"></script>
+    <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css' />
+</head>
+<body>
+    <section class="SocialIcons">
+        <script type="text/x-javascript">~/views/shared/SocialIcons.html");</script>
+    </section>
+    <div class="ContentWrapper">
+        <div class="Content">
+            <header>
+                <div>
+                    <a href="@Url.Action("Index", "Home")">
+                        <img alt="Fancy Things logo" class="logo" src="../../img/logo_site.png" />
+                        @*<img alt="Fancy Things logo" class="logo" src="../../img/header2.png" />*@
+                    </a>
+                </div>
+                <nav>
+                    @*<a href="http://www.fancythingsblog.com/" target="_blank">Blog</a> *@
+                    <a href="~/views/blog.index.html">Blog</a>
+                    <a href="http://www.etsy.com/shop/shopfancythings" target="_blank">Shop</a> 
+                    <a href="http://www.instagram.com/fancythingsblog" target="_blank">Instagram</a> 
+                    <a href="http://www.fancythingsblog.com/p/about.html">About</a>
+                    <a href="#">As Seen</a>
+                </nav>
+            </header>
+            <div id="body">
+                <script type="text/x-javascript">$(this).append("~/views/home/Index.html");</script>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>
+            &copy; 2011 - Fancythings</p>
+    </footer>
+    <script src="~/js/google.analytics.js" type="text/javascript"></script>
+</body>
+</html>
