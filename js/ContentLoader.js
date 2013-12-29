@@ -2,7 +2,7 @@
 
     ContentLoader.Redirect = function(route) {
         // var baseUrl = "http://localhost:34503/Index.html/";
-		var baseUrl = "MikeL9286.github.io/Fancythings/";
+		var baseUrl = "http://mikel9286.github.io/Fancythings/";
 		// var baseUrl = "file:///C:/Users/Michael/Documents/Visual%20Studio%202012/Projects/FancyThings/Fancythings/";
         window.location.href = baseUrl + route;
     }
