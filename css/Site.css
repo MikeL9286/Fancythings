@@ -9,13 +9,9 @@ body
 
 div.ContentWrapper
 {
-    max-width: 1400px;
+    max-width: 1300px;
     height: 100%;
     margin: 55px auto 5px auto;
-    border: 5px solid #fff;
-    box-shadow: 0 0 10px rgba(198, 198, 197, 0.9);
-    -moz-box-shadow: 0 0 10px rgba(198, 198, 197, 0.9);
-    -webkit-box-shadow: 0 0 10px rgba(198, 198, 197, 0.9);
 }
 
 div.ContentWrapper:before, div.ContentWrapper:after
@@ -27,12 +23,9 @@ div.ContentWrapper:before, div.ContentWrapper:after
 
 div.Content
 {
-    padding: 0 10px 10px 10px;
+    padding: 0 50px 10px 50px;
     margin: 0 auto 0 auto;
     background-color: #fff;
-    box-shadow: 0 0 2px #ccc;
-    -moz-box-shadow: 0 0 2px #ccc;
-    -webkit-box-shadow: 0 0 2px #ccc;
 }
 
 a
@@ -56,6 +49,7 @@ header, footer, hgroup, section
 {
     display: block;
     position: relative;
+	text-align: center;
 }
 
 header:before, header:after
@@ -71,12 +65,12 @@ header:after
 
 header > div
 {
-    float: left;
+    display: inline-block;
 }
 
 nav
 {
-    float: left;
+    display: inline-block;
     margin: 50px 0 0 20px;
     border-bottom: 1px solid black;
 }
