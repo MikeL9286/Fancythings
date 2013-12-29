@@ -504,7 +504,7 @@ div.broken > a:hover{
     width: 100px;
     opacity: .8;
     height: 50px;
-    background: url('../../img/pinkTape.png') no-repeat;
+    background: url('img/pinkTape.png') no-repeat;
     transform: rotate(-4deg);
     -moz-transform: rotate(-4deg);
     -webkit-transform: rotate(-4deg);
