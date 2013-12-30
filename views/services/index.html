@@ -14,8 +14,8 @@
 
     <h3 style="display: block; margin-top: 25px; margin-bottom: 15px">Packages</h3>
     <div class="serviceTile" style="background-color: #a5d3ad">
-        <strong style="display: block">Social Media Marketing - $??</strong>
-        <div>Looking to <strong>grow your brands online presence</strong>? Social media is an important key to being successful online. It’s our goal to optimize content for your social media platforms (i.e. Twitter, Facebook, Pinterest, Linked In, Google +, Instagram) through strategic methods that work for your brand.</div>
+        <div class="serviceTitle">Social Media Strategy</div>
+        <div class="serviceDesc">Looking to <strong>grow your brands online presence</strong>? Social media is an important key to being successful online. It’s our goal to optimize content for your social media platforms (i.e. Twitter, Facebook, Pinterest, Linked In, Google +, Instagram) through strategic methods that work for your brand.</div>
         <div id="try" onclick="toggleDeets($(this))" data-expanded="false">> show more</div>
         <div class="packageDetails" style="display: none">...deets</div>
     </div>
@@ -65,8 +65,15 @@
         padding: 10px;
     }
 
-        .serviceTile > strong
+        .serviceTitle
         {
             display: inline-block;
+            height: 100%;
+            width: 25%;
         }
+
+    .serviceDesc
+    {
+        display: block;
+    }
 </style>
