@@ -15,9 +15,11 @@
     <h3 style="display: block; margin-top: 25px; margin-bottom: 15px">Packages</h3>
     <div class="serviceTile" style="background-color: #a5d3ad">
         <div class="serviceTitle">Social Media Strategy</div>
-        <div class="serviceDesc">Looking to <strong>grow your brands online presence</strong>? Social media is an important key to being successful online. It’s our goal to optimize content for your social media platforms (i.e. Twitter, Facebook, Pinterest, Linked In, Google +, Instagram) through strategic methods that work for your brand.</div>
-        <div id="try" onclick="toggleDeets($(this))" data-expanded="false">> show more</div>
-        <div class="packageDetails" style="display: none">...deets</div>
+        <div class="serviceDesc">
+            <div class="serviceText">Looking to <strong>grow your brands online presence</strong>? Social media is an important key to being successful online. It’s our goal to optimize content for your social media platforms (i.e. Twitter, Facebook, Pinterest, Linked In, Google +, Instagram) through strategic methods that work for your brand.</div>
+            <div class="serviceToggle" onclick="toggleDeets($(this))" data-expanded="false">> show more</div>
+            <div class="serviceDetails" style="display: none">...deets</div>
+        </div>
     </div>
     <div class="serviceTile" style="background-color: #91d1d3">
         <strong style="display: block">Content Creation - $50</strong>
@@ -74,6 +76,8 @@
 
     .serviceDesc
     {
-        display: block;
+        display: inline-block;
+        width: 70%;
     }
+
 </style>
