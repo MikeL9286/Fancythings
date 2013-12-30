@@ -25,19 +25,19 @@
         <strong style="display: block">Content Creation - $50</strong>
         <div>Lorem ipsum dolor sit amet, ad sed eripuit aliquid comprehensam. An viris decore mucius nam. Tota regione ne sit, adipisci pericula an mea, mei ad.</div>
         <div onclick="toggleDeets($(this))" data-expanded="false">> show more</div>
-        <div class="packageDetails" style="display: none">...deets</div>
+        <div class="serviceDetails" style="display: none">...deets</div>
     </div>
     <div class="serviceTile" style="background-color: #ff7a7a">
         <strong style="display: block">Media Outreach - $75</strong>
         <div>Lorem ipsum dolor sit amet, ad sed eripuit aliquid comprehensam. An viris decore mucius nam. Tota regione ne sit, adipisci pericula an mea, mei ad.</div>
         <div onclick="toggleDeets($(this))" data-expanded="false">> show more</div>
-        <div class="packageDetails" style="display: none">...deets</div>
+        <div class="serviceDetails" style="display: none">...deets</div>
     </div>
     <div class="serviceTile" style="background-color: #f2bb49">
         <strong style="display: block">Design - $100</strong>
         <div>Lorem ipsum dolor sit amet, ad sed eripuit aliquid comprehensam. An viris decore mucius nam. Tota regione ne sit, adipisci pericula an mea, mei ad.</div>
         <div onclick="toggleDeets($(this))" data-expanded="false">> show more</div>
-        <div class="packageDetails" style="display: none">...deets</div>
+        <div class="serviceDetails" style="display: none">...deets</div>
     </div>
     <br style="clear: both" />
 </div>
@@ -45,7 +45,6 @@
 <script type="text/javascript">
     function toggleDeets(elm) {
         var isExpanded = elm.attr("data-expanded");
-        console.log(isExpanded);
         if (isExpanded === "false") {
             elm.html("v show less");
             elm.attr('data-expanded', 'true');
@@ -55,7 +54,7 @@
             elm.attr('data-expanded', 'false');
         }
 
-        elm.parent().find("div.packageDetails").toggle(500);
+        elm.parent().find("div.serviceDetails").toggle(500);
     }
 </script>
 
