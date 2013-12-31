@@ -15,30 +15,30 @@
     <h3 style="display: block; margin-top: 25px; margin-bottom: 15px">Packages</h3>
 
     <div class="serviceRow">
-    <section class="serviceTile">
-        <header>Social Media Strategy</header>
-        <div class="serviceDesc">Looking to <strong>grow your brands online presence</strong>? Social media is an important key to being successful online. It’s our goal to optimize content for your social media platforms (i.e. Twitter, Facebook, Pinterest, Linked In, Google +, Instagram) through strategic methods that work for your brand.</div>
-        <div class="serviceDetails">
-            <i>Details</i>
-            <ul>
-                <li>twitter</li>
-                <li>facebook</li>
-                <li>instagram</li>
-            </ul>
-        </div>
-    </section>
+        <section class="serviceTile">
+            <header>Social Media Strategy</header>
+            <div class="serviceDesc">Looking to <strong>grow your brands online presence</strong>? Social media is an important key to being successful online. It’s our goal to optimize content for your social media platforms (i.e. Twitter, Facebook, Pinterest, Linked In, Google +, Instagram) through strategic methods that work for your brand.</div>
+            <div class="serviceDetails">
+                <i>Details</i>
+                <ul>
+                    <li>twitter</li>
+                    <li>facebook</li>
+                    <li>instagram</li>
+                </ul>
+            </div>
+        </section>
 
-    <section class="serviceTile">
-        <header>Content Creation</header>
-        <div class="serviceDesc">Lorem ipsum dolor sit amet, ad sed eripuit aliquid comprehensam. An viris decore mucius nam. Tota regione ne sit, adipisci pericula an mea, mei ad.</div>
-        <div class="serviceDetails">
-            <i>Details</i>
-            <ul>
-                <li>blog posts</li>
-                <li>tweets</li>
-            </ul>
-        </div>
-    </section>
+        <section class="serviceTile">
+            <header>Content Creation</header>
+            <div class="serviceDesc">Lorem ipsum dolor sit amet, ad sed eripuit aliquid comprehensam. An viris decore mucius nam. Tota regione ne sit, adipisci pericula an mea, mei ad.</div>
+            <div class="serviceDetails">
+                <i>Details</i>
+                <ul>
+                    <li>blog posts</li>
+                    <li>tweets</li>
+                </ul>
+            </div>
+        </section>
     </div>
 
     <br style="clear: both" />
@@ -47,7 +47,9 @@
 <style>
     .serviceRow
     {
-        overflow: hidden;
+        display: table;
+        content: "";
+        clear: both;
     }
 
     .serviceTile
@@ -60,37 +62,38 @@
         background-color: #f2f2f2;
         border-radius: 3px;
         height: 100%;
+        box-sizing: border-box;
     }
 
-    .serviceTile > header
-    {
-        font-size: larger;
-        margin-bottom: 10px;
-    }
+        .serviceTile > header
+        {
+            font-size: larger;
+            margin-bottom: 10px;
+        }
 
-    .serviceTile > .serviceDesc
-    {
-        text-align: left;
-        margin-bottom: 10px;
-    }
+        .serviceTile > .serviceDesc
+        {
+            text-align: left;
+            margin-bottom: 10px;
+        }
 
-    .serviceTile > .serviceDetails > ul
-    {
-        list-style-type: none;
-    }
+        .serviceTile > .serviceDetails > ul
+        {
+            list-style-type: none;
+        }
 
-    .serviceTile > .serviceDetails > ul > li
-    {
-        display: inline-block;
-        margin: 5px 10px 0 10px;
-        border-radius: 3px;
-        background-color: #ddd;
-        padding: 5px;
-        box-shadow: 0 0 1px 1px #bbb;
-    }
+            .serviceTile > .serviceDetails > ul > li
+            {
+                display: inline-block;
+                margin: 5px 10px 0 10px;
+                border-radius: 3px;
+                background-color: #ddd;
+                padding: 5px;
+                box-shadow: 0 0 1px 1px #bbb;
+            }
 </style>
 
-    <!--<div class="serviceTile" style="background-color: #a5d3ad">
+<!--<div class="serviceTile" style="background-color: #a5d3ad">
         <strong style="display: block">Social Media Strategy</strong>
         <div>Looking to <strong>grow your brands online presence</strong>? Social media is an important key to being successful online. It’s our goal to optimize content for your social media platforms (i.e. Twitter, Facebook, Pinterest, Linked In, Google +, Instagram) through strategic methods that work for your brand.</div>
         <div onclick="toggleDeets($(this))" data-expanded="false">> show more</div>
@@ -114,7 +117,7 @@
         <div onclick="toggleDeets($(this))" data-expanded="false">> show more</div>
         <div class="serviceDetails" style="display: none">...deets</div>
     </div>-->
-    <!--<br style="clear: both" />
+<!--<br style="clear: both" />
 </div>-->
 
 <!--<script type="text/javascript">
