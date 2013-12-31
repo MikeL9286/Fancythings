@@ -112,8 +112,7 @@
     <Content Include="views\home\Contact.cshtml" />
     <Content Include="views\home\SlideShow_old.html" />
     <Content Include="views\home\Index.html" />
-    <Content Include="views\services\Design.html" />
-    <Content Include="views\services\Media.html" />
+    <Content Include="views\services\index.html" />
     <Content Include="views\shared\Error.cshtml" />
     <Content Include="views\shared\_LoginPartial.cshtml" />
     <Content Include="views\shared\_Layout.cshtml" />
