@@ -68,15 +68,16 @@
             </div>
         </section>
     </div>
+    <br style="clear:both" />
 </div>
 
 <style>
-    .serviceFlex
+    /*.serviceFlex
     {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-    }
+    }*/
 
     .serviceTile
     {
@@ -87,6 +88,10 @@
         background-color: #f2f2f2;
         border-radius: 3px;
         box-sizing: border-box;
+
+        display: inline-block;
+        float: left;
+        height: 250px;
     }
 
         .serviceTile > header
@@ -117,69 +122,3 @@
                 box-shadow: 0 0 1px 1px #bbb;
             }
 </style>
-
-<!--<div class="serviceTile" style="background-color: #a5d3ad">
-        <strong style="display: block">Social Media Strategy</strong>
-        <div>Looking to <strong>grow your brands online presence</strong>? Social media is an important key to being successful online. It’s our goal to optimize content for your social media platforms (i.e. Twitter, Facebook, Pinterest, Linked In, Google +, Instagram) through strategic methods that work for your brand.</div>
-        <div onclick="toggleDeets($(this))" data-expanded="false">> show more</div>
-        <div class="serviceDetails" style="display: none">...deets</div>
-    </div>
-    <div class="serviceTile" style="background-color: #91d1d3">
-        <strong style="display: block">Content Creation</strong>
-        <div>Lorem ipsum dolor sit amet, ad sed eripuit aliquid comprehensam. An viris decore mucius nam. Tota regione ne sit, adipisci pericula an mea, mei ad.</div>
-        <div onclick="toggleDeets($(this))" data-expanded="false">> show more</div>
-        <div class="serviceDetails" style="display: none">...deets</div>
-    </div>
-    <div class="serviceTile" style="background-color: #ff7a7a">
-        <strong style="display: block">Media Outreach</strong>
-        <div>Lorem ipsum dolor sit amet, ad sed eripuit aliquid comprehensam. An viris decore mucius nam. Tota regione ne sit, adipisci pericula an mea, mei ad.</div>
-        <div onclick="toggleDeets($(this))" data-expanded="false">> show more</div>
-        <div class="serviceDetails" style="display: none">...deets</div>
-    </div>
-    <div class="serviceTile" style="background-color: #f2bb49">
-        <strong style="display: block">Design</strong>
-        <div>Lorem ipsum dolor sit amet, ad sed eripuit aliquid comprehensam. An viris decore mucius nam. Tota regione ne sit, adipisci pericula an mea, mei ad.</div>
-        <div onclick="toggleDeets($(this))" data-expanded="false">> show more</div>
-        <div class="serviceDetails" style="display: none">...deets</div>
-    </div>-->
-<!--<br style="clear: both" />
-</div>-->
-
-<!--<script type="text/javascript">
-    function toggleDeets(elm) {
-        var isExpanded = elm.attr("data-expanded");
-        if (isExpanded === "false") {
-            elm.html("v show less");
-            elm.attr('data-expanded', 'true');
-        }
-        else {
-            elm.html("> show more");
-            elm.attr('data-expanded', 'false');
-        }
-
-        elm.parent().find("div.serviceDetails").toggle(500);
-    }
-</script>
-
-<style>
-    .serviceTile
-    {
-        margin: 2.5%;
-        margin: 10px 2.5% 10px 2.5%;
-        padding: 10px;
-    }
-
-        .serviceTitle
-        {
-            display: inline-block;
-            height: 100%;
-            width: 25%;
-        }
-
-    .serviceDesc
-    {
-        display: inline-block;
-        width: 70%;
-    }
-
-</style>-->
