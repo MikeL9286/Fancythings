@@ -76,9 +76,9 @@
 <script type="text/javascript">
     function toggle_visibility(elm) {
         if (elm.height() <= 0)
-            elm.attr('height', '0');
+            elm.removeAttr('height');
         else
-            elm.attr('height', '30px');
+            elm.height(0);
     }
 </script>
 
@@ -113,6 +113,7 @@
         .serviceTile > .serviceDetails > ul
         {
             list-style-type: none;
+            overflow: hidden;
         }
 
             .serviceTile > .serviceDetails > ul > li
