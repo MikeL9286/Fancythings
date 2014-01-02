@@ -10,7 +10,7 @@ div.ContentWrapper
 {
     max-width: 1300px;
     height: 100%;
-    margin: 55px auto 5px auto;
+    margin: 30px auto 5px auto;
 }
 
     div.ContentWrapper:before, div.ContentWrapper:after
