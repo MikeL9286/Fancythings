@@ -2,7 +2,7 @@
 body
 {
     color: #000;
-    font-family: "Segoe UI" , Verdana, Helvetica, Sans-Serif;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
     margin: 0;
 }
 
@@ -13,12 +13,12 @@ div.ContentWrapper
     margin: 55px auto 5px auto;
 }
 
-div.ContentWrapper:before, div.ContentWrapper:after
-{
-    content: "";
-    position: absolute;
-    left: 0px;
-}
+    div.ContentWrapper:before, div.ContentWrapper:after
+    {
+        content: "";
+        position: absolute;
+        left: 0px;
+    }
 
 div.Content
 {
@@ -34,38 +34,38 @@ a
     text-decoration: none;
 }
 
-a img
-{
-    border: none;
-}
+    a img
+    {
+        border: none;
+    }
 
-a:link, a:visited, a:active, a:hover
-{
-    text-decoration: none;
-}
+    a:link, a:visited, a:active, a:hover
+    {
+        text-decoration: none;
+    }
 
 header, footer, hgroup, section
 {
     display: block;
     position: relative;
-	text-align: center;
+    text-align: center;
 }
 
-header:before, header:after
-{
-    content: "";
-    display: table;
-}
+    header:before, header:after
+    {
+        content: "";
+        display: table;
+    }
 
-header:after
-{
-    clear: both;
-}
+    header:after
+    {
+        clear: both;
+    }
 
-header > div
-{
-    display: inline-block;
-}
+    header > div
+    {
+        display: inline-block;
+    }
 
 nav
 {
@@ -74,28 +74,28 @@ nav
     border-bottom: 1px solid black;
 }
 
-nav > a
-{
-    display: inline-block;
-    cursor: pointer;
-    text-align: center;
-    color: #000;
-    padding-bottom: 4px;
-    font-family: Raleway, Georgia, Sans-Serif;
-    font-variant: small-caps;
-    font-size: 1.4em;
-    margin-right: 40px;
-}
+    nav > a
+    {
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+        color: #000;
+        padding-bottom: 4px;
+        font-family: Raleway, Georgia, Sans-Serif;
+        font-variant: small-caps;
+        font-size: 1.4em;
+        margin-right: 40px;
+    }
 
-nav > a:first-of-type
-{
-    margin-left: 40px;
-}
+        nav > a:first-of-type
+        {
+            margin-left: 40px;
+        }
 
-nav > a:hover
-{
-    color: #f9aab3;
-}
+        nav > a:hover
+        {
+            color: #f9aab3;
+        }
 
 .float-left
 {
@@ -148,11 +148,11 @@ h5, h6
     font-size: 1em;
 }
 
-h5 a:link, h5 a:visited, h5 a:active
-{
-    padding: 0;
-    text-decoration: none;
-}
+    h5 a:link, h5 a:visited, h5 a:active
+    {
+        padding: 0;
+        text-decoration: none;
+    }
 
 
 /* main layout
@@ -172,10 +172,10 @@ div.hr
     background: #fff url(http://www.holladayhealthandfitness.com/Content/images/content-divider.gif) no-repeat scroll center;
 }
 
-div.hr > hr
-{
-    display: none;
-}
+    div.hr > hr
+    {
+        display: none;
+    }
 
 /* Blog styles
 ------------------------------------*/
@@ -190,48 +190,63 @@ div#blog
     float: left;
     margin: 0 30px 0 30px;
 }
-.tileWrapper 
+
+.tileWrapper
 {
-    position:relative;
-    margin-bottom:30px;
+    position: relative;
+    margin-bottom: 30px;
     box-shadow: 0 0 5px black;
     moz-box-shadow: 0 0 5px black;
     webkit-box-shadow: 0 0 5px black;
 }
-.tileWrapper:hover
+
+    .tileWrapper:hover
+    {
+        opacity: .8;
+    }
+
+    .tileWrapper a:hover
+    {
+        color: Black;
+    }
+
+.tile
 {
-    opacity:.8;   
+    height: 300px;
+    background-color: #ccc;
 }
-.tileWrapper a:hover
+
+.tileSnapshot
 {
-    color: Black;
+    height: 100%;
+    background-color: #eee;
+    overflow: hidden;
 }
-.tile {
-    height:300px;
-    background-color:#ccc;
-}
-.tileSnapshot {
-    height:100%;
-    background-color:#eee;
-    overflow:hidden;
-}
-.tilePreview {
-    position:absolute;
-    top:240px;
-    height:50px;
+
+.tilePreview
+{
+    position: absolute;
+    top: 240px;
+    height: 50px;
     width: 530px;
-    background-color:#ccc;
+    background-color: #ccc;
     padding: 5px 10px 5px 10px;
-    opacity:.9;
+    opacity: .9;
 }
-.tileTitle {
-	float:left;
+
+.tileTitle
+{
+    float: left;
 }
-.tileDate {
-	float:right;
+
+.tileDate
+{
+    float: right;
 }
-.tileSummary {
-    clear:both;
+
+.tileSummary
+{
+    clear: both;
 }
 
 div#addContainer
@@ -241,7 +256,7 @@ div#addContainer
     margin: 18px 30px 0 0;
 }
 
-div.addSection 
+div.addSection
 {
     margin-bottom: 30px;
 }
@@ -253,16 +268,16 @@ div.blockLinks
     text-align: center;
 }
 
-div.blockLinks > a
-{
-    display: block;
-    margin: 3px 0 3px 0;
-    padding: 5px 0 5px 0;
-    font: normal normal 15px Arial, sans-serif;
-    color: black;
-    opacity: .75;
-    letter-spacing: 1px;
-}
+    div.blockLinks > a
+    {
+        display: block;
+        margin: 3px 0 3px 0;
+        padding: 5px 0 5px 0;
+        font: normal normal 15px Arial, sans-serif;
+        color: black;
+        opacity: .75;
+        letter-spacing: 1px;
+    }
 
 div.broken > a
 {
@@ -270,35 +285,40 @@ div.broken > a
     background-color: #EBE4CA;
 }
 
-div.broken > a:hover
-{
-    opacity: 1;
-    text-decoration: none;
-}
+    div.broken > a:hover
+    {
+        opacity: 1;
+        text-decoration: none;
+    }
 
-.shopImg:hover {
+.shopImg:hover
+{
     opacity: .8;
 }
 
 
 /* Pinit Button */
-div.pinContainer {
-  position: relative;
-  display: inline-block;
-  opacity: 1;
+div.pinContainer
+{
+    position: relative;
+    display: inline-block;
+    opacity: 1;
 }
 
-div.pinContainer:hover {
-  opacity: .8;
-}
+    div.pinContainer:hover
+    {
+        opacity: .8;
+    }
 
-div.pinContainer:hover a.pinIt {
-      display: inline-block;
-}
- 
+        div.pinContainer:hover a.pinIt
+        {
+            display: inline-block;
+        }
+
 /* button style, and center it */
-a.pinIt {
-    position:absolute;
+a.pinIt
+{
+    position: absolute;
     top: 0%;
     left: 75%;
     display: none;
@@ -306,72 +326,82 @@ a.pinIt {
     opacity: .9;
 }
 
-a.pinIt:hover {
-  opacity: 1;
-}
+    a.pinIt:hover
+    {
+        opacity: 1;
+    }
 
 
 /* Post Archive
 -------------------------*/
-select#postArchive {
+select#postArchive
+{
     width: 100%;
     height: 30px;
     margin: 0;
 }
 
-select#postArchive:focus {
-    outline-color: rgb(255, 155, 200);
-}
+    select#postArchive:focus
+    {
+        outline-color: rgb(255, 155, 200);
+    }
 
 
 /* Instagram
 ------------------------------------*/
-.shopImg:hover {
-  opacity: .8;
+.shopImg:hover
+{
+    opacity: .8;
 }
 
 
 /* Where I Shop
 ------------------------------------*/
-div.pink {
-  background-color: #FBDEDF;
+div.pink
+{
+    background-color: #FBDEDF;
 }
 
 
 /* Favorite Reads
 ------------------------------------*/
-div.beige {
-  background-color: #F2ECDD;
+div.beige
+{
+    background-color: #F2ECDD;
 }
 
 
 /* Block Links
 ------------------------------------*/
-div.blockLinks {
-  width: 100%;
-  margin: -7px 0 -7px 0;
-  padding: 7px 0 7px 0;
-  text-align: center;
+div.blockLinks
+{
+    width: 100%;
+    margin: -7px 0 -7px 0;
+    padding: 7px 0 7px 0;
+    text-align: center;
 }
 
-div.blockLinks > a {
-  display: block;
-  margin: 3px 0 3px 0;
-  padding: 5px 0 5px 0;
-  font: normal normal 15px Open Sans Condensed;
-  color: black;
-  opacity: .75;
-  letter-spacing: 1px;
+    div.blockLinks > a
+    {
+        display: block;
+        margin: 3px 0 3px 0;
+        padding: 5px 0 5px 0;
+        font: normal normal 15px Open Sans Condensed;
+        color: black;
+        opacity: .75;
+        letter-spacing: 1px;
+    }
+
+div.broken > a
+{
+    padding: 10px 0 10px 0;
 }
 
-div.broken > a {
-  padding: 10px 0 10px 0;
-}
-
-div.broken > a:hover{
-  opacity: 1;
-  text-decoration: none;
-}
+    div.broken > a:hover
+    {
+        opacity: 1;
+        text-decoration: none;
+    }
 
 /* Slideshow styles
 ------------------------------------*/
@@ -390,46 +420,46 @@ div.broken > a:hover{
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
-.SlideContainer img
-{
-    height: auto;
-    max-width: 100%;
-}
+    .SlideContainer img
+    {
+        height: auto;
+        max-width: 100%;
+    }
 
-.SlideContainer div[id*=slide]
-{
-    display: block;
-    position: absolute;
-    left: 100%;
-}
+    .SlideContainer div[id*=slide]
+    {
+        display: block;
+        position: absolute;
+        left: 100%;
+    }
 
-.SlideContainer div.slideLeftQuick
-{
-    left: -100%;
-}
+    .SlideContainer div.slideLeftQuick
+    {
+        left: -100%;
+    }
 
-.SlideContainer div.slideLeft
-{
-    left: -100%;
-    transition: left 1s;
-    -webkit-transition: left 1s;
-}
+    .SlideContainer div.slideLeft
+    {
+        left: -100%;
+        transition: left 1s;
+        -webkit-transition: left 1s;
+    }
 
-.SlideContainer div.slideRight
-{
-    left: 100%;
-    transition: left 1s;
-    -webkit-transition: left 1s;
-}
+    .SlideContainer div.slideRight
+    {
+        left: 100%;
+        transition: left 1s;
+        -webkit-transition: left 1s;
+    }
 
-.SlideContainer div.live
-{
-    z-index: 5;
-    left: 0px;
-    transition: left 1s;
-    -webkit-transition: left 1s;
-    position: relative;
-}
+    .SlideContainer div.live
+    {
+        z-index: 5;
+        left: 0px;
+        transition: left 1s;
+        -webkit-transition: left 1s;
+        position: relative;
+    }
 
 .SlideToolbar
 {
@@ -480,15 +510,15 @@ div.broken > a:hover{
     float: left;
 }
 
-.Portal:hover img
-{
-    opacity: .9;
-}
+    .Portal:hover img
+    {
+        opacity: .9;
+    }
 
-.Portal:hover p
-{
-    text-decoration: underline;
-}
+    .Portal:hover p
+    {
+        text-decoration: underline;
+    }
 
 .portalTape
 {
@@ -544,7 +574,7 @@ ul
     top: 0px;
     height: 30px;
     width: 100%;
-    background-color: #0c0c0c;
+    background-color: #999;
     text-align: center;
     z-index: 100;
     opacity: .4;
@@ -552,7 +582,7 @@ ul
 
 .SocialIconsDark
 {
-    background-color: #999;
+    background-color: #0c0c0c;
 }
 
 .SocialIcons ul
@@ -568,16 +598,16 @@ ul
     text-align: right;
 }
 
-.SocialIcons ul > li
-{
-    display: inline;
-    margin: 0 5px 0 5px;
-}
+    .SocialIcons ul > li
+    {
+        display: inline;
+        margin: 0 5px 0 5px;
+    }
 
-.SocialIcons ul > li:hover
-{
-    opacity: .85;
-}
+        .SocialIcons ul > li:hover
+        {
+            opacity: .85;
+        }
 
 .SocialIcons a
 {
@@ -587,51 +617,98 @@ ul
     width: 20px;
 }
 
-.SocialIcons a#facebook
+    .SocialIcons a#facebook
+    {
+        background-position: 0px -17px;
+    }
+
+        .SocialIcons a#facebook:hover
+        {
+            opacity: .8;
+        }
+
+    .SocialIcons a#twitter
+    {
+        background-position: 0px 0px;
+    }
+
+        .SocialIcons a#twitter:hover
+        {
+            opacity: .8;
+        }
+
+    .SocialIcons a#bloglovin
+    {
+        background-position: 0px -35px;
+        height: 16px;
+    }
+
+    .SocialIcons a#pinterest
+    {
+        background-position: 0px -67px;
+    }
+
+        .SocialIcons a#pinterest:hover
+        {
+            opacity: .8;
+        }
+
+    .SocialIcons a#instagram
+    {
+        background-position: 0px -51px;
+    }
+
+        .SocialIcons a#instagram:hover
+        {
+            opacity: .8;
+        }
+
+/* Services Styles
+---------------------------------------------------------*/
+.serviceTile
 {
-    background-position: 0px -17px;
+    width: 46%;
+    padding: 15px;
+    margin: 15px 2% 15px 2%;
+    box-shadow: 0 0 1px 1px #ccc;
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    display: inline-block;
+    float: left;
+    min-height: 220px;
 }
 
-.SocialIcons a#facebook:hover
-{
-    opacity: .8;
-}
+    .serviceTile > header
+    {
+        font-size: larger;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
 
-.SocialIcons a#twitter
-{
-    background-position: 0px 0px;
-}
+    .serviceTile > .serviceDesc
+    {
+        text-align: left;
+        margin-bottom: 10px;
+    }
 
-.SocialIcons a#twitter:hover
-{
-    opacity: .8;
-}
+    .serviceTile > .serviceDetails > ul
+    {
+        list-style-type: none;
+        overflow: hidden;
+        padding-bottom: 5px;
+        display: none;
+    }
 
-.SocialIcons a#bloglovin
-{
-    background-position: 0px -35px;
-    height: 16px;
-}
-
-.SocialIcons a#pinterest
-{
-    background-position: 0px -67px;
-}
-
-.SocialIcons a#pinterest:hover
-{
-    opacity: .8;
-}
-
-.SocialIcons a#instagram
-{
-    background-position: 0px -51px;
-}
-
-.SocialIcons a#instagram:hover
-{
-    opacity: .8;
-}
+        .serviceTile > .serviceDetails > ul > li
+        {
+            display: inline-block;
+            margin: 5px 10px 0 10px;
+            border-radius: 3px;
+            background-color: #ddd;
+            padding: 5px;
+            box-shadow: 0 0 1px 1px #bbb;
+            height: -10px;
+        }
 
 /* About sections
 ---------------------------------------------------------*/
@@ -655,7 +732,7 @@ div .About .Highlight
 div .About .Keyword
 {
     display: inline-block;
-    font-family: "Lucida Grande" , Verdana, Sans-Serif;
+    font-family: "Lucida Grande", Verdana, Sans-Serif;
     font-weight: 500;
     font-size: 2.3em;
     float: left;
