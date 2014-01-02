@@ -21,7 +21,7 @@
         <section class="serviceTile">
             <header>Social Media Strategy</header>
             <div class="serviceDesc">Looking to <strong>grow your brands online presence</strong>? Social media is an important key to being successful online. It’s our goal to optimize content for your social media platforms (i.e. Twitter, Facebook, Pinterest, Linked In, Google +, Instagram) through strategic methods that work for your brand.</div>
-            <div class="serviceDetails" onclick="toggle_visibility($(this))">
+            <div class="serviceDetails" onclick="toggle_visibility($(this).find('ul'))">
                 <i>Details</i>
                 <ul>
                     <li>twitter</li>
@@ -34,7 +34,7 @@
         <section class="serviceTile">
             <header>Content Creation</header>
             <div class="serviceDesc">Lorem ipsum dolor sit amet, ad sed eripuit aliquid comprehensam. An viris decore mucius nam. Tota regione ne sit, adipisci pericula an mea, mei ad.</div>
-            <div class="serviceDetails" onclick="toggle_visibility($(this))">
+            <div class="serviceDetails" onclick="toggle_visibility($(this).find('ul'))">
                 <i>Details</i>
                 <ul>
                     <li>blog posts</li>
@@ -48,7 +48,7 @@
         <section class="serviceTile">
             <header>Media Outreach</header>
             <div class="serviceDesc">Lorem ipsum dolor sit amet, ad sed eripuit aliquid comprehensam. An viris decore mucius nam. Tota regione ne sit, adipisci pericula an mea, mei ad.</div>
-            <div class="serviceDetails" onclick="toggle_visibility($(this))">
+            <div class="serviceDetails" onclick="toggle_visibility($(this).find('ul'))">
                 <i>Details</i>
                 <ul>
                     <li>twitter</li>
@@ -61,7 +61,7 @@
         <section class="serviceTile">
             <header>Design</header>
             <div class="serviceDesc">Lorem ipsum dolor sit amet, ad sed eripuit aliquid comprehensam. An viris decore mucius nam. Tota regione ne sit, adipisci pericula an mea, mei ad.</div>
-            <div class="serviceDetails" onclick="toggle_visibility($(this))">
+            <div class="serviceDetails" onclick="toggle_visibility($(this).find('ul'))">
                 <i>Details</i>
                 <ul>
                     <li>blog posts</li>
@@ -76,9 +76,9 @@
 <script type="text/javascript">
     function toggle_visibility(elm) {
         if (elm.height() <= 0)
-            elm.find('li').attr('height', '-10px');
+            elm.attr('height', '0');
         else
-            elm.find('li').attr('height', '20px');
+            elm.attr('height', '30px');
     }
 </script>
 
