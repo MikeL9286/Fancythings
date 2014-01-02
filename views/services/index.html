@@ -34,7 +34,7 @@
         <section class="serviceTile">
             <header>Content Creation</header>
             <div class="serviceDesc">Lorem ipsum dolor sit amet, ad sed eripuit aliquid comprehensam. An viris decore mucius nam. Tota regione ne sit, adipisci pericula an mea, mei ad.</div>
-            <div class="serviceDetails" onclick="toggle_visibility($(this).find('li'))">
+            <div class="serviceDetails" onclick="toggle_visibility($(this))">
                 <i>Details</i>
                 <ul>
                     <li>blog posts</li>
@@ -48,7 +48,7 @@
         <section class="serviceTile">
             <header>Media Outreach</header>
             <div class="serviceDesc">Lorem ipsum dolor sit amet, ad sed eripuit aliquid comprehensam. An viris decore mucius nam. Tota regione ne sit, adipisci pericula an mea, mei ad.</div>
-            <div class="serviceDetails" onclick="toggle_visibility($(this).find('li'))">
+            <div class="serviceDetails" onclick="toggle_visibility($(this))">
                 <i>Details</i>
                 <ul>
                     <li>twitter</li>
@@ -61,7 +61,7 @@
         <section class="serviceTile">
             <header>Design</header>
             <div class="serviceDesc">Lorem ipsum dolor sit amet, ad sed eripuit aliquid comprehensam. An viris decore mucius nam. Tota regione ne sit, adipisci pericula an mea, mei ad.</div>
-            <div class="serviceDetails" onclick="toggle_visibility($(this).find('li'))">
+            <div class="serviceDetails" onclick="toggle_visibility($(this))">
                 <i>Details</i>
                 <ul>
                     <li>blog posts</li>
@@ -76,9 +76,9 @@
 <script type="text/javascript">
     function toggle_visibility(elm) {
         if (elm.height() <= 0)
-            elm.attr('height', '-10px');
+            elm.find('li').attr('height', '-10px');
         else
-            elm.attr('height', '20px');
+            elm.find('li').attr('height', '20px');
     }
 </script>
 
