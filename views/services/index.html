@@ -74,15 +74,16 @@
 </div>
 
 <script type="text/javascript">
-    function setVisibility(elm) {
-        if (elm.height() <= 0)
-            elm.height('auto');
-        else
-            elm.height(0);
+    function toggle_visibility(elm) {
+        elm.animate({
+            height: "toggle"
+        }, 400, function(){});
     }
 
-    function toggle_visibility(elm) {
-        elm.toggle(setVisibility(elm), 400);
+        //if (elm.height() <= 0)
+        //    elm.height('auto');
+        //else
+        //    elm.height(0);
     }
 </script>
 
@@ -118,7 +119,6 @@
         {
             list-style-type: none;
             overflow: hidden;
-            height: 0;
         }
 
             .serviceTile > .serviceDetails > ul > li
