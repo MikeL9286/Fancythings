@@ -27,6 +27,11 @@ div.Content
     background-color: #fff;
 }
 
+    div.Content > header
+    {
+        padding: 25px;
+    }
+
 a
 {
     color: #000;
