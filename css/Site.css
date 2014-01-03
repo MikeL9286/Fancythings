@@ -447,6 +447,7 @@ div.broken > a
         left: -100%;
         transition: left 1s;
         -webkit-transition: left 1s;
+        position: absolute;
     }
 
     .SlideContainer div.slideRight
