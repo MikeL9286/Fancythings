@@ -462,7 +462,7 @@ div.broken > a
         left: 0px;
         transition: left 1s;
         -webkit-transition: left 1s;
-        position: absolute;
+        position: relative;
     }
 
 .SlideToolbar
