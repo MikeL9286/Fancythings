@@ -31,8 +31,8 @@
         if (targetSlideId != currentSlide.attr('id')) {
             nextSlide = GetNextSlide(targetSlideId);
 
-            //ChangeSlide();
-            SlideLeft();
+            ChangeSlide();
+            //SlideLeft();
             ChangeBlob();
 
             //Execute final steps after animation finishes
