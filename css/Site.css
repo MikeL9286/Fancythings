@@ -580,8 +580,13 @@ ul
     width: 100%;
     text-align: center;
     z-index: 100;
-    opacity: .4;
+}
+
+.SocialIconsBG
+{
     background-color: white;
+    opacity: .4;
+    z-index: 99;
 }
 
     .SocialIcons ul
