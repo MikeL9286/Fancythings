@@ -584,83 +584,88 @@ ul
     background-color: white;
 }
 
-.SocialIcons ul
-{
-    padding-top: 7px;
-    list-style-type: none;
-    -webkit-padding-start: 0;
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    height: 100%;
-    width: 960px;
-    margin: 0 auto 0 auto;
-    text-align: right;
-}
-
-    .SocialIcons ul > li
+    .SocialIcons ul
     {
-        display: inline;
-        margin: 0 5px 0 5px;
+        padding-top: 7px;
+        list-style-type: none;
+        -webkit-padding-start: 0;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+        height: 100%;
+        width: 960px;
+        margin: 0 auto 0 auto;
+        text-align: right;
     }
 
-        .SocialIcons ul > li:hover
+        .SocialIcons ul > li
         {
-            opacity: .85;
+            display: inline;
+            margin: 0 5px 0 5px;
         }
 
-.SocialIcons a
-{
-    display: inline-block;
-    background-image: url('../img/stacked_socialmeeds.png');
-    height: 17px;
-    width: 20px;
-}
+            .SocialIcons ul > li:hover
+            {
+                opacity: .85;
+            }
 
-    .SocialIcons a#facebook
+    .SocialIcons a
     {
-        background-position: 0px -17px;
+        display: inline-block;
+        background-image: url('../img/stacked_socialmeeds.png');
+        height: 17px;
+        width: 20px;
     }
 
-        .SocialIcons a#facebook:hover
+        .SocialIcons a#facebook
         {
-            background-position: 20px -17px;
+            background-position: 0px -17px;
         }
 
-    .SocialIcons a#twitter
-    {
-        background-position: 0px 0px;
-    }
+            .SocialIcons a#facebook:hover
+            {
+                background-position: 20px -17px;
+            }
 
-        .SocialIcons a#twitter:hover
+        .SocialIcons a#twitter
         {
-            background-position: 20px 0px;
+            background-position: 0px 0px;
         }
 
-    .SocialIcons a#bloglovin
-    {
-        background-position: 0px -35px;
-        height: 16px;
-    }
+            .SocialIcons a#twitter:hover
+            {
+                background-position: 20px 0px;
+            }
 
-    .SocialIcons a#pinterest
-    {
-        background-position: 0px -67px;
-    }
-
-        .SocialIcons a#pinterest:hover
+        .SocialIcons a#bloglovin
         {
-            opacity: .8;
+            background-position: 0px -35px;
+            height: 16px;
         }
 
-    .SocialIcons a#instagram
-    {
-        background-position: 0px -51px;
-    }
+            .SocialIcons a#bloglovin:hover
+            {
+                background-position: 20px -35px;
+            }
 
-        .SocialIcons a#instagram:hover
+        .SocialIcons a#pinterest
         {
-            opacity: .8;
+            background-position: 0px -67px;
         }
+
+            .SocialIcons a#pinterest:hover
+            {
+                background-position: 20px -67px;
+            }
+
+        .SocialIcons a#instagram
+        {
+            background-position: 0px -51px;
+        }
+
+            .SocialIcons a#instagram:hover
+            {
+                background-position: 20px -51px;
+            }
 
 /* Services Styles
 ---------------------------------------------------------*/
