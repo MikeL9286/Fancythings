@@ -581,6 +581,7 @@ ul
     text-align: center;
     z-index: 100;
     opacity: .4;
+    background-color: white;
 }
 
 .SocialIcons ul
