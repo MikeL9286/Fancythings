@@ -84,6 +84,7 @@
     <Content Include="img\blog_image.png" />
     <Content Include="img\book_shelves.JPG" />
     <Content Include="img\fancy_pencils.jpg" />
+    <Content Include="img\header.jpg" />
     <Content Include="img\header2.png" />
     <Content Include="img\leopard_armparty.JPG" />
     <Content Include="img\logo_site.png" />
