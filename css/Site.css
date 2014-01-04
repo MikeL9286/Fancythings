@@ -86,9 +86,9 @@ nav
         color: #000;
         padding-bottom: 4px;
         font-family: Montserrat, Raleway, Georgia, Sans-Serif;
-        font-variant: small-caps;
-        font-size: 1.4em;
+        text-transform: uppercase;
         margin-right: 40px;
+        letter-spacing: 3px;
     }
 
         nav > a:first-of-type
