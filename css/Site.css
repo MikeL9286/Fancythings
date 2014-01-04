@@ -494,7 +494,7 @@ div.broken > a
     border-radius: 7px;
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
-    background-color: #5ABECC;
+    background-color: #222;
     cursor: pointer;
     margin: 0 5px 0 5px;
 }
