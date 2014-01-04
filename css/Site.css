@@ -623,7 +623,7 @@ ul
 
         .SocialIcons a#facebook:hover
         {
-            background-position: 0px -34px;
+            background-position: 20px -17px;
         }
 
     .SocialIcons a#twitter
@@ -633,7 +633,7 @@ ul
 
         .SocialIcons a#twitter:hover
         {
-            opacity: .8;
+            background-position: 20px 0px;
         }
 
     .SocialIcons a#bloglovin
