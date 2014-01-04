@@ -601,7 +601,6 @@ ul
     {
         display: inline;
         margin: 0 5px 0 5px;
-        background-color: black;
     }
 
         .SocialIcons ul > li:hover
@@ -624,7 +623,7 @@ ul
 
         .SocialIcons a#facebook:hover
         {
-            opacity: .8;
+            background-position: 0px -34px;
         }
 
     .SocialIcons a#twitter
