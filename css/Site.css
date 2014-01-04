@@ -98,7 +98,7 @@ nav
 
         nav > a:hover
         {
-            color: #f9aab3;
+            color: #5ABECC;
         }
 
 .float-left
@@ -578,15 +578,9 @@ ul
     top: 0px;
     height: 30px;
     width: 100%;
-    background-color: #999;
     text-align: center;
     z-index: 100;
     opacity: .4;
-}
-
-.SocialIconsDark
-{
-    background-color: #0c0c0c;
 }
 
 .SocialIcons ul
@@ -606,6 +600,7 @@ ul
     {
         display: inline;
         margin: 0 5px 0 5px;
+        background-color: black;
     }
 
         .SocialIcons ul > li:hover
