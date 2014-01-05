@@ -430,9 +430,8 @@ div.broken > a
     .SlideContainer div[id*=slide]
     {
         position: relative;
-        margin-bottom: -100%;
         z-index:8;
-        display: inline-block;
+        display: none;
     }
 
     .SlideContainer div.next

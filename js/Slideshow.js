@@ -43,6 +43,7 @@
 
     function SwapSlides() {
         nextSlide.attr('class', 'live');
+        currentSlide.fadeOut();
         nextSlide.fadeIn();
     }
 
