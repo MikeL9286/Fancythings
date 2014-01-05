@@ -69,7 +69,7 @@
 
             //If the slideshow has passed the end of the slide list, loop back to 1st slide
             if (nextSlide.length == 0)
-                return $('.SlideContainer div.live').closest('.SlideContainer').find('div:first-child');
+                return $('.SlideContainer div.live').closest('.SlideContainer').find('div[id*=slide]:first-child');
 
             return nextSlide;
         }
