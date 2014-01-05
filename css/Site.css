@@ -432,9 +432,10 @@ div.broken > a
         position: absolute;
         top: 0;
         z-index:7;
+        display: none;
     }
 
-    .SlideContainer div.old
+    .SlideContainer div.next
     {
         z-index:8;
     }

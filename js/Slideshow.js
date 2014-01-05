@@ -42,15 +42,18 @@
     /*** Private methods ***/
 
     function SwapSlides() {
-        currentSlide.attr('class', 'old');
-        nextSlide.attr('class', 'live');
+        //load the next slide behind the live slide
+        nextSlide.attr('class', 'next');
         nextSlide.fadeIn();
+
+        currentSlide.fadeOut();
+
+        //change next slide to live slide and un-load the old slide
+        nextSlide.attr('class', 'live');
+        currentSlide.removeAttr('class');
     }
 
     function FinishSlide() {
-        currentSlide.removeAttr('class');
-        currentSlide.fadeOut();
-
         //Rebind the onclick event for each blob after transition
         $('ul.SlideBlobs li').each(function () {
             $(this).attr('onclick', 'Slideshow.InitSlide($(this).attr("data-slideFor"))');
