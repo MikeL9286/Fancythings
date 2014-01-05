@@ -42,8 +42,8 @@
     /*** Private methods ***/
 
     function SwapSlides() {
+        currentSlide.attr('class', 'old');
         nextSlide.attr('class', 'live');
-        currentSlide.fadeOut();
         nextSlide.fadeIn();
     }
 
