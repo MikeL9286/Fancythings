@@ -82,6 +82,7 @@
     <Content Include="img\Baies_candle.jpeg" />
     <Content Include="favicon.ico" />
     <Content Include="img\blog_image.png" />
+    <Content Include="img\blog_portal.jpg" />
     <Content Include="img\book_shelves.JPG" />
     <Content Include="img\fancy_pencils.jpg" />
     <Content Include="img\header.jpg" />
@@ -89,12 +90,16 @@
     <Content Include="img\leopard_armparty.JPG" />
     <Content Include="img\logo_site.png" />
     <Content Include="img\nailpolishes.jpg" />
+    <Content Include="img\services_portal.jpg" />
+    <Content Include="img\services_portal2.jpg" />
     <Content Include="img\shop_image.jpg" />
     <Content Include="img\peonies.jpg" />
     <Content Include="img\pinkTape.png" />
     <Content Include="img\shop_image_oldest.png" />
+    <Content Include="img\shop_portal.png" />
     <Content Include="img\socialIcons.png" />
     <Content Include="img\socialmeeds.png" />
+    <Content Include="img\stacked_socialmeeds2.png" />
     <Content Include="img\tulips.JPG" />
     <Content Include="img\zara_pumps.JPG" />
     <Content Include="js\Blog.js" />

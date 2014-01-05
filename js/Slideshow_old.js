@@ -31,7 +31,8 @@
         if (targetSlideId != currentSlide.attr('id')) {
             nextSlide = GetNextSlide(targetSlideId);
 
-            SwapSlides();
+            ChangeSlide();
+            //SlideLeft();
             ChangeBlob();
 
             //Execute final steps after animation finishes
@@ -39,11 +40,20 @@
         }
     }
 
-    /*** Private methods ***/
+/*** Private methods ***/
 
-    function SwapSlides() {
+    function SlideLeft() {
         nextSlide.attr('class', 'live');
-        nextSlide.fadeIn();
+        currentSlide.attr('class', 'slideLeft');
+    }
+
+    function SlideRight() {
+        nextSlide.attr('class', 'slideLeftQuick');
+        //setTimeout is needed so the animations will execute correctly
+        setTimeout(function () {
+            nextSlide.attr('class', 'live');
+            currentSlide.attr('class', 'slideRight');
+        }, 100);
     }
 
     function FinishSlide() {
@@ -53,6 +63,16 @@
         $('ul.SlideBlobs li').each(function () {
             $(this).attr('onclick', 'Slideshow.InitSlide($(this).attr("data-slideFor"))');
         });
+    }
+
+    function ChangeSlide() {
+        //If the next slide is positioned before the live slide
+        if (nextSlide.attr('id') < currentSlide.attr('id')) {
+            SlideRight();
+        }
+        else {
+            SlideLeft();
+        }
     }
 
     function GetNextSlide(targetSlideId) {

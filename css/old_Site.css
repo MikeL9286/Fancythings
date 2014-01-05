@@ -1,40 +1,36 @@
 ﻿
 body
 {
-    /*min-width: 610px;*/
     color: #000;
-    font-size: .85em;
-    font-family: "Segoe UI" , Verdana, Helvetica, Sans-Serif;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
     margin: 0;
 }
 
 div.ContentWrapper
 {
-    width: 960px;
+    max-width: 1300px;
     height: 100%;
-    margin: 55px auto 5px auto;
-    border: 5px solid #fff;
-    box-shadow: 0 0 10px rgba(198, 198, 197, 0.9);
-    -moz-box-shadow: 0 0 10px rgba(198, 198, 197, 0.9);
-    -webkit-box-shadow: 0 0 10px rgba(198, 198, 197, 0.9);
+    margin: 30px auto 5px auto;
 }
 
-div.ContentWrapper:before, div.ContentWrapper:after
-{
-    content: "";
-    position: absolute;
-    left: 0px;
-}
+    div.ContentWrapper:before, div.ContentWrapper:after
+    {
+        content: "";
+        position: absolute;
+        left: 0px;
+    }
 
 div.Content
 {
-    padding: 0 10px 10px 10px;
+    padding: 0 50px 10px 50px;
     margin: 0 auto 0 auto;
     background-color: #fff;
-    box-shadow: 0 0 2px #ccc;
-    -moz-box-shadow: 0 0 2px #ccc;
-    -webkit-box-shadow: 0 0 2px #ccc;
 }
+
+    div.Content > header
+    {
+        padding: 25px;
+    }
 
 a
 {
@@ -43,67 +39,67 @@ a
     text-decoration: none;
 }
 
-a img
-{
-    border: none;
-}
+    a img
+    {
+        border: none;
+    }
 
-a:link, a:visited, a:active, a:hover
-{
-    text-decoration: none;
-}
+    a:link, a:visited, a:active, a:hover
+    {
+        text-decoration: none;
+    }
 
 header, footer, hgroup, section
 {
     display: block;
     position: relative;
+    text-align: center;
 }
 
-header:before, header:after
-{
-    content: "";
-    display: table;
-}
+    header:before, header:after
+    {
+        content: "";
+        display: table;
+    }
 
-header:after
-{
-    clear: both;
-}
+    header:after
+    {
+        clear: both;
+    }
 
-header > div
-{
-    float: left;
-}
+    header > div
+    {
+        display: inline-block;
+    }
 
 nav
 {
-    float: left;
-    margin: 50px 0 0 20px;
-    border-bottom: 1px solid black;
-}
-
-nav > a
-{
     display: inline-block;
-    cursor: pointer;
-    text-align: center;
-    color: #000;
-    padding-bottom: 4px;
-    font-family: Raleway, Georgia, Sans-Serif;
-    font-variant: small-caps;
-    font-size: 1.4em;
-    margin-right: 40px;
+    margin: 50px 0 0 20px;
 }
 
-nav > a:first-of-type
-{
-    margin-left: 40px;
-}
+    nav > a
+    {
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+        color: #000;
+        padding-bottom: 4px;
+        font-family: Montserrat, Raleway, Georgia, Sans-Serif;
+        text-transform: uppercase;
+        margin-right: 40px;
+        letter-spacing: 3px;
+    }
 
-nav > a:hover
-{
-    color: #f9aab3;
-}
+        nav > a:first-of-type
+        {
+            margin-left: 40px;
+        }
+
+        nav > a:hover
+        {
+            color: #5ABECC;
+        }
 
 .float-left
 {
@@ -156,11 +152,11 @@ h5, h6
     font-size: 1em;
 }
 
-h5 a:link, h5 a:visited, h5 a:active
-{
-    padding: 0;
-    text-decoration: none;
-}
+    h5 a:link, h5 a:visited, h5 a:active
+    {
+        padding: 0;
+        text-decoration: none;
+    }
 
 
 /* main layout
@@ -180,10 +176,10 @@ div.hr
     background: #fff url(http://www.holladayhealthandfitness.com/Content/images/content-divider.gif) no-repeat scroll center;
 }
 
-div.hr > hr
-{
-    display: none;
-}
+    div.hr > hr
+    {
+        display: none;
+    }
 
 /* Blog styles
 ------------------------------------*/
@@ -198,48 +194,63 @@ div#blog
     float: left;
     margin: 0 30px 0 30px;
 }
-.tileWrapper 
+
+.tileWrapper
 {
-    position:relative;
-    margin-bottom:30px;
+    position: relative;
+    margin-bottom: 30px;
     box-shadow: 0 0 5px black;
     moz-box-shadow: 0 0 5px black;
     webkit-box-shadow: 0 0 5px black;
 }
-.tileWrapper:hover
+
+    .tileWrapper:hover
+    {
+        opacity: .8;
+    }
+
+    .tileWrapper a:hover
+    {
+        color: Black;
+    }
+
+.tile
 {
-    opacity:.8;   
+    height: 300px;
+    background-color: #ccc;
 }
-.tileWrapper a:hover
+
+.tileSnapshot
 {
-    color: Black;
+    height: 100%;
+    background-color: #eee;
+    overflow: hidden;
 }
-.tile {
-    height:300px;
-    background-color:#ccc;
-}
-.tileSnapshot {
-    height:100%;
-    background-color:#eee;
-    overflow:hidden;
-}
-.tilePreview {
-    position:absolute;
-    top:240px;
-    height:50px;
+
+.tilePreview
+{
+    position: absolute;
+    top: 240px;
+    height: 50px;
     width: 530px;
-    background-color:#ccc;
+    background-color: #ccc;
     padding: 5px 10px 5px 10px;
-    opacity:.9;
+    opacity: .9;
 }
-.tileTitle {
-	float:left;
+
+.tileTitle
+{
+    float: left;
 }
-.tileDate {
-	float:right;
+
+.tileDate
+{
+    float: right;
 }
-.tileSummary {
-    clear:both;
+
+.tileSummary
+{
+    clear: both;
 }
 
 div#addContainer
@@ -249,7 +260,7 @@ div#addContainer
     margin: 18px 30px 0 0;
 }
 
-div.addSection 
+div.addSection
 {
     margin-bottom: 30px;
 }
@@ -261,16 +272,16 @@ div.blockLinks
     text-align: center;
 }
 
-div.blockLinks > a
-{
-    display: block;
-    margin: 3px 0 3px 0;
-    padding: 5px 0 5px 0;
-    font: normal normal 15px Arial, sans-serif;
-    color: black;
-    opacity: .75;
-    letter-spacing: 1px;
-}
+    div.blockLinks > a
+    {
+        display: block;
+        margin: 3px 0 3px 0;
+        padding: 5px 0 5px 0;
+        font: normal normal 15px Arial, sans-serif;
+        color: black;
+        opacity: .75;
+        letter-spacing: 1px;
+    }
 
 div.broken > a
 {
@@ -278,35 +289,40 @@ div.broken > a
     background-color: #EBE4CA;
 }
 
-div.broken > a:hover
-{
-    opacity: 1;
-    text-decoration: none;
-}
+    div.broken > a:hover
+    {
+        opacity: 1;
+        text-decoration: none;
+    }
 
-.shopImg:hover {
+.shopImg:hover
+{
     opacity: .8;
 }
 
 
 /* Pinit Button */
-div.pinContainer {
-  position: relative;
-  display: inline-block;
-  opacity: 1;
+div.pinContainer
+{
+    position: relative;
+    display: inline-block;
+    opacity: 1;
 }
 
-div.pinContainer:hover {
-  opacity: .8;
-}
+    div.pinContainer:hover
+    {
+        opacity: .8;
+    }
 
-div.pinContainer:hover a.pinIt {
-      display: inline-block;
-}
- 
+        div.pinContainer:hover a.pinIt
+        {
+            display: inline-block;
+        }
+
 /* button style, and center it */
-a.pinIt {
-    position:absolute;
+a.pinIt
+{
+    position: absolute;
     top: 0%;
     left: 75%;
     display: none;
@@ -314,72 +330,82 @@ a.pinIt {
     opacity: .9;
 }
 
-a.pinIt:hover {
-  opacity: 1;
-}
+    a.pinIt:hover
+    {
+        opacity: 1;
+    }
 
 
 /* Post Archive
 -------------------------*/
-select#postArchive {
+select#postArchive
+{
     width: 100%;
     height: 30px;
     margin: 0;
 }
 
-select#postArchive:focus {
-    outline-color: rgb(255, 155, 200);
-}
+    select#postArchive:focus
+    {
+        outline-color: rgb(255, 155, 200);
+    }
 
 
 /* Instagram
 ------------------------------------*/
-.shopImg:hover {
-  opacity: .8;
+.shopImg:hover
+{
+    opacity: .8;
 }
 
 
 /* Where I Shop
 ------------------------------------*/
-div.pink {
-  background-color: #FBDEDF;
+div.pink
+{
+    background-color: #FBDEDF;
 }
 
 
 /* Favorite Reads
 ------------------------------------*/
-div.beige {
-  background-color: #F2ECDD;
+div.beige
+{
+    background-color: #F2ECDD;
 }
 
 
 /* Block Links
 ------------------------------------*/
-div.blockLinks {
-  width: 100%;
-  margin: -7px 0 -7px 0;
-  padding: 7px 0 7px 0;
-  text-align: center;
+div.blockLinks
+{
+    width: 100%;
+    margin: -7px 0 -7px 0;
+    padding: 7px 0 7px 0;
+    text-align: center;
 }
 
-div.blockLinks > a {
-  display: block;
-  margin: 3px 0 3px 0;
-  padding: 5px 0 5px 0;
-  font: normal normal 15px Open Sans Condensed;
-  color: black;
-  opacity: .75;
-  letter-spacing: 1px;
+    div.blockLinks > a
+    {
+        display: block;
+        margin: 3px 0 3px 0;
+        padding: 5px 0 5px 0;
+        font: normal normal 15px Open Sans Condensed;
+        color: black;
+        opacity: .75;
+        letter-spacing: 1px;
+    }
+
+div.broken > a
+{
+    padding: 10px 0 10px 0;
 }
 
-div.broken > a {
-  padding: 10px 0 10px 0;
-}
-
-div.broken > a:hover{
-  opacity: 1;
-  text-decoration: none;
-}
+    div.broken > a:hover
+    {
+        opacity: 1;
+        text-decoration: none;
+    }
 
 /* Slideshow styles
 ------------------------------------*/
@@ -389,54 +415,55 @@ div.broken > a:hover{
     position: relative;
     top: 0px;
     left: 0px;
-    width: 940px;
-    height: 400px;
+    max-width: 100%;
+    height: 700px;
+    height: auto;
     overflow: hidden;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
-.SlideContainer img
-{
-    height: 100%;
-    width: 940px;
-    max-width: inherit;
-}
+    .SlideContainer img
+    {
+        height: auto;
+        max-width: 100%;
+    }
 
-.SlideContainer div[id*=slide]
-{
-    display: block;
-    position: absolute;
-    left: 940px;
-}
+    .SlideContainer div[id*=slide]
+    {
+        display: block;
+        position: absolute;
+        left: 100%;
+    }
 
-.SlideContainer div.slideLeftQuick
-{
-    left: -940px;
-}
+    .SlideContainer div.slideLeftQuick
+    {
+        left: -100%;
+    }
 
-.SlideContainer div.slideLeft
-{
-    left: -940px;
-    transition: left 1s;
-    -webkit-transition: left 1s;
-}
+    .SlideContainer div.slideLeft
+    {
+        left: -100%;
+        transition: left 1s;
+        -webkit-transition: left 1s;
+    }
 
-.SlideContainer div.slideRight
-{
-    left: 940px;
-    transition: left 1s;
-    -webkit-transition: left 1s;
-}
+    .SlideContainer div.slideRight
+    {
+        left: 100%;
+        transition: left 1s;
+        -webkit-transition: left 1s;
+    }
 
-.SlideContainer div.live
-{
-    z-index: 5;
-    left: 0px;
-    transition: left 1s;
-    -webkit-transition: left 1s;
-}
+    .SlideContainer div.live
+    {
+        z-index: 5;
+        left: 0px;
+        transition: left 1s;
+        -webkit-transition: left 1s;
+        position: relative;
+    }
 
 .SlideToolbar
 {
@@ -479,42 +506,23 @@ div.broken > a:hover{
 
 .Portal
 {
-    height: 190px;
-    width: 227.5px;
+    height: auto;
+    max-width: 24.625%;
     margin-top: 10px;
     overflow: hidden;
+    margin-right: 0.5%;
+    float: left;
 }
 
-.blogPortal
-{
-    margin-right: 10px;
-}
+    .Portal:hover img
+    {
+        opacity: .9;
+    }
 
-.shopPortal
-{
-    margin-right: 10px;
-}
-
-.aboutPortal
-{
-    /* about portal styles */
-}
-
-.Portal img
-{
-    height: 100%;
-    width: 100%;
-}
-
-.Portal:hover img
-{
-    opacity: .9;
-}
-
-.Portal:hover p
-{
-    text-decoration: underline;
-}
+    .Portal:hover p
+    {
+        text-decoration: underline;
+    }
 
 .portalTape
 {
@@ -523,7 +531,6 @@ div.broken > a:hover{
     width: 100px;
     opacity: .8;
     height: 50px;
-    background: url('../../img/pinkTape.png') no-repeat;
     transform: rotate(-4deg);
     -moz-transform: rotate(-4deg);
     -webkit-transform: rotate(-4deg);
@@ -569,91 +576,148 @@ ul
 {
     position: fixed;
     top: 0px;
-    height: 50px;
+    height: 30px;
     width: 100%;
-    background-color: #ddd;
     text-align: center;
     z-index: 100;
+}
+
+.SocialIconsBG
+{
+    background-color: white;
     opacity: .4;
+    z-index: 99;
 }
 
-.SocialIcons ul
-{
-    padding-top: 15px;
-    list-style-type: none;
-    -webkit-padding-start: 0;
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    height: 100%;
-    width: 960px;
-    margin: 0 auto 0 auto;
-    text-align: right;
-}
+    .SocialIcons ul
+    {
+        padding-top: 7px;
+        list-style-type: none;
+        -webkit-padding-start: 0;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+        height: 100%;
+        width: 960px;
+        margin: 0 auto 0 auto;
+        text-align: right;
+    }
 
-.SocialIcons ul > li
-{
-    display: inline;
-    margin: 0 5px 0 5px;
-}
+        .SocialIcons ul > li
+        {
+            display: inline;
+            margin: 0 5px 0 5px;
+        }
 
-.SocialIcons ul > li:hover
-{
-    opacity: .85;
-}
+            .SocialIcons ul > li:hover
+            {
+                opacity: .85;
+            }
 
-.SocialIcons a
+    .SocialIcons a
+    {
+        display: inline-block;
+        background-image: url('../img/stacked_socialmeeds2.png');
+        height: 17px;
+        width: 20px;
+    }
+
+        .SocialIcons a#facebook
+        {
+            background-position: 0px -17px;
+        }
+
+            .SocialIcons a#facebook:hover
+            {
+                background-position: 20px -17px;
+            }
+
+        .SocialIcons a#twitter
+        {
+            background-position: 0px 0px;
+        }
+
+            .SocialIcons a#twitter:hover
+            {
+                background-position: 20px 0px;
+            }
+
+        .SocialIcons a#bloglovin
+        {
+            background-position: 0px -35px;
+            height: 16px;
+        }
+
+            .SocialIcons a#bloglovin:hover
+            {
+                background-position: 20px -35px;
+            }
+
+        .SocialIcons a#pinterest
+        {
+            background-position: 0px -67px;
+        }
+
+            .SocialIcons a#pinterest:hover
+            {
+                background-position: 20px -67px;
+            }
+
+        .SocialIcons a#instagram
+        {
+            background-position: 0px -51px;
+        }
+
+            .SocialIcons a#instagram:hover
+            {
+                background-position: 20px -51px;
+            }
+
+/* Services Styles
+---------------------------------------------------------*/
+.serviceTile
 {
+    width: 46%;
+    padding: 15px;
+    margin: 15px 2% 15px 2%;
+    box-shadow: 0 0 1px 1px #ccc;
+    background-color: #f2f2f2;
+    border-radius: 3px;
     display: inline-block;
-    background-image: url('../img/socialmeeds.png');
-    height: 17px;
-    width: 20px;
+    float: left;
+    min-height: 220px;
 }
 
-.SocialIcons a#facebook
-{
-    background-position: 0px -17px;
-}
+    .serviceTile > header
+    {
+        font-size: larger;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
 
-.SocialIcons a#facebook:hover
-{
-    opacity: .8;
-}
+    .serviceTile > .serviceDesc
+    {
+        text-align: left;
+        margin-bottom: 10px;
+    }
 
-.SocialIcons a#twitter
-{
-    background-position: 0px 0px;
-}
+    .serviceTile > .serviceDetails > ul
+    {
+        list-style-type: none;
+        overflow: hidden;
+        padding-bottom: 5px;
+        display: none;
+    }
 
-.SocialIcons a#twitter:hover
-{
-    opacity: .8;
-}
-
-.SocialIcons a#bloglovin
-{
-    background-position: 0px -35px;
-    height: 16px;
-}
-
-.SocialIcons a#pinterest
-{
-    background-position: 0px -67px;
-}
-
-.SocialIcons a#pinterest:hover
-{
-    opacity: .8;
-}
-
-.SocialIcons a#instagram
-{
-    background-position: 0px -51px;
-}
-
-.SocialIcons a#instagram:hover
-{
-    opacity: .8;
-}
+        .serviceTile > .serviceDetails > ul > li
+        {
+            display: inline-block;
+            margin: 5px 10px 0 10px;
+            border-radius: 3px;
+            background-color: #ddd;
+            padding: 5px;
+            box-shadow: 0 0 1px 1px #bbb;
+            height: -10px;
+        }
 
 /* About sections
 ---------------------------------------------------------*/
@@ -677,7 +741,7 @@ div .About .Highlight
 div .About .Keyword
 {
     display: inline-block;
-    font-family: "Lucida Grande" , Verdana, Sans-Serif;
+    font-family: "Lucida Grande", Verdana, Sans-Serif;
     font-weight: 500;
     font-size: 2.3em;
     float: left;
@@ -755,7 +819,7 @@ input[type="checkbox"].input-validation-error
 ********************/
 @media only screen and (max-width: 1000px) and (min-width: 750px)
 {
-    div.ContentWrapper
+    /*div.ContentWrapper
     {
         width: 750px;
         min-width: 750px;
@@ -780,7 +844,7 @@ input[type="checkbox"].input-validation-error
 
     .SlideContainer
     {
-        width: 730px; /*height: 450px;*/
+        width: 730px;
         height: 320px;
     }
 
@@ -837,12 +901,12 @@ input[type="checkbox"].input-validation-error
     {
         width: 236px;
         height: 237px;
-    }
+    }*/
 }
 
 @media only screen and (max-width: 750px) and (min-width: 560px)
 {
-    div.ContentWrapper
+    /*div.ContentWrapper
     {
         width: 540px;
         min-width: 540px;
@@ -925,12 +989,12 @@ input[type="checkbox"].input-validation-error
     {
         width: 166px;
         height: 165px;
-    }
+    }*/
 }
 
 @media only screen and (max-width: 560px)
 {
-    div.ContentWrapper
+    /*div.ContentWrapper
     {
         width: 250px;
         min-width: 250px;
@@ -1044,5 +1108,5 @@ input[type="checkbox"].input-validation-error
         display: none;
         width: 70px;
         height: 70px;
-    }
+    }*/
 }
