@@ -432,7 +432,6 @@ div.broken > a
         position: absolute;
         top: 0;
         z-index:7;
-        display: none;
     }
 
     .SlideContainer div.old

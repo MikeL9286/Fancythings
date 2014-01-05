@@ -49,6 +49,7 @@
 
     function FinishSlide() {
         currentSlide.removeAttr('class');
+        currentSlide.fadeOut();
 
         //Rebind the onclick event for each blob after transition
         $('ul.SlideBlobs li').each(function () {
