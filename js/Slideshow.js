@@ -70,7 +70,7 @@
         //Else it was invoked by the timer...
         else {
             nextSlide = $('.SlideContainer div.live + div[id*=slide]');
-            alert('length of nextslide == ' + nextSlide.length());
+            alert('length of nextslide == ' + nextSlide.length);
             //If the slideshow has passed the end of the slide list, loop back to 1st slide
             if (nextSlide.length == 0)
                 return $('.SlideContainer').find('div[id*=slide]:first-child');
