@@ -44,9 +44,9 @@
     function SwapSlides() {
         //load the next slide behind the live slide
         nextSlide.attr('class', 'next');
-        nextSlide.fadeIn();
+        nextSlide.fadeIn(0);
 
-        currentSlide.fadeOut();
+        currentSlide.fadeOut(1000);
 
         //change next slide to live slide and un-load the old slide
         nextSlide.attr('class', 'live');

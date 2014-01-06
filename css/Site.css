@@ -459,17 +459,7 @@ div.broken > a
     width: 100%;
     height: 30px;
     text-align: center;
-}
-
-.SlideToolbarShadow
-{
-    position: absolute;
-    bottom: 0px;
-    z-index: 9;
-    width: 100%;
-    height: 30px;
-    background-color: #fff;
-    opacity: .7;
+    background-color: #aaa;
 }
 
 .SlideToolbar > ul > li
