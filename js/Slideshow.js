@@ -46,11 +46,11 @@
         nextSlide.attr('class', 'next');
         nextSlide.fadeIn(0);
 
-        currentSlide.fadeOut(1000);
-
-        //change next slide to live slide and un-load the old slide
-        nextSlide.attr('class', 'live');
-        currentSlide.removeAttr('class');
+        currentSlide.fadeOut(1000, function () {
+            //change next slide to live slide and un-load the old slide
+            nextSlide.attr('class', 'live');
+            currentSlide.removeAttr('class');
+        });
     }
 
     function FinishSlide() {
