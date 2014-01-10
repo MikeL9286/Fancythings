@@ -100,7 +100,7 @@
         $('.SlideContainer div.filler').height(newHeight);
 
         var newWidth = $('.SlideContainer div.live').width();
-        $('.SlideContainer div.filler').height(newWidth);
+        $('.SlideContainer div.filler').width(newWidth);
     }
 
 } (window.Slideshow = window.Slideshow || {}, jQuery))
