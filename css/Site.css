@@ -75,7 +75,7 @@ header, footer, hgroup, section
 nav
 {
     display: inline-block;
-    margin: 50px 0 0 20px;
+    margin-top: 50px;
 }
 
     nav > a
@@ -91,9 +91,14 @@ nav
         letter-spacing: 3px;
     }
 
-        nav > a:first-of-type
+        nav.navRight > a:first-of-type
         {
             margin-left: 40px;
+        }
+
+        nav.navRight > a:last-of-type
+        {
+            margin-right: 0;
         }
 
         nav > a:hover
