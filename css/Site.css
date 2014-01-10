@@ -100,7 +100,7 @@ nav
             margin-right: 0;
         }
 
-    nav.navLeftMobile
+    nav.navTop, nav.navBottom
     {
         display: none;
     }
