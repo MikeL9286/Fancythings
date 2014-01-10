@@ -87,14 +87,20 @@
 
     window.onresize = setSlideshowSize;
     function setSlideshowSize() {
-        var heightDif = originalHeight - window.innerHeight;
-        var widthDif = originalWidth - window.innerWidth;
+        //var heightDif = originalHeight - window.innerHeight;
+        //var widthDif = originalWidth - window.innerWidth;
 
-        var newHeight = 600 - heightDif;
-        var newWidth = 1200 - widthDif;
+        //var newHeight = 600 - heightDif;
+        //var newWidth = 1200 - widthDif;
 
+        //$('.SlideContainer div.filler').height(newHeight);
+        //$('.SlideContainer div.filler').width(newWidth);
+
+        var newHeight = $('.SlideContainer div.live').height();
         $('.SlideContainer div.filler').height(newHeight);
-        $('.SlideContainer div.filler').width(newWidth);
+
+        var newWidth = $('.SlideContainer div.live').width();
+        $('.SlideContainer div.filler').height(newWidth);
     }
 
 } (window.Slideshow = window.Slideshow || {}, jQuery))
