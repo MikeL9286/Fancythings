@@ -100,6 +100,11 @@ nav
             margin-right: 0;
         }
 
+    nav.navLeftMobile
+    {
+        display: none;
+    }
+
         nav > a:hover
         {
             color: #5ABECC;
@@ -791,8 +796,34 @@ input[type="checkbox"].input-validation-error
     display: none;
 }
 
+
+
+
+
 /********************
 *   Mobile Styles   *
+********************/
+@media only screen and (max-width: 860px)
+{
+    nav.navLeft, nav.navRight
+    {
+        display: none;
+    }
+
+    nav.navTop, nav.navBottom
+    {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+/********************
+*  OLD Mobile Styles   *
 ********************/
 @media only screen and (max-width: 1000px) and (min-width: 750px)
 {
