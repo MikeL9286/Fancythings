@@ -94,7 +94,7 @@
         var newWidth = 1200 - widthDif;
 
         $('.SlideContainer div.filler').height(newHeight);
-        $('.SlideContainer div.filler').width(newHeight);
+        $('.SlideContainer div.filler').width(newWidth);
     }
 
 } (window.Slideshow = window.Slideshow || {}, jQuery))

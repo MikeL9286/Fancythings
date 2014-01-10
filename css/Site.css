@@ -444,7 +444,7 @@ div.broken > a
 
     .SlideContainer div.filler
     {
-        height: 600px;
+        max-height: 600px;
         z-index: -50;
     }
 
