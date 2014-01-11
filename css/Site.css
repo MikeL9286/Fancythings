@@ -423,7 +423,6 @@ div.broken > a
 {
     position: relative;
     /*max-width: 820px;*/
-    height: auto;
     overflow: hidden;
 }
 
@@ -489,14 +488,14 @@ div.broken > a
 .Portals
 {
     float: left;
-    max-width: 35%;
+    max-width: 34.3%;
 }
 
 .Portal
 {
     display: inline-block;
     height: auto;
-    max-width: 49.2%;
+    max-width: 48%;
     overflow: hidden;
     letter-spacing: 0;
 }
