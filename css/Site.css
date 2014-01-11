@@ -422,7 +422,7 @@ div.broken > a
 .SlideContainer
 {
     position: relative;
-    max-width: 820px;
+    /*max-width: 820px;*/
     height: auto;
     overflow: hidden;
 }
