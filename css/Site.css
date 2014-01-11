@@ -489,6 +489,7 @@ div.broken > a
 .Portals
 {
     float: left;
+    max-width: 35%;
 }
 
 .Portal
