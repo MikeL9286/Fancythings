@@ -488,18 +488,16 @@ div.broken > a
 
 .Portals
 {
-    display: inline-block;
-    padding-right: 15px;
+    float: left;
 }
 
 .Portal
 {
     display: inline-block;
     height: auto;
-    max-width: 10%;
-    margin-top: 10px;
+    max-width: 49.2%;
     overflow: hidden;
-    margin-right: 0.5%;
+    letter-spacing: 0;
 }
 
     .Portal:hover img
@@ -510,6 +508,11 @@ div.broken > a
     .Portal:hover p
     {
         text-decoration: underline;
+    }
+
+    .Portal topRight
+    {
+        clear: both;
     }
 
 footer
