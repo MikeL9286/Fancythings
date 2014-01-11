@@ -77,6 +77,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="img\about_image.png" />
     <Content Include="img\about_photo.jpg" />
+    <Content Include="img\about_portal.png" />
     <Content Include="img\arm_party_old.JPG" />
     <Content Include="img\arm_party.jpg" />
     <Content Include="img\Baies_candle.jpeg" />
@@ -85,13 +86,13 @@
     <Content Include="img\blog_portal.jpg" />
     <Content Include="img\book_shelves.JPG" />
     <Content Include="img\fancy_pencils.jpg" />
+    <Content Include="img\flower_slide.jpeg" />
     <Content Include="img\header.jpg" />
     <Content Include="img\header2.png" />
     <Content Include="img\leopard_armparty.JPG" />
     <Content Include="img\logo_site.png" />
     <Content Include="img\nailpolishes.jpg" />
     <Content Include="img\services_portal.jpg" />
-    <Content Include="img\services_portal2.jpg" />
     <Content Include="img\shop_image.jpg" />
     <Content Include="img\peonies.jpg" />
     <Content Include="img\pinkTape.png" />
@@ -101,6 +102,7 @@
     <Content Include="img\socialmeeds.png" />
     <Content Include="img\stacked_socialmeeds2.png" />
     <Content Include="img\tulips.JPG" />
+    <Content Include="img\welcome_slide.jpeg" />
     <Content Include="img\zara_pumps.JPG" />
     <Content Include="js\Blog.js" />
     <Content Include="js\ContentLoader.js" />
