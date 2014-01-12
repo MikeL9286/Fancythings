@@ -625,6 +625,7 @@ ul
         .SocialIcons a#pinterest
         {
             background-position: 0px -67px;
+            font-size: 1.33em;
         }
 
             .SocialIcons a#pinterest:hover
@@ -644,6 +645,7 @@ ul
         .SocialIcons a#instagram
         {
             background-image: none;
+            font-size: 1.33em;
         }
 
             .SocialIcons a#instagram:hover
