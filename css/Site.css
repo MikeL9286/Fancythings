@@ -578,6 +578,7 @@ ul
     {
         display: inline-block;
         /*background-image: url('../img/stacked_socialmeeds2.png');*/
+        font-size: 1.35em;
         height: 17px;
         width: 20px;
     }
