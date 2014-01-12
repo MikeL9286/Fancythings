@@ -577,53 +577,48 @@ ul
     .SocialIcons a
     {
         display: inline-block;
-        background-image: url('../img/stacked_socialmeeds2.png');
+        /*background-image: url('../img/stacked_socialmeeds2.png');*/
         height: 17px;
         width: 20px;
     }
 
-        .SocialIcons a#facebook
+        .SocialIcons a:hover
+        {
+            color: #5ABECC;
+        }
+
+        /*.SocialIcons a#facebook
         {
             background-position: 0px -17px;
-        }
+        }*/
 
-            .SocialIcons a#facebook:hover
+            /*.SocialIcons a#facebook:hover
             {
                 background-position: 20px -17px;
-            }
+            }*/
 
-        .SocialIcons a#twitter
+        /*.SocialIcons a#twitter
         {
             background-position: 0px 0px;
-        }
+        }*/
 
-            .SocialIcons a#twitter:hover
+            /*.SocialIcons a#twitter:hover
             {
                 background-position: 20px 0px;
-            }
+            }*/
 
         /*.SocialIcons a#bloglovin
         {
             background-position: 0px -35px;
             height: 16px;
         }*/
-        .SocialIcons a#bloglovin
-        {
-            background-image: none;
-            font-size: 1.33em;
-        }
-
 
             /*.SocialIcons a#bloglovin:hover
             {
                 background-position: 20px -35px;
             }*/
-            .SocialIcons a#bloglovin:hover
-            {
-                color: #5ABECC;
-            }
 
-        .SocialIcons a#pinterest
+        /*.SocialIcons a#pinterest
         {
             background-position: 0px -67px;
         }
@@ -631,7 +626,7 @@ ul
             .SocialIcons a#pinterest:hover
             {
                 background-position: 20px -67px;
-            }
+            }*/
 
         /*.SocialIcons a#instagram
         {
@@ -642,16 +637,11 @@ ul
             {
                 background-position: 20px -51px;
             }*/
-        .SocialIcons a#instagram
-        {
-            background-image: none;
-            font-size: 1.33em;
-        }
 
-            .SocialIcons a#instagram:hover
+            /*.SocialIcons a#instagram:hover
             {
                 color: #5ABECC;
-            }
+            }*/
 
 /* Services Styles
 ---------------------------------------------------------*/
