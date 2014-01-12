@@ -602,15 +602,24 @@ ul
                 background-position: 20px 0px;
             }
 
-        .SocialIcons a#bloglovin
+        /*.SocialIcons a#bloglovin
         {
             background-position: 0px -35px;
             height: 16px;
+        }*/
+        .SocialIcons a#bloglovin
+        {
+            background-image: none;
         }
 
-            .SocialIcons a#bloglovin:hover
+
+            /*.SocialIcons a#bloglovin:hover
             {
                 background-position: 20px -35px;
+            }*/
+            .SocialIcons a#bloglovin:hover
+            {
+                color: #5ABECC;
             }
 
         .SocialIcons a#pinterest
@@ -623,7 +632,7 @@ ul
                 background-position: 20px -67px;
             }
 
-        .SocialIcons a#instagram
+        /*.SocialIcons a#instagram
         {
             background-position: 0px -51px;
         }
@@ -631,6 +640,15 @@ ul
             .SocialIcons a#instagram:hover
             {
                 background-position: 20px -51px;
+            }*/
+        .SocialIcons a#instagram
+        {
+            background-image: none;
+        }
+
+            .SocialIcons a#instagram:hover
+            {
+                color: #5ABECC;
             }
 
 /* Services Styles
