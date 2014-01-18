@@ -509,19 +509,19 @@ div.broken > a
         text-decoration: underline;
     }
 
-    .Portal .topLeft
+    .Portals .topLeft
     {
         margin: 0 1% 1% 0;
     }
 
-    .Portal .topRight:after
+    .Portals .topRight:after
     {
 
         content: "";
         clear: both;
     }
 
-    .Portal .bottomLeft
+    .Portals .bottomLeft
     {
         margin-right: 1%;
     }
