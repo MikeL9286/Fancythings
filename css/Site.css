@@ -504,26 +504,15 @@ div.broken > a
         opacity: .9;
     }
 
-    .Portal:hover p
-    {
-        text-decoration: underline;
-    }
-
     .Portals .topLeft
     {
         margin: 0 1% 1% 0;
     }
 
-    .Portals .topRight:after
-    {
-
-        content: "";
-        clear: both;
-    }
-
     .Portals .bottomLeft
     {
         margin-right: 1%;
+        clear: both;
     }
 
 footer
@@ -599,61 +588,6 @@ ul
             color: #5ABECC;
         }
 
-        /*.SocialIcons a#facebook
-        {
-            background-position: 0px -17px;
-        }*/
-
-            /*.SocialIcons a#facebook:hover
-            {
-                background-position: 20px -17px;
-            }*/
-
-        /*.SocialIcons a#twitter
-        {
-            background-position: 0px 0px;
-        }*/
-
-            /*.SocialIcons a#twitter:hover
-            {
-                background-position: 20px 0px;
-            }*/
-
-        /*.SocialIcons a#bloglovin
-        {
-            background-position: 0px -35px;
-            height: 16px;
-        }*/
-
-            /*.SocialIcons a#bloglovin:hover
-            {
-                background-position: 20px -35px;
-            }*/
-
-        /*.SocialIcons a#pinterest
-        {
-            background-position: 0px -67px;
-        }
-
-            .SocialIcons a#pinterest:hover
-            {
-                background-position: 20px -67px;
-            }*/
-
-        /*.SocialIcons a#instagram
-        {
-            background-position: 0px -51px;
-        }
-
-            .SocialIcons a#instagram:hover
-            {
-                background-position: 20px -51px;
-            }*/
-
-            /*.SocialIcons a#instagram:hover
-            {
-                color: #5ABECC;
-            }*/
 
 /* Services Styles
 ---------------------------------------------------------*/
