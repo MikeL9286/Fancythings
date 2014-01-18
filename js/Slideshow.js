@@ -87,7 +87,6 @@
 
     function setSlideshowSize() {
         var newHeight = $('.SlideContainer div.live').height();
-        alert('height: ' + newHeight);
         $('.SlideContainer div.filler').height(newHeight);
 
         var newWidth = $('.SlideContainer div.live').width();
