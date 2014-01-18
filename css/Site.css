@@ -419,6 +419,11 @@ div.broken > a
 /* Slideshow styles
 ------------------------------------*/
 
+.Slideshow
+{
+    display: inline-block;
+}
+
 .SlideContainer
 {
     position: relative;
@@ -798,6 +803,7 @@ input[type="checkbox"].input-validation-error
     nav.navLeft, nav.navRight
     {
         display: none;
+        width: 250px;
     }
 
     nav.navTop, nav.navBottom
