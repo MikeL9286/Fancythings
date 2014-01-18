@@ -419,11 +419,6 @@ div.broken > a
 /* Slideshow styles
 ------------------------------------*/
 
-.Slideshow
-{
-    display: inline-block;
-}
-
 .SlideContainer
 {
     position: relative;
@@ -494,6 +489,7 @@ div.broken > a
 {
     float: left;
     max-width: 34.3%;
+    z-index: 1000;
 }
 
 .Portal
