@@ -24,7 +24,7 @@
     </div>
 
 <script type="text/javascript">
-    $(window).load(function () {
-        window.setTimeout(Slideshow.Start, 500);
+    $('.SlideContainer .live').imagesLoaded(function () {
+        Slideshow.Start();
     });
 </script>
