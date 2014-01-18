@@ -488,7 +488,7 @@ div.broken > a
 .Portals
 {
     float: left;
-    max-width: 34%;
+    max-width: 33.75%;
     z-index: 1000;
 }
 
@@ -506,12 +506,12 @@ div.broken > a
 
     .Portals .topLeft
     {
-        margin: 0 1% 1% 0;
+        margin: 0 2% 2% 0;
     }
 
     .Portals .bottomLeft
     {
-        margin-right: 1%;
+        margin-right: 2%;
         clear: both;
     }
 
