@@ -12,6 +12,7 @@
     /*** Public methods ***/
 
     Slideshow.Start = function () {
+        setSlideshowSize();
         slideTimer = window.setInterval(function () {
             Slideshow.InitSlide(null)
         }, delayTime);
@@ -92,11 +93,6 @@
         var newWidth = $('.SlideContainer div.live').width();
         $('.SlideContainer div.filler').width(newWidth);
     }
-
-    $(window).load(function () {
-        setSlideshowSize();
-        Slideshow.Start();
-    });
 
     window.onresize = setSlideshowSize;
 
