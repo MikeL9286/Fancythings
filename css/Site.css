@@ -421,7 +421,7 @@ div.broken > a
 
 .Slideshow
 {
-    display: inline;
+    display: inline-block;
 }
 
 .SlideContainer
