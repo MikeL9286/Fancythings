@@ -597,6 +597,12 @@ ul
 
 /* Services Styles
 ---------------------------------------------------------*/
+.serviceFlex
+{
+    font-family: Montserrat;
+    font-size: .9em;
+}
+
 .serviceTile
 {
     width: 46%;
