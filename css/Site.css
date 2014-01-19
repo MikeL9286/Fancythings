@@ -519,6 +519,11 @@ div.broken > a
         margin: 0 2% 2% 0;
     }
 
+.Portals .topRight
+{
+    cursor: pointer;
+}
+
     .Portals .bottomLeft
     {
         margin-right: 2%;

@@ -91,7 +91,8 @@
     <Content Include="img\fancy_pencils.jpg" />
     <Content Include="img\flower_slide.jpeg" />
     <Content Include="img\header.jpg" />
-    <Content Include="img\header2.png" />
+    <Content Include="img\header2.jpg" />
+    <Content Include="img\header_old.png" />
     <Content Include="img\leopard_armparty.JPG" />
     <Content Include="img\logo_site.png" />
     <Content Include="img\nailpolishes.jpg" />
