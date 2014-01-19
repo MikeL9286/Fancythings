@@ -2,7 +2,8 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 @font-face {
 font-family: 'FontAwesome';
-src: url('../fonts/fontawesome-webfont.svg') format('svg');
+font-size: 1.35em;
+src: url('fonts/fontawesome-webfont.svg') format('svg');
 
 }
 }
@@ -585,10 +586,6 @@ ul
     .SocialIcons a
     {
         display: inline-block;
-        /*background-image: url('../img/stacked_socialmeeds2.png');*/
-        font-size: 1.35em;
-        height: 17px;
-        width: 20px;
     }
 
         .SocialIcons a:hover
