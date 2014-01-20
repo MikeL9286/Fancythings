@@ -429,8 +429,14 @@ div.broken > a
 /* Slideshow styles
 ------------------------------------*/
 
+.Slideshow:hover .Slideshow .Slideleft, .Slideshow:hover .Slideshow .Slideright
+{
+    display: block;
+}
+
 .Slideshow .Slideleft, .Slideshow .Slideright
 {
+    display: none;
     position: absolute;
     top: 50%;
     z-index: 50;
@@ -438,6 +444,12 @@ div.broken > a
     line-height: 0;
     opacity: .5;
     margin: 0 1%;
+}
+
+.Slideshow .Slideleft:hover, .Slideshow .Slideright:hover
+{
+    opacity: .6;
+    display: block;
 }
 
 .Slideshow .Slideleft
