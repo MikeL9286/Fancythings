@@ -53,15 +53,16 @@
         }
 
         if (slideDirection == 'left') {
-            nextSlideIndex = currentSlideIndex--;
+            nextSlideIndex = currentSlideIndex - 1;
         }
         else {
-            nextSlideIndex = currentSlideIndex++;
+            nextSlideIndex = currentSlideIndex + 1;
         }
 
         if (nextSlideIndex >= 0 && nextSlideIndex < slides.length)
             nextSlide = $(slides[nextSlideIndex]);
 
+        console.log('dir: ' + slideDirection);
         console.log('current index: ' + currentSlideIndex);
         console.log('next index: ' + nextSlideIndex);
         console.log('next slide: ' + nextSlide.attr('id'));
