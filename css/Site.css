@@ -429,12 +429,21 @@ div.broken > a
 /* Slideshow styles
 ------------------------------------*/
 
+.Slideshow .Slideleft, .Slideshow .Slideright
+{
+    position: absolute;
+    top: 50%;
+    z-index: 50;
+}
+
 .Slideshow .Slideleft
 {
+    left: 0;
 }
 
 .Slideshow .Slideright
 {
+    right: 0;
 }
 
 .SlideContainer
