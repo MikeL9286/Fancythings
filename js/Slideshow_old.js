@@ -6,10 +6,13 @@
     var slideTimer;
     var currentSlide;
     var nextSlide;
+    var originalHeight = window.innerHeight;
+    var originalWidth = window.innerWidth;
 
     /*** Public methods ***/
 
     Slideshow.Start = function () {
+        setSlideshowSize();
         slideTimer = window.setInterval(function () {
             Slideshow.InitSlide(null)
         }, delayTime);
@@ -31,8 +34,7 @@
         if (targetSlideId != currentSlide.attr('id')) {
             nextSlide = GetNextSlide(targetSlideId);
 
-            ChangeSlide();
-            //SlideLeft();
+            SwapSlides();
             ChangeBlob();
 
             //Execute final steps after animation finishes
@@ -40,39 +42,25 @@
         }
     }
 
-/*** Private methods ***/
+    /*** Private methods ***/
 
-    function SlideLeft() {
-        nextSlide.attr('class', 'live');
-        currentSlide.attr('class', 'slideLeft');
-    }
+    function SwapSlides() {
+        //load the next slide behind the live slide
+        nextSlide.attr('class', 'next');
+        nextSlide.fadeIn(0);
 
-    function SlideRight() {
-        nextSlide.attr('class', 'slideLeftQuick');
-        //setTimeout is needed so the animations will execute correctly
-        setTimeout(function () {
+        currentSlide.fadeOut(1000, function () {
+            //change next slide to live slide and un-load the old slide
             nextSlide.attr('class', 'live');
-            currentSlide.attr('class', 'slideRight');
-        }, 100);
+            currentSlide.removeAttr('class');
+        });
     }
 
     function FinishSlide() {
-        currentSlide.removeAttr('class');
-
         //Rebind the onclick event for each blob after transition
         $('ul.SlideBlobs li').each(function () {
             $(this).attr('onclick', 'Slideshow.InitSlide($(this).attr("data-slideFor"))');
         });
-    }
-
-    function ChangeSlide() {
-        //If the next slide is positioned before the live slide
-        if (nextSlide.attr('id') < currentSlide.attr('id')) {
-            SlideRight();
-        }
-        else {
-            SlideLeft();
-        }
     }
 
     function GetNextSlide(targetSlideId) {
@@ -84,11 +72,10 @@
         }
         //Else it was invoked by the timer...
         else {
-            nextSlide = $('.SlideContainer div.live + div');
-
+            nextSlide = $('.SlideContainer div.live + div[id*=slide]');
             //If the slideshow has passed the end of the slide list, loop back to 1st slide
             if (nextSlide.length == 0)
-                return $('.SlideContainer div.live').closest('.SlideContainer').find('div:first-child');
+                return $('.SlideContainer').find('div[id*=slide]:first-child');
 
             return nextSlide;
         }
@@ -98,5 +85,15 @@
         $('.SlideBlobs li[data-slideFor=' + currentSlide.attr('id') + ']').removeAttr('style');
         $('.SlideBlobs li[data-slideFor=' + nextSlide.attr('id') + ']').attr('style', 'background-color:#5ABECC');
     }
+
+    function setSlideshowSize() {
+        var newHeight = $('.SlideContainer div.live').height();
+        $('.SlideContainer div.filler').height(newHeight);
+
+        var newWidth = $('.SlideContainer div.live').width();
+        $('.SlideContainer div.filler').width(newWidth);
+    }
+
+    window.onresize = setSlideshowSize;
 
 } (window.Slideshow = window.Slideshow || {}, jQuery))
