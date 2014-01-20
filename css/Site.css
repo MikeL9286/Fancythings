@@ -442,14 +442,15 @@ div.broken > a
     z-index: 50;
     font-size: 4em;
     line-height: 0;
-    opacity: .5;
+    opacity: .3;
     margin: 0 1%;
 }
 
 .Slideshow .Slideleft:hover, .Slideshow .Slideright:hover
 {
-    opacity: .6;
+    opacity: .5;
     display: block;
+    cursor: pointer;
 }
 
 .Slideshow .Slideleft
