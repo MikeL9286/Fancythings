@@ -67,8 +67,10 @@
         console.log('next slide: ' + nextSlide.attr('id'));
 
         //reset if index is past the start or end of list
-        if (nextSlide.length == null)
+        if (nextSlide.length == null) {
             nextSlide = $('.Slides div:first-child');
+            console.log('nextslide was null');
+        }
     }
 
     function SwapSlides() {
