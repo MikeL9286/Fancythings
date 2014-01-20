@@ -429,6 +429,14 @@ div.broken > a
 /* Slideshow styles
 ------------------------------------*/
 
+.Slideshow .Slideleft
+{
+}
+
+.Slideshow .Slideright
+{
+}
+
 .SlideContainer
 {
     position: relative;
