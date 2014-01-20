@@ -65,6 +65,10 @@
         //reset if index is past the start or end of list
         if (nextSlide.length == null)
             nextSlide = $('.Slides div:first-child');
+
+        console.log('current index: ' + currentSlideIndex);
+        console.log('next index: ' + nextSlideIndex);
+        console.log('next slide: ' + nextSlide);
     }
 
     function SwapSlides() {
