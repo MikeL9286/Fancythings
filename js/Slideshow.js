@@ -86,9 +86,8 @@
 
     function FinishSlide() {
         //Rebind the onclick event for each blob after transition
-        $('.Slideleft, .Slideright').each(function () {
-            $(this).attr('onclick', "Slideshow.InitSlide('right')");
-        });
+        $('.Slideleft').attr('onclick', "Slideshow.InitSlide('left')");
+        $('.Slideright').attr('onclick', "Slideshow.InitSlide('right')");
     }
 
     function setSlideshowSize() {
