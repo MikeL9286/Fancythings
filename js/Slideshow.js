@@ -57,17 +57,21 @@
         else
             nextSlideIndex = currentSlideIndex + 1;
 
-        if (nextSlideIndex >= 0)
+        if (nextSlideIndex > 0)
             nextSlide = $(slides[nextSlideIndex]);
+
+        //if on first slide and user clicks for previous slide, go to last slide
+        if (nextSlideIndex == 0 && currentSlideIndex == 0)
+            nextSlide = $('.Slides div:last');
 
         console.log('dir: ' + slideDirection);
         console.log('current index: ' + currentSlideIndex);
         console.log('next index: ' + nextSlideIndex);
         console.log('next slide: ' + nextSlide.attr('id'));
 
-        //reset if index is past the start or end of list
+        //reset if index is past start or end of list
         if (nextSlide.length == null || nextSlideIndex >= slides.length)
-            nextSlide = $('.Slides div:first-child');
+            nextSlide = $('.Slides div:first');
     }
 
     function SwapSlides() {
