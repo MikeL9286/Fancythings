@@ -61,7 +61,7 @@
             nextSlide = $(slides[nextSlideIndex]);
 
         //if on first slide and user clicks for previous slide, go to last slide
-        if (nextSlideIndex == 0 && currentSlideIndex == 0)
+        if (currentSlideIndex == 0 && slideDirection == 'left')
             nextSlide = $('.Slides div:last');
 
         console.log('dir: ' + slideDirection);
@@ -75,6 +75,9 @@
     }
 
     function SwapSlides() {
+        //restart the slideshow timer on click so the timers won't overlap
+        Slideshow.Stop();
+
         //load the next slide behind the live slide
         nextSlide.attr('class', 'next');
         nextSlide.fadeIn(0);
@@ -84,6 +87,7 @@
             nextSlide.attr('class', 'live');
             currentSlide.removeAttr('class');
         });
+        Slideshow.Start();
     }
 
     function FinishSlide() {
