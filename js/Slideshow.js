@@ -66,11 +66,6 @@
         }
 
         nextSlide = $(slides[nextSlideIndex]);
-
-        console.log('dir: ' + slideDirection);
-        console.log('current index: ' + currentSlideIndex);
-        console.log('next index: ' + nextSlideIndex);
-        console.log('next slide: ' + nextSlide.attr('id'));
     }
 
     function SwapSlides() {
