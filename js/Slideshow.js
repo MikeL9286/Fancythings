@@ -52,12 +52,10 @@
             }
         }
 
-        if (slideDirection == 'left') {
+        if (slideDirection == 'left')
             nextSlideIndex = currentSlideIndex - 1;
-        }
-        else {
+        else
             nextSlideIndex = currentSlideIndex + 1;
-        }
 
         if (nextSlideIndex >= 0)
             nextSlide = $(slides[nextSlideIndex]);
@@ -68,7 +66,7 @@
         console.log('next slide: ' + nextSlide.attr('id'));
 
         //reset if index is past the start or end of list
-        if (nextSlide.length == null)
+        if (nextSlide.length == null || nextSlideIndex >= slides.length)
             nextSlide = $('.Slides div:first-child');
     }
 
