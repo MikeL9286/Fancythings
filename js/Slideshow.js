@@ -52,26 +52,23 @@
             }
         }
 
-        if (slideDirection == 'left')
-            nextSlideIndex = currentSlideIndex - 1;
-        else
-            nextSlideIndex = currentSlideIndex + 1;
+        if (slideDirection == 'left') {
+            if (currentSlideIndex == 0)
+                nextSlideIndex = slides.length - 1;
+            else nextSlideIndex = currentSlideIndex - 1;
+        }
+        else {
+            if (nextSlideIndex >= (slides.length - 1))
+                nextSlideIndex = 0;
+            else nextSlideIndex = currentSlideIndex + 1;
+        }
 
-        if (nextSlideIndex > 0)
-            nextSlide = $(slides[nextSlideIndex]);
-
-        //if on first slide and user clicks for previous slide, go to last slide
-        if (currentSlideIndex == 0 && slideDirection == 'left')
-            nextSlide = $('.Slides div:last');
+        nextSlide = $(slides[nextSlideIndex]);
 
         console.log('dir: ' + slideDirection);
         console.log('current index: ' + currentSlideIndex);
         console.log('next index: ' + nextSlideIndex);
         console.log('next slide: ' + nextSlide.attr('id'));
-
-        //reset if index is past start or end of list
-        if (nextSlide.length == null || nextSlideIndex >= slides.length)
-            nextSlide = $('.Slides div:first');
     }
 
     function SwapSlides() {
