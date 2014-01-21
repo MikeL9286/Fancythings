@@ -53,14 +53,16 @@
         }
 
         if (slideDirection == 'left') {
-            if (currentSlideIndex == 0)
+            nextSlideIndex = currentSlideIndex - 1;
+
+            if (nextSlideIndex < 0)
                 nextSlideIndex = slides.length - 1;
-            else nextSlideIndex = currentSlideIndex - 1;
         }
         else {
+            nextSlideIndex = currentSlideIndex + 1;
+
             if (nextSlideIndex >= (slides.length - 1))
                 nextSlideIndex = 0;
-            else nextSlideIndex = currentSlideIndex + 1;
         }
 
         nextSlide = $(slides[nextSlideIndex]);
