@@ -61,7 +61,7 @@
         else {
             nextSlideIndex = currentSlideIndex + 1;
 
-            if (nextSlideIndex >= (slides.length - 1))
+            if (nextSlideIndex >= slides.length)
                 nextSlideIndex = 0;
         }
 
