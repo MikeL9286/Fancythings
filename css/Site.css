@@ -795,9 +795,9 @@ input[type="checkbox"].input-validation-error
         display: none;
     }
 
-    header > div
+    header > nav
     {
-        display: block;
+        display: none;
     }
 
     .Portals
@@ -805,6 +805,11 @@ input[type="checkbox"].input-validation-error
         float: none;
         max-width: 100%;
     }
+
+        .Portals:after
+        {
+            clear: both;
+        }
 }
 
 
