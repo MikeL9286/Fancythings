@@ -672,17 +672,13 @@ ul
         cursor: pointer;
     }
 
-        .serviceDetails .fa-angle-right
-        {
-            transition: transform .5s;
-        }
-
     .rotateRight
     {
         transform: rotate(90deg);
         -moz-transform: rotate(90deg);
         -o-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
     }
 
     .serviceTile > .serviceDetails > ul
