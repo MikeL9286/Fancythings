@@ -804,6 +804,17 @@ input[type="checkbox"].input-validation-error
     {
         float: none;
         max-width: 100%;
+        margin: 0 10% 0 10%;
+    }
+
+    .Portals .topLeft
+    {
+        margin: 0 1% 1% 0;
+    }
+
+    .Portals .bottomLeft
+    {
+        margin-right: 1%;
     }
 
     footer
