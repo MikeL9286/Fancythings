@@ -849,10 +849,10 @@ input[type="checkbox"].input-validation-error
         margin: 0 10% 0 10%;
     }
 
-        .Portals .topLeft
-        {
-            margin: 0;
-        }
+    .Portals .topLeft
+    {
+        margin: 0 0 1% 0;
+    }
 
     .Portal
     {
