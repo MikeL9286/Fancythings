@@ -672,6 +672,11 @@ ul
         cursor: pointer;
     }
 
+        .serviceDetails .fa-angle-right
+        {
+            transition: transform .5s;
+        }
+
     .rotateRight
     {
         transform: rotate(90deg);
