@@ -14,6 +14,10 @@ body
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
     margin: 0;
     -webkit-text-stroke: 0.3px;
+
+background-color: #FFFFFF;
+background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, from(#C7E7EC), color-stop(0.5, #E6F2F3), to(#FFFFFF));
+background: -moz-radial-gradient(50% 50%, farthest-side, #C7E7EC, #E6F2F3, #FFFFFF);
 }
 
 div.ContentWrapper
@@ -674,7 +678,7 @@ ul
 
         .serviceDetails .fa
         {
-            padding-right: 10px;
+            width: 20px;
         }
 
     .serviceTile > .serviceDetails > ul
