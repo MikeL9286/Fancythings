@@ -840,19 +840,19 @@ input[type="checkbox"].input-validation-error
 
     .Portals .topLeft
     {
-        margin: 0 0 1% 0;
+        margin: 0 0 2% 0;
     }
 
     .Portals .bottomLeft
     {
-        margin: 0 0 1% 0;
+        margin: 0 0 2% 0;
     }
 
     .Portal
     {
         float: none;
         max-width: 100%;
-        margin: 0 0 1% 0;
+        margin: 0 0 2% 0;
     }
 
     footer
