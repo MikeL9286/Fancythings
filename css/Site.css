@@ -832,7 +832,7 @@ input[type="checkbox"].input-validation-error
 ********************/
 @media only screen and (max-width: 500px)
 {
-    header a
+    header img
     {
         max-width: 100%;
         height: auto;
