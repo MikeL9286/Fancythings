@@ -851,6 +851,7 @@ input[type="checkbox"].input-validation-error
 
     .Portal
     {
+        float: none;
         max-width: 100%;
         margin: 0 0 0 1%;
     }
