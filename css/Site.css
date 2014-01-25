@@ -672,8 +672,18 @@ ul
         cursor: pointer;
     }
 
+        .serviceDetails .fa-angle-right
+        {
+            padding-right: 10px;
+            transition: transform 1s;
+            -webkit-transition: transform 1s;
+        }
+
     .rotateRight
     {
+        transition: transform 1s;
+        -webkit-transition: transform 1s;
+
         transform: rotate(90deg);
         -moz-transform: rotate(90deg);
         -o-transform: rotate(90deg);
