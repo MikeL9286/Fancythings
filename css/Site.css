@@ -832,24 +832,18 @@ input[type="checkbox"].input-validation-error
 ********************/
 @media only screen and (max-width: 500px)
 {
-    .Slideshow
+    header a
     {
-        display: none;
-    }
-
-    header > nav
-    {
-        display: none;
-    }
-
-    .Portals
-    {
-        float: none;
         max-width: 100%;
-        margin: 0 10% 0 10%;
+        height: auto;
     }
 
     .Portals .topLeft
+    {
+        margin: 0 0 1% 0;
+    }
+
+    .Portals .bottomLeft
     {
         margin: 0 0 1% 0;
     }
@@ -863,7 +857,7 @@ input[type="checkbox"].input-validation-error
 
     footer
     {
-        padding-top: 20px;
+        padding-top: 0;
         clear: both;
     }
 }
