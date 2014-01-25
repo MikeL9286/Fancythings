@@ -587,7 +587,7 @@ ul
     height: 30px;
     width: 100%;
     text-align: center;
-    z-index: 100;
+    z-index: 2000;
 }
 
 .SocialIconsBG
@@ -819,6 +819,7 @@ input[type="checkbox"].input-validation-error
 
     footer
     {
+        padding-top: 20px;
         clear: both;
     }
 }
