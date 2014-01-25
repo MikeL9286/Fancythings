@@ -18,7 +18,7 @@ body
 
 div.ContentWrapper
 {
-    max-width: 1300px;
+    max-width: 97%;
     height: 100%;
     margin: 30px auto 5px auto;
 }
@@ -790,20 +790,20 @@ input[type="checkbox"].input-validation-error
 ********************/
 @media only screen and (max-width: 860px)
 {
-    nav.navLeft, nav.navRight
+    .Slideshow
     {
         display: none;
-        width: 250px;
-    }
-
-    nav.navTop, nav.navBottom
-    {
-        display: block;
     }
 
     header > div
     {
         display: block;
+    }
+
+    .Portals
+    {
+        float: none;
+        max-width: 100%;
     }
 }
 
