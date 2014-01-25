@@ -14,10 +14,6 @@ body
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
     margin: 0;
     -webkit-text-stroke: 0.3px;
-
-background-color: #FFFFFF;
-background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, from(#C7E7EC), color-stop(0.5, #E6F2F3), to(#FFFFFF));
-background: -moz-radial-gradient(50% 50%, farthest-side, #C7E7EC, #E6F2F3, #FFFFFF);
 }
 
 div.ContentWrapper
@@ -38,7 +34,10 @@ div.Content
 {
     padding: 0 50px 10px 50px;
     margin: 0 auto 0 auto;
-    background-color: #fff;
+    
+    background-color: #FFFFFF;
+background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, from(#C7E7EC), color-stop(0.5, #E6F2F3), to(#FFFFFF));
+background: -moz-radial-gradient(50% 50%, farthest-side, #C7E7EC, #E6F2F3, #FFFFFF);
 }
 
     div.Content > header
