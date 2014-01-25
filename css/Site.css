@@ -646,12 +646,12 @@ ul
     width: 46%;
     padding: 15px;
     margin: 15px 2% 15px 2%;
-    box-shadow: 0 0 1px 1px #ccc;
-    background-color: #f2f2f2;
+    box-shadow: 0 0 1px 1px #5ABECC;
+    background-color: #e9efea;
     border-radius: 3px;
     display: inline-block;
     float: left;
-    min-height: 220px;
+    min-height: 250px;
 }
 
     .serviceTile > header
@@ -665,6 +665,19 @@ ul
     {
         text-align: left;
         margin-bottom: 10px;
+    }
+
+    .serviceDetails
+    {
+        cursor: pointer;
+    }
+
+    .rotateRight
+    {
+        transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
     }
 
     .serviceTile > .serviceDetails > ul
@@ -860,305 +873,4 @@ input[type="checkbox"].input-validation-error
         padding-top: 0;
         clear: both;
     }
-}
-
-
-
-
-
-/********************
-*  OLD Mobile Styles   *
-********************/
-@media only screen and (max-width: 1000px) and (min-width: 750px)
-{
-    /*div.ContentWrapper
-    {
-        width: 750px;
-        min-width: 750px;
-        margin: 10px auto 5px auto;
-    }
-
-    header
-    {
-        text-align: center;
-    }
-
-    header > div
-    {
-        float: none;
-    }
-
-    nav
-    {
-        float: none;
-        margin: 0 50px 30px 50px;
-    }
-
-    .SlideContainer
-    {
-        width: 730px;
-        height: 320px;
-    }
-
-    .SlideContainer img
-    {
-        height: 100%;
-        width: 730px;
-    }
-
-    .SlideContainer div[id*=slide]
-    {
-        left: 730px;
-    }
-
-    .SlideContainer div.slideLeftQuick
-    {
-        left: -730px;
-    }
-
-    .SlideContainer div.slideLeft
-    {
-        left: -730px;
-        transition: none;
-        -webkit-transition: none;
-    }
-
-    .SlideContainer div.slideRight
-    {
-        left: 730px;
-        transition: none;
-        -webkit-transition: none;
-    }
-
-    .SlideContainer div.live
-    {
-        z-index: 5;
-        left: 0px;
-        transition: none;
-        -webkit-transition: none;
-    }
-
-    .SocialIcons
-    {
-        position: relative;
-    }
-
-    .SocialIcons ul
-    {
-        height: 100%;
-        width: 730px;
-    }
-
-    .Portal
-    {
-        width: 236px;
-        height: 237px;
-    }*/
-}
-
-@media only screen and (max-width: 750px) and (min-width: 560px)
-{
-    /*div.ContentWrapper
-    {
-        width: 540px;
-        min-width: 540px;
-        margin: 10px auto 5px auto;
-    }
-
-    header
-    {
-        text-align: center;
-    }
-
-    header > div
-    {
-        float: none;
-    }
-
-    nav
-    {
-        float: none;
-        margin: 0 20px 30px 20px;
-    }
-
-    .SlideContainer
-    {
-        width: 520px;
-        height: 240px;
-    }
-
-    .SlideContainer img
-    {
-        height: 100%;
-        width: 520px;
-    }
-
-    .SlideContainer div[id*=slide]
-    {
-        left: 520px;
-    }
-
-    .SlideContainer div.slideLeftQuick
-    {
-        left: -520px;
-    }
-
-    .SlideContainer div.slideLeft
-    {
-        left: -520px;
-        transition: none;
-        -webkit-transition: none;
-    }
-
-    .SlideContainer div.slideRight
-    {
-        left: 520px;
-        transition: none;
-        -webkit-transition: none;
-    }
-
-    .SlideContainer div.live
-    {
-        z-index: 5;
-        left: 0px;
-        transition: none;
-        -webkit-transition: none;
-    }
-
-    .SocialIcons
-    {
-        position: relative;
-    }
-
-    .SocialIcons ul
-    {
-        height: 100%;
-        width: 520px;
-        text-align: center;
-    }
-
-    .Portal
-    {
-        width: 166px;
-        height: 165px;
-    }*/
-}
-
-@media only screen and (max-width: 560px)
-{
-    /*div.ContentWrapper
-    {
-        width: 250px;
-        min-width: 250px;
-        margin: 10px auto 5px auto;
-    }
-
-    .logo
-    {
-        width: 100%;
-    }
-
-    header
-    {
-        text-align: center;
-    }
-
-    header > div
-    {
-        float: none;
-    }
-
-    nav
-    {
-        float: none;
-        margin: 0 0 10px 0;
-        border-bottom: none;
-    }
-
-    nav > a
-    {
-        display: block;
-        text-align: center;
-        margin-right: 0;
-        background-color: pink;
-        margin-top: 5px;
-        border-radius: 5px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        padding-top: 3px;
-    }
-
-    nav > a:hover
-    {
-        color: White;
-    }
-
-    nav > a:first-of-type
-    {
-        margin-left: 0;
-        margin-top: 0px;
-    }
-
-    .SlideContainer
-    {
-        width: 230px;
-        height: 120px;
-    }
-
-    .SlideContainer img
-    {
-        width: 230px;
-    }
-
-    .SlideContainer div[id*=slide]
-    {
-        left: 230px;
-    }
-
-    .SlideContainer div.slideLeftQuick
-    {
-        left: -230px;
-        height: 100%;
-    }
-
-    .SlideContainer div.slideLeft
-    {
-        left: -230px;
-        transition: none;
-        -webkit-transition: none;
-    }
-
-    .SlideContainer div.slideRight
-    {
-        left: 230px;
-        transition: none;
-        -webkit-transition: none;
-    }
-
-    .SlideContainer div.live
-    {
-        z-index: 5;
-        left: 0px;
-        transition: none;
-        -webkit-transition: none;
-    }
-
-    .SocialIcons
-    {
-        position: relative;
-    }
-
-    .SocialIcons ul
-    {
-        height: 100%;
-        width: 230px;
-        text-align: center;
-    }
-
-    .Portal
-    {
-        display: none;
-        width: 70px;
-        height: 70px;
-    }*/
 }

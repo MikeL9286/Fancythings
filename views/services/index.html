@@ -9,8 +9,8 @@
         <section class="serviceTile">
             <header>Social Media Strategy</header>
             <div class="serviceDesc">Looking to <strong>grow your brands online presence</strong>? Social media is an important key to being successful online. It’s our goal to optimize content for your social media platforms (i.e. Twitter, Facebook, Pinterest, Linked In, Google +, Instagram) through strategic methods that work for your brand.</div>
-            <div class="serviceDetails" onclick="toggle_visibility($(this).find('ul'))">
-                <i>Details</i>
+            <div class="serviceDetails" onclick="toggle_visibility($(this))">
+                <i class="fa fa-angle-right"></i><span>Details</span>
                 <ul>
                     <li>twitter</li>
                     <li>facebook</li>
@@ -23,7 +23,7 @@
             <header>Content Creation</header>
             <div class="serviceDesc">Lorem ipsum dolor sit amet, ad sed eripuit aliquid comprehensam. An viris decore mucius nam. Tota regione ne sit, adipisci pericula an mea, mei ad.</div>
             <div class="serviceDetails" onclick="toggle_visibility($(this).find('ul'))">
-                <i>Details</i>
+                <i class="fa fa-angle-right"></i><span>Details</span>
                 <ul>
                     <li>blog posts</li>
                     <li>tweets</li>
@@ -37,7 +37,7 @@
             <header>Media Outreach</header>
             <div class="serviceDesc">Lorem ipsum dolor sit amet, ad sed eripuit aliquid comprehensam. An viris decore mucius nam. Tota regione ne sit, adipisci pericula an mea, mei ad.</div>
             <div class="serviceDetails" onclick="toggle_visibility($(this).find('ul'))">
-                <i>Details</i>
+                <i class="fa fa-angle-right"></i><span>Details</span>
                 <ul>
                     <li>twitter</li>
                     <li>facebook</li>
@@ -50,7 +50,7 @@
             <header>Design</header>
             <div class="serviceDesc">Lorem ipsum dolor sit amet, ad sed eripuit aliquid comprehensam. An viris decore mucius nam. Tota regione ne sit, adipisci pericula an mea, mei ad.</div>
             <div class="serviceDetails" onclick="toggle_visibility($(this).find('ul'))">
-                <i>Details</i>
+                <i class="fa fa-angle-right"></i><span>Details</span>
                 <ul>
                     <li>blog posts</li>
                     <li>tweets</li>
@@ -63,9 +63,16 @@
 
 <script type="text/javascript">
     function toggle_visibility(elm) {
-        if (elm.is(':visible'))
-            elm.hide(400);
-        else
-            elm.show(400);
+        var ul = elm.find('ul');
+        var icon = elm.find('i');
+
+        if (ul.is(':visible')) {
+            ul.hide(400);
+            icon.addClass('rotateRight');
+        }
+        else {
+            ul.show(400);
+            icon.removeClass('rotateRight');
+        }
     }
 </script>
