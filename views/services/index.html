@@ -64,15 +64,15 @@
 <script type="text/javascript">
     function toggle_visibility(elm) {
         var ul = elm.find('ul');
-        var icon = elm.find('i');
+        var icon = elm.find('span.fa-angle-right');
 
         if (ul.is(':visible')) {
             ul.hide(400);
-            icon.addClass('rotateRight');
+            icon.removeClass('rotateRight');
         }
         else {
             ul.show(400);
-            icon.removeClass('rotateRight');
+            icon.addClass('rotateRight');
         }
     }
 </script>
