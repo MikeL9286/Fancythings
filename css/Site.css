@@ -200,11 +200,6 @@ div.hr
         display: none;
     }
 
-.emailLink a
-{
-    text-decoration: underline;
-}
-
 /* Blog styles
 ------------------------------------*/
 
@@ -640,7 +635,7 @@ ul
 
 /* Services Styles
 ---------------------------------------------------------*/
-.servicesContainer
+#servicesContainer
 {
     text-align: center;
 }
