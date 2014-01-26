@@ -37,9 +37,12 @@
 </div>
 
 <script type="text/javascript">
-    $('.serviceTile header').click(function (elm) {
-        var description = $(elm).parent().find('.serviceDesc');
-        var icon = $(elm).find('span.fa');
+    $('.serviceTile header').click(function (header) {
+        var description = $(header).parent().find('.serviceDesc');
+        var icon = $(header).find('span.fa');
+
+        console.log(description.length);
+        console.log(icon.length);
 
         if (description.is(':visible')) {
             description.hide(400);
