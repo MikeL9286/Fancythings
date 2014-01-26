@@ -1,51 +1,44 @@
 ﻿<!--<script src="../../js/services.js" type="text/javascript" />-->
 
 <div id="servicesContainer">
+    <div>Looking for some help with your company's marketing/social media?</div>
+    <div class="emailLink">
+        <a href="https://docs.google.com/forms/d/1uTBZqoY5HjB4N2MQNdZlbz2pW0zRmKUxG8SIp_9BqyM/viewform" target="_blank">Submit an inquiry</a>
+    </div>
+
     <div style="width:100%;text-align:center;margin:25px 0 15px 0">
         <h3>Packages</h3>
     </div>
 
     <div class="serviceFlex">
         <section class="serviceTile">
-            <header>Social Media Strategy</header>
+            <header><span class="fa fa-angle-right"></span>Social Media Strategy</header>
             <div class="serviceDesc">Looking to <strong>grow your brands online presence</strong>? Social media is an important key to being successful online. It’s our goal to optimize content for your social media platforms (i.e. Twitter, Facebook, Pinterest, Linked In, Google +, Instagram) through strategic methods that work for your brand.</div>
-            <div class="emailLink">
-                <a href="https://docs.google.com/forms/d/1uTBZqoY5HjB4N2MQNdZlbz2pW0zRmKUxG8SIp_9BqyM/viewform" target="_blank">Submit an inquiry</a>
-            </div>
         </section>
 
         <section class="serviceTile">
-            <header>Content Creation</header>
+            <header><span class="fa fa-angle-right"></span>Content Creation</header>
             <div class="serviceDesc">Lorem ipsum dolor sit amet, ad sed eripuit aliquid comprehensam. An viris decore mucius nam. Tota regione ne sit, adipisci pericula an mea, mei ad.</div>
-            <div class="emailLink">
-                <a href="https://docs.google.com/forms/d/1uTBZqoY5HjB4N2MQNdZlbz2pW0zRmKUxG8SIp_9BqyM/viewform" target="_blank">Submit an inquiry</a>
-            </div>
         </section>
 
         <br style="clear:both" />
 
         <section class="serviceTile">
-            <header>Media Outreach</header>
+            <header><span class="fa fa-angle-right"></span>Media Outreach</header>
             <div class="serviceDesc">Lorem ipsum dolor sit amet, ad sed eripuit aliquid comprehensam. An viris decore mucius nam. Tota regione ne sit, adipisci pericula an mea, mei ad.</div>
-            <div class="emailLink">
-                <a href="https://docs.google.com/forms/d/1uTBZqoY5HjB4N2MQNdZlbz2pW0zRmKUxG8SIp_9BqyM/viewform" target="_blank">Submit an inquiry</a>
-            </div>
         </section>
 
         <section class="serviceTile">
-            <header>Design</header>
+            <header><span class="fa fa-angle-right"></span>Design</header>
             <div class="serviceDesc">Lorem ipsum dolor sit amet, ad sed eripuit aliquid comprehensam. An viris decore mucius nam. Tota regione ne sit, adipisci pericula an mea, mei ad.</div>
-            <div class="emailLink">
-                <a href="https://docs.google.com/forms/d/1uTBZqoY5HjB4N2MQNdZlbz2pW0zRmKUxG8SIp_9BqyM/viewform" target="_blank">Submit an inquiry</a>
-            </div>
         </section>
     </div>
     <br style="clear:both" />
 </div>
 
 <script type="text/javascript">
-    function toggle_visibility(elm) {
-        var ul = elm.find('ul');
+    $('.serviceTile header').click(function (elm) {
+        var header = elm.find('ul');
         var icon = elm.find('span.fa');
 
         if (ul.is(':visible')) {
@@ -54,6 +47,20 @@
         }
         else {
             ul.show(400);
+            icon.removeClass('fa-angle-right').addClass('fa-angle-down');
+        }
+    });
+
+    function toggle_visibility(elm) {
+        var description = elm.parent().find('.serviceDesc');
+        var icon = elm.find('span.fa');
+
+        if (description.is(':visible')) {
+            description.hide(400);
+            icon.removeClass('fa-angle-down').addClass('fa-angle-right');
+        }
+        else {
+            description.show(400);
             icon.removeClass('fa-angle-right').addClass('fa-angle-down');
         }
     }
