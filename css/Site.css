@@ -682,9 +682,10 @@ ul
 {
     background-color: #5ABECC;
     border-color: #3A9EAC;
+    margin-top: 15px;
 }
 
-.inquiryBtn
+.inquiryBtn:hover
 {
     background-color: #4AAEBC;
     border-color: #2A8E9C;
