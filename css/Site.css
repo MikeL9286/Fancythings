@@ -15,9 +15,9 @@ body
     margin: 0;
 }
 
-.fa
+.fa, .smooth
 {
-    /*smooths the edges for font awesome*/
+    /*smooths the edges for font awesome and other jagged fonts*/
     -webkit-text-stroke: 0.3px;
 }
 
