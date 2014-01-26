@@ -13,6 +13,11 @@ body
     color: #000;
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
     margin: 0;
+}
+
+.fa
+{
+    /*smooths the edges for font awesome*/
     -webkit-text-stroke: 0.3px;
 }
 
