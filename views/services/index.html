@@ -38,20 +38,6 @@
 
 <script type="text/javascript">
     $('.serviceTile header').click(function (elm) {
-        var header = elm.find('ul');
-        var icon = elm.find('span.fa');
-
-        if (ul.is(':visible')) {
-            ul.hide(400);
-            icon.removeClass('fa-angle-down').addClass('fa-angle-right');
-        }
-        else {
-            ul.show(400);
-            icon.removeClass('fa-angle-right').addClass('fa-angle-down');
-        }
-    });
-
-    function toggle_visibility(elm) {
         var description = elm.parent().find('.serviceDesc');
         var icon = elm.find('span.fa');
 
@@ -63,7 +49,7 @@
             description.show(400);
             icon.removeClass('fa-angle-right').addClass('fa-angle-down');
         }
-    }
+    });
 </script>
 
 
