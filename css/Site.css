@@ -670,7 +670,13 @@ ul
         font-size: larger;
         margin-bottom: 10px;
         text-transform: uppercase;
+        cursor: pointer;
     }
+
+    .serviceTile .fa
+        {
+            width: 20px;
+        }
 
     .serviceTile > .serviceDesc
     {
@@ -678,35 +684,6 @@ ul
         text-align: left;
         margin-bottom: 10px;
     }
-
-    .serviceDetails
-    {
-        cursor: pointer;
-    }
-
-        .serviceDetails .fa
-        {
-            width: 20px;
-        }
-
-    .serviceTile > .serviceDetails > ul
-    {
-        list-style-type: none;
-        overflow: hidden;
-        padding-bottom: 5px;
-        display: none;
-    }
-
-        .serviceTile > .serviceDetails > ul > li
-        {
-            display: inline-block;
-            margin: 5px 10px 0 10px;
-            border-radius: 3px;
-            background-color: #ddd;
-            padding: 5px;
-            box-shadow: 0 0 1px 1px #bbb;
-            height: -10px;
-        }
 
 /* About sections
 ---------------------------------------------------------*/
