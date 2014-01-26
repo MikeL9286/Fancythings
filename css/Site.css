@@ -642,25 +642,23 @@ ul
 ---------------------------------------------------------*/
 .serviceFlex
 {
-    font-family: Montserrat;
-    font-size: .9em;
+    padding: 0 10% 0 10%;
 }
 
 .serviceTile
 {
-    width: 46%;
+    width: 100%;
     padding: 15px;
     margin: 15px 2% 15px 2%;
     box-shadow: 0 0 1px 1px #5ABECC;
     background-color: #e9efea;
     border-radius: 3px;
     display: inline-block;
-    float: left;
-    min-height: 200px;
 }
 
     .serviceTile > header
     {
+        font-family: Montserrat;
         font-size: larger;
         margin-bottom: 10px;
         text-transform: uppercase;
@@ -677,6 +675,7 @@ ul
         font-family: Arial;
         text-align: left;
         margin-bottom: 10px;
+        display: none;
     }
 
 /* About sections
