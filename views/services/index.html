@@ -37,9 +37,9 @@
 </div>
 
 <script type="text/javascript">
-    $('.serviceTile header').click(function (header) {
-        var description = $(header).parent().find('.serviceDesc');
-        var icon = $(header).find('span.fa');
+    $('.serviceTile header').click(function () {
+        var description = $(this).parent().find('.serviceDesc');
+        var icon = $(this).find('span.fa');
 
         console.log(description.length);
         console.log(icon.length);
