@@ -663,6 +663,7 @@ ul
 
     .serviceTile > .serviceDesc
     {
+        font-family: Arial;
         text-align: left;
         margin-bottom: 10px;
     }
