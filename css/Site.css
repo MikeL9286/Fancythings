@@ -200,6 +200,11 @@ div.hr
         display: none;
     }
 
+.emailLink a
+{
+    text-decoration: underline;
+}
+
 /* Blog styles
 ------------------------------------*/
 
