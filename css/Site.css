@@ -18,7 +18,7 @@ body
 .fa, .smooth
 {
     /*smooths the edges for font awesome and other jagged fonts*/
-    -webkit-text-stroke: 0.3px;
+    -webkit-text-stroke: 0.2px;
 }
 
 div.ContentWrapper
