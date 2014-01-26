@@ -678,6 +678,12 @@ ul
         display: none;
     }
 
+.inquiryBtn
+{
+    background-color: #5ABECC;
+    border-color: #3A9EAC;
+}
+
 /* About sections
 ---------------------------------------------------------*/
 section .About
