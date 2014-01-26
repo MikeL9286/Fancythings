@@ -38,7 +38,7 @@
 
 <script type="text/javascript">
     $('.serviceTile header').click(function (elm) {
-        var description = elm.parent().find('.serviceDesc');
+        var description = $(elm).parent().find('.serviceDesc');
         alert('step1');
         var icon = elm.find('span.fa');
         alert('step2');
