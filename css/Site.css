@@ -709,10 +709,12 @@ ul
 #aboutContainer
 {
     padding: 0 10% 0 10%;
+    font-family: Montserrat;
 }
 
 .aboutHeader
 {
+    margin-bottom: 15px
 }
 
 .leftColumn
@@ -727,6 +729,14 @@ ul
 
 .leftColumn .aboutImg
 {
+    margin-bottom: 10%;
+}
+
+.middleColumn
+{
+    height: 100%;
+    width:3px;
+    background-color: black;
 }
 
 .rightColumn
@@ -737,6 +747,7 @@ ul
 
 .rightColumn .aboutPoint
 {
+    margin-bottom: 10%;
 }
 
 .rightColumn .aboutImg
