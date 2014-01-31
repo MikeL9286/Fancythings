@@ -724,15 +724,6 @@ ul
     width: 40%;
 }
 
-.leftColumn .aboutPoint
-{
-}
-
-.leftColumn .aboutImg
-{
-    margin-bottom: 10%;
-}
-
 .middleColumn
 {
     height: 100%;
@@ -746,13 +737,13 @@ ul
     width: 40%;
 }
 
-.rightColumn .aboutPoint
+.aboutPoint
 {
-    margin-bottom: 10%;
 }
 
-.rightColumn .aboutImg
+.aboutImg
 {
+    margin-bottom: 10%;
 }
 
 /* info and errors */
