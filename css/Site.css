@@ -708,6 +708,7 @@ ul
 
 .aboutContainer
 {
+    padding: 0 10% 0 10%;
 }
 
 .aboutHeader
@@ -717,6 +718,7 @@ ul
 .leftColumn
 {
     float: left;
+    width: 40%;
 }
 
 .leftColumn .aboutPoint
@@ -730,6 +732,7 @@ ul
 .rightColumn
 {
     float: right;
+    width: 40%;
 }
 
 .rightColumn .aboutPoint
