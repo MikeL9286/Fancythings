@@ -17,6 +17,9 @@
         else if (currentUrl.indexOf("Services") != -1) {
             index.load("views/services/index.html");
         }
+        else if (currentUrl.indexOf("About") != -1) {
+            index.load("views/about/index.html");
+        }
         else {
             index.load("views/home/Index.html");
         }

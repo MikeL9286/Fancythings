@@ -704,33 +704,37 @@ ul
 
 /* About sections
 ---------------------------------------------------------*/
-section .About
+
+.aboutContainer
 {
-    height: 200px;
-    width: 100%;
-    margin-bottom: 20px;
-    opacity: .8;
 }
 
-div .About .Highlight
+.aboutHeader
 {
-    height: 100%;
-    width: 350px;
-    background-color: #999;
-    display: inline-block;
-    float: left;
 }
 
-div .About .Keyword
+.leftColumn
 {
-    display: inline-block;
-    font-family: "Lucida Grande", Verdana, Sans-Serif;
-    font-weight: 500;
-    font-size: 2.3em;
-    float: left;
-    text-align: center;
-    margin-top: 80px;
-    width: 590px;
+}
+
+.leftColumn .aboutPoint
+{
+}
+
+.leftColumn .aboutImg
+{
+}
+
+.rightColumn
+{
+}
+
+.rightColumn .aboutPoint
+{
+}
+
+.rightColumn .aboutImg
+{
 }
 
 /* info and errors */
