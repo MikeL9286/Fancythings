@@ -715,6 +715,7 @@ ul
 
 .leftColumn
 {
+    float: left;
 }
 
 .leftColumn .aboutPoint
@@ -727,6 +728,11 @@ ul
 
 .rightColumn
 {
+    float: right;
+}
+
+.rightColumn:after {
+    clear: both;
 }
 
 .rightColumn .aboutPoint
