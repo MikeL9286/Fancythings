@@ -714,7 +714,8 @@ ul
 
 .aboutHeader
 {
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    border-bottom: 3px solid black;
 }
 
 .leftColumn
