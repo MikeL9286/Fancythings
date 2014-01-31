@@ -706,7 +706,7 @@ ul
 /* About sections
 ---------------------------------------------------------*/
 
-.aboutContainer
+#aboutContainer
 {
     padding: 0 10% 0 10%;
 }
