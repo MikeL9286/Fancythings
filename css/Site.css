@@ -188,7 +188,7 @@ h5, h6
 #body
 {
     background-color: #fff;
-    font: normal normal 1.2em Arial, Georgia, Utopia, sans-serif;
+    font: normal normal .85em Arial, Georgia, Utopia, sans-serif;
     line-height: 20px;
     letter-spacing: .1em;
 }
