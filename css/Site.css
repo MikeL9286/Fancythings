@@ -556,6 +556,13 @@ div.broken > a
     left: 40%;
 }
 
+    .portalText:before
+    {
+        content: "";
+        background-color: white;
+        opacity: .4;
+    }
+
     .Portal:hover img
     {
         opacity: .9;
