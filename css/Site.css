@@ -661,6 +661,7 @@ ul
     background-color: #f9f9f9;
     border-radius: 3px;
     display: inline-block;
+    cursor: pointer;
 }
 
 .serviceTile:hover
@@ -674,7 +675,6 @@ ul
         font-size: larger;
         margin-bottom: 10px;
         text-transform: uppercase;
-        cursor: pointer;
     }
 
     .serviceTile .fa
