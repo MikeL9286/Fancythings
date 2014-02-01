@@ -560,7 +560,13 @@ div.broken > a
     {
         content: "";
         background-color: white;
-        opacity: .4;
+        opacity: .7;
+    }
+
+    .portalText:after
+    {
+        content: "Blog";
+        padding: 5px;
     }
 
     .Portal:hover img
