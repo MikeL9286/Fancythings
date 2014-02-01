@@ -546,6 +546,14 @@ div.broken > a
     float: left;
     height: auto;
     max-width: 48%;
+    position: relative;
+}
+
+.portalText
+{
+    position: absolute;
+    top: 45%;
+    left: 40%;
 }
 
     .Portal:hover img
