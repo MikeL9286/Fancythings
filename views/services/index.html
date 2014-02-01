@@ -35,11 +35,8 @@
 
 <script type="text/javascript">
     $('.serviceTile').click(function () {
-        var description = $(this).parent().find('.serviceDesc');
+        var description = $(this).find('.serviceDesc');
         var icon = $(this).find('span.fa');
-
-        console.log(description.length);
-        console.log(icon.length);
 
         if (description.is(':visible')) {
             description.hide(400);
