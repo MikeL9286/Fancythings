@@ -708,12 +708,18 @@ ul
 
 #aboutContainer
 {
-    padding: 0 15% 0 15%;
+    padding: 0 20% 0 20%;
 }
 
 .aboutText
 {
     margin-bottom: 2%;
+}
+
+.aboutProfileImg img
+{
+    height: auto;
+    max-width: 100%;
 }
 
 .aboutHeader
