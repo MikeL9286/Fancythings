@@ -736,6 +736,13 @@ ul
 .aboutPoint
 {
     height:45px;
+    position: relative;
+}
+
+.aboutPoint span
+{
+    position: absolute;
+    bottom: 0;
 }
 
 .aboutImg
