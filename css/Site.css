@@ -721,19 +721,21 @@ ul
 .leftColumn
 {
     display: inline-block;
-    width: 50%;
+    width: 47%;
     vertical-align: top;
+    margin-right: 5%;
 }
 
 .rightColumn
 {
     display: inline-block;
-    width: 49%;
+    width: 47%;
     vertical-align: top;
 }
 
 .aboutPoint
 {
+    height:45px;
 }
 
 .aboutImg
