@@ -720,14 +720,16 @@ ul
 
 .leftColumn
 {
-    float: left;
-    width: 40%;
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
 }
 
 .rightColumn
 {
-    float: right;
-    width: 40%;
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
 }
 
 .aboutPoint
@@ -737,6 +739,12 @@ ul
 .aboutImg
 {
     margin-bottom: 10%;
+}
+
+.aboutImg img
+{
+    height: auto;
+    width: 100%
 }
 
 /* info and errors */
