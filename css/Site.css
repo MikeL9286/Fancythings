@@ -558,14 +558,17 @@ div.broken > a
 
     .portalText:before
     {
-        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
         background-color: white;
         opacity: .7;
     }
 
     .portalText:after
     {
-        content: "Blog";
+        position: absolute;
+        content: "(" attr(data-content) ")";
         padding: 5px;
     }
 
