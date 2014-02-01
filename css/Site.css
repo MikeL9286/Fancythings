@@ -721,15 +721,15 @@ ul
 .leftColumn
 {
     display: inline-block;
-    width: 47%;
+    width: 48%;
     vertical-align: top;
-    margin-right: 5%;
+    margin-right: 3%;
 }
 
 .rightColumn
 {
     display: inline-block;
-    width: 47%;
+    width: 48%;
     vertical-align: top;
 }
 
@@ -737,6 +737,8 @@ ul
 {
     height:45px;
     position: relative;
+    margin-bottom: 5px;
+    text-transform: uppercase;
 }
 
 .aboutPoint span
@@ -747,7 +749,7 @@ ul
 
 .aboutImg
 {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .aboutImg img
