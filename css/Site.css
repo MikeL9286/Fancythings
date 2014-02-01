@@ -711,6 +711,11 @@ ul
     padding: 0 15% 0 15%;
 }
 
+#aboutContainer div:first
+{
+    margin-bottom: 1%;
+}
+
 .aboutHeader
 {
     margin: 5% 0 5% 0;
