@@ -714,7 +714,7 @@ ul
 
 .aboutHeader
 {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     border-bottom: 3px solid black;
 }
 
@@ -722,13 +722,6 @@ ul
 {
     float: left;
     width: 40%;
-}
-
-.middleColumn
-{
-    height: 100%;
-    width:3px;
-    background-color: black;
 }
 
 .rightColumn
