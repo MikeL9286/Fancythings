@@ -708,7 +708,7 @@ ul
 
 #aboutContainer
 {
-    padding: 0 10% 0 10%;
+    padding: 0 15% 0 15%;
     font-family: Montserrat;
 }
 
@@ -736,20 +736,18 @@ ul
 .aboutPoint
 {
     height:45px;
-    position: relative;
-    margin-bottom: 5px;
     text-transform: uppercase;
+    margin-bottom: 5%;
 }
 
 .aboutPoint span
 {
-    position: absolute;
-    bottom: 0;
+    
 }
 
 .aboutImg
 {
-    margin-bottom: 5%;
+    margin-bottom: 5px;
 }
 
 .aboutImg img
