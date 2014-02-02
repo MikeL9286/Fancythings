@@ -565,6 +565,7 @@ div.broken > a
         background-color: white;
         opacity: .7;
         content: "";
+        padding: 10px 40px;
     }
 
     .portalText:after
