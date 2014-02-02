@@ -569,7 +569,7 @@ div.broken > a
     .portalText:after
     {
         position: absolute;
-        content: "(" attr(data-content) ")";
+        content: "" attr(data-content) "";
         padding: 5px;
     }
 
