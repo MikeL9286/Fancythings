@@ -552,20 +552,17 @@ div.broken > a
 .portalText
 {
     position: absolute;
-    top: 45%;
-    left: 40%;
+    top: 48%;
+    left: 30%;
 }
 
     .portalText:before
     {
         position: absolute;
-        display: table;
-        height: 100%;
-        width: 100%;
         background-color: white;
         opacity: .7;
         content: "";
-        padding: 10px 40px;
+        padding: 10px 45px;
     }
 
     .portalText:after
@@ -573,6 +570,7 @@ div.broken > a
         position: absolute;
         content: "" attr(data-content) "";
         padding: 5px;
+        font-family: Montserrat;
     }
 
     .Portal:hover img
