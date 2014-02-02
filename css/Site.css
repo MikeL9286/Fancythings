@@ -564,6 +564,7 @@ div.broken > a
         width: 100%;
         background-color: white;
         opacity: .7;
+        content: "";
     }
 
     .portalText:after
