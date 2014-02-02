@@ -570,9 +570,23 @@ div.broken > a
     {
         position: absolute;
         content: "" attr(data-content) "";
-        padding: 5px;
         font-family: Montserrat;
     }
+
+.topLeft .portalText:after, .bottomLeft .portalText:after
+{
+    left: 25px;
+}
+
+.bottomRight .portalText:after
+{
+    left: 22px;
+}
+
+.topRight .portalText:after
+{
+    left: 10px;
+}
 
     .Portal:hover img
     {
