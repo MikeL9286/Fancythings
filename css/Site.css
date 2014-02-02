@@ -549,7 +549,7 @@ div.broken > a
     position: relative;
 }
 
-/*.portalText
+.portalText
 {
     position: absolute;
     top: 48%;
@@ -572,30 +572,6 @@ div.broken > a
         content: "" attr(data-content) "";
         padding: 5px;
         font-family: Montserrat;
-    }*/
-
-
-.Portal img
-{
-    position: relative;
-}
-
-    .Portal img:before
-    {
-        position: absolute;
-        background-color: white;
-        opacity: .7;
-        content: "";
-        padding: 10px 45px;
-    }
-
-    .Portal img:after
-    {
-        position: absolute;
-        content: "" attr(data-content) "";
-        padding: 5px;
-        font-family: Montserrat;
-        text-transform: uppercase;
     }
 
     .Portal:hover img
