@@ -549,45 +549,6 @@ div.broken > a
     position: relative;
 }
 
-.portalText
-{
-    position: absolute;
-    top: 48%;
-    left: 30%;
-    text-transform: uppercase;
-}
-
-    .portalText:before
-    {
-        position: absolute;
-        background-color: white;
-        opacity: .7;
-        content: "";
-        padding: 10px 45px;
-    }
-
-    .portalText:after
-    {
-        position: absolute;
-        content: "" attr(data-content) "";
-        font-family: Montserrat;
-    }
-
-.topLeft .portalText:after, .bottomLeft .portalText:after
-{
-    left: 25px;
-}
-
-.bottomRight .portalText:after
-{
-    left: 22px;
-}
-
-.topRight .portalText:after
-{
-    left: 10px;
-}
-
     .Portal:hover img
     {
         opacity: .9;
