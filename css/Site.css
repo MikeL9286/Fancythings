@@ -25,7 +25,7 @@ div.ContentWrapper
 {
     padding: 0 2% 0 2%;
     height: 100%;
-    margin: 30px auto 5px auto;
+    margin: 30px auto 0 auto;
 }
 
     div.ContentWrapper:before, div.ContentWrapper:after
@@ -37,7 +37,7 @@ div.ContentWrapper
 
 div.Content
 {
-    padding: 0 50px 10px 50px;
+    padding: 0 50px;
     margin: 0 auto 0 auto;
     background-color: #fff;
     max-width: 1400px;
@@ -570,13 +570,13 @@ footer
 {
     text-align: center;
     font-family: Segoe UI, Raleway, Arial, sans-serif;
-    margin-top: 30px;
-    clear: both;
+    border-top: 1px solid black;
+    padding: 5px 0;
 }
 
     footer .monogram
     {
-        margin-bottom: 20px;
+        height: 200px;
     }
 
 ul
