@@ -547,6 +547,7 @@ div.broken > a
     height: auto;
     max-width: 48%;
     position: relative;
+    cursor: pointer;
 }
 
     .Portal:hover img
@@ -558,11 +559,6 @@ div.broken > a
     {
         margin: 0 2% 2% 0;
     }
-
-.Portals .topRight
-{
-    cursor: pointer;
-}
 
     .Portals .bottomLeft
     {
