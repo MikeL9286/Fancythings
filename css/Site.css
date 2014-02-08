@@ -884,7 +884,7 @@ input[type="checkbox"].input-validation-error
 /************************************
 *   Reward Style Widget Overrides   *
 ************************************/
-.ltk-table
+.ltkwidget-widget
 {
     width: 50%;
     display: inline-block;
