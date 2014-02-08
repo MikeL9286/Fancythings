@@ -582,15 +582,19 @@ footer
         color: white;
         text-transform: uppercase;
         font-family: Montserrat;
+        letter-spacing: .1em;
+        font-size: .9em;
+        padding: 20px;
     }
 
-.innerFooter .spacer
+.copyrightInfo
 {
-    margin: 0 20px;
+    float: left;
 }
 
 .footerLinks
 {
+    float: right;
     list-style-type: none;
     -webkit-padding-start: 0;
     -webkit-margin-before: 0;
