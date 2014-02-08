@@ -580,7 +580,13 @@ footer
         height: 200px;
         background-color: black;
         color: white;
+        text-transform: uppercase;
     }
+
+.innerFooter .spacer
+{
+    margin: 0 20px;
+}
 
 .footerLinks
 {
@@ -588,6 +594,12 @@ footer
     -webkit-padding-start: 0;
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
+    display: inline-block;
+}
+
+.copyrightInfo
+{ 
+    opacity: .8;
 }
 
     .footerLinks li
