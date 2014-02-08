@@ -24,7 +24,6 @@ body
 
 div.ContentWrapper
 {
-    padding: 0 2% 0 2%;
     height: 100%;
     margin: 30px auto 0 auto;
 }
@@ -38,7 +37,7 @@ div.ContentWrapper
 
 div.Content
 {
-    padding: 0 50px;
+    padding: 0 5%;
     margin: 0 auto 0 auto;
     background-color: #fff;
     max-width: 1400px;
@@ -577,7 +576,7 @@ footer
 
     footer .innerFooter
     {
-        height: 200px;
+        height: 150px;
         background-color: black;
         color: white;
         text-transform: uppercase;
@@ -830,7 +829,7 @@ ul
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     padding: 15px;
-    margin: 50px 25px;
+    margin: 50px 25px 0 25px;
 }
 
 
