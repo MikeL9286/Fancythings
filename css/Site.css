@@ -23,7 +23,7 @@ body
 
 div.ContentWrapper
 {
-    max-width: 97%;
+    padding: 0 2% 0 2%;
     height: 100%;
     margin: 30px auto 5px auto;
 }
@@ -40,6 +40,7 @@ div.Content
     padding: 0 50px 10px 50px;
     margin: 0 auto 0 auto;
     background-color: #fff;
+    max-width: 1400px;
 }
 
     div.Content > header
@@ -501,7 +502,6 @@ div.broken > a
 
     .SlideContainer div.filler
     {
-        max-height: 412px;
         z-index: -50;
     }
 

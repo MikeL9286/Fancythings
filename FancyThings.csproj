@@ -79,6 +79,7 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="img\aboutArmParty.jpg" />
+    <Content Include="img\aboutEspresso.jpg" />
     <Content Include="img\aboutImg.jpg" />
     <Content Include="img\aboutPeonies.jpg" />
     <Content Include="img\aboutRocky.jpg" />
