@@ -584,12 +584,17 @@ footer
         font-family: Montserrat;
         letter-spacing: .1em;
         font-size: .9em;
-        padding: 20px;
+        padding: 20px 100px;
     }
 
 .copyrightInfo
 {
     float: left;
+}
+
+.monogram
+{
+    width: 50px;
 }
 
 .footerLinks
