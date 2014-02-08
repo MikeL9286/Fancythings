@@ -574,9 +574,10 @@ footer
     padding: 5px 0;
 }
 
-    footer .monogram
+    footer .innerFooter
     {
         height: 200px;
+        background-color: black;
     }
 
 ul
