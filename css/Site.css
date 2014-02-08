@@ -881,6 +881,14 @@ input[type="checkbox"].input-validation-error
 }
 
 
+/************************************
+*   Reward Style Widget Overrides   *
+************************************/
+.ltk-table
+{
+    width: 50%;
+    display: inline-block;
+}
 
 
 /********************
