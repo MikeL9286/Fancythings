@@ -890,7 +890,7 @@ input[type="checkbox"].input-validation-error
     display: inline-block;*/
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    padding: 5px;       
+    padding: 10px;       
 }
 
 
