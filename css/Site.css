@@ -836,6 +836,21 @@ ul
 /********************
 *   Mobile Styles   *
 ********************/
+@media only screen and (max-width: 1100px)
+{
+    .copyrightInfo
+    {
+        float: none;
+        display: block;
+    }
+
+    .footerLinks
+    {
+        float: none;
+        display: block;
+    }
+}
+
 @media only screen and (max-width: 860px)
 {
     .Slideshow
@@ -872,11 +887,6 @@ ul
     }
 }
 
-
-
-/********************
-*   Mobile Styles   *
-********************/
 @media only screen and (max-width: 500px)
 {
     header img
