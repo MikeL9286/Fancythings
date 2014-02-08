@@ -574,6 +574,11 @@ footer
     clear: both;
 }
 
+    footer .monogram
+    {
+        margin-bottom: 20px;
+    }
+
 ul
 {
     -webkit-margin-before: 0;
