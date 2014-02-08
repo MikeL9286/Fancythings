@@ -1,11 +1,12 @@
 ﻿
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-@font-face {
-font-family: 'FontAwesome';
-font-size: 1.35em;
-src: url('fonts/fontawesome-webfont.svg') format('svg');
-
-}
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+    @font-face
+    {
+        font-family: 'FontAwesome';
+        font-size: 1.35em;
+        src: url('fonts/fontawesome-webfont.svg') format('svg');
+    }
 }
 
 body
@@ -106,25 +107,25 @@ nav
         letter-spacing: 3px;
     }
 
-        nav.navRight > a:first-of-type
-        {
-            margin-left: 40px;
-        }
+    nav.navRight > a:first-of-type
+    {
+        margin-left: 40px;
+    }
 
-        nav.navRight > a:last-of-type
-        {
-            margin-right: 0;
-        }
+    nav.navRight > a:last-of-type
+    {
+        margin-right: 0;
+    }
 
     nav.navTop, nav.navBottom
     {
         display: none;
     }
 
-        nav > a:hover
-        {
-            color: #5ABECC;
-        }
+    nav > a:hover
+    {
+        color: #5ABECC;
+    }
 
 .float-left
 {
@@ -452,12 +453,12 @@ div.broken > a
     margin: 0 1%;
 }
 
-.Slideshow .Slideleft:hover, .Slideshow .Slideright:hover
-{
-    opacity: .5;
-    display: block;
-    cursor: pointer;
-}
+    .Slideshow .Slideleft:hover, .Slideshow .Slideright:hover
+    {
+        opacity: .5;
+        display: block;
+        cursor: pointer;
+    }
 
 .Slideshow .Slideleft
 {
@@ -486,13 +487,13 @@ div.broken > a
     {
         position: absolute;
         top: 0;
-        z-index:7;
+        z-index: 7;
         display: none;
     }
 
     .SlideContainer div.next
     {
-        z-index:8;
+        z-index: 8;
     }
 
     .SlideContainer div.live
@@ -516,18 +517,18 @@ div.broken > a
     background-color: #aaa;
 }
 
-.SlideToolbar > ul > li
-{
-    display: inline-block;
-    height: 14px;
-    width: 14px;
-    border-radius: 7px;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
-    background-color: #222;
-    cursor: pointer;
-    margin: 0 5px 0 5px;
-}
+    .SlideToolbar > ul > li
+    {
+        display: inline-block;
+        height: 14px;
+        width: 14px;
+        border-radius: 7px;
+        -moz-border-radius: 7px;
+        -webkit-border-radius: 7px;
+        background-color: #222;
+        cursor: pointer;
+        margin: 0 5px 0 5px;
+    }
 
 .SlideBlobs
 {
@@ -555,16 +556,16 @@ div.broken > a
         opacity: .9;
     }
 
-    .Portals .topLeft
-    {
-        margin: 0 2% 2% 0;
-    }
+.Portals .topLeft
+{
+    margin: 0 2% 2% 0;
+}
 
-    .Portals .bottomLeft
-    {
-        margin-right: 2%;
-        clear: both;
-    }
+.Portals .bottomLeft
+{
+    margin-right: 2%;
+    clear: both;
+}
 
 footer
 {
@@ -579,6 +580,19 @@ footer
         height: 200px;
         background-color: black;
         color: white;
+    }
+
+.footerLinks
+{
+    list-style-type: none;
+    -webkit-padding-start: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+    .footerLinks li
+    {
+        display: inline-block;
     }
 
 ul
@@ -607,40 +621,40 @@ ul
     z-index: 99;
 }
 
-    .SocialIcons ul
+.SocialIcons ul
+{
+    padding-top: 7px;
+    list-style-type: none;
+    -webkit-padding-start: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    text-align: right;
+}
+
+    .SocialIcons ul > li
     {
-        padding-top: 7px;
-        list-style-type: none;
-        -webkit-padding-start: 0;
-        -webkit-margin-before: 0;
-        -webkit-margin-after: 0;
-        height: 100%;
-        width: 80%;
-        margin: 0 auto 0 auto;
-        text-align: right;
+        display: inline;
+        margin: 0 5px 0 5px;
     }
 
-        .SocialIcons ul > li
+        .SocialIcons ul > li:hover
         {
-            display: inline;
-            margin: 0 5px 0 5px;
+            opacity: .85;
         }
 
-            .SocialIcons ul > li:hover
-            {
-                opacity: .85;
-            }
+.SocialIcons a
+{
+    display: inline-block;
+    font-size: 1.35em;
+}
 
-    .SocialIcons a
+    .SocialIcons a:hover
     {
-        display: inline-block;
-        font-size: 1.35em;
+        color: #5ABECC;
     }
-
-        .SocialIcons a:hover
-        {
-            color: #5ABECC;
-        }
 
 
 /* Services Styles
@@ -667,10 +681,10 @@ ul
     cursor: pointer;
 }
 
-.serviceTile:hover
-{
-    background-color: #f0f0f0;
-}
+    .serviceTile:hover
+    {
+        background-color: #f0f0f0;
+    }
 
     .serviceTile > header
     {
@@ -681,9 +695,9 @@ ul
     }
 
     .serviceTile .fa
-        {
-            width: 20px;
-        }
+    {
+        width: 20px;
+    }
 
     .serviceTile > .serviceDesc
     {
@@ -700,11 +714,11 @@ ul
     margin-top: 15px;
 }
 
-.inquiryBtn:hover
-{
-    background-color: #4AAEBC;
-    border-color: #2A8E9C;
-}
+    .inquiryBtn:hover
+    {
+        background-color: #4AAEBC;
+        border-color: #2A8E9C;
+    }
 
 /* About sections
 ---------------------------------------------------------*/
@@ -752,7 +766,7 @@ ul
 
 .aboutPoint
 {
-    height:45px;
+    height: 45px;
     text-transform: uppercase;
     margin-bottom: 3%;
     font-family: Montserrat;
@@ -769,77 +783,24 @@ ul
     margin-bottom: 5px;
 }
 
-.aboutImg img
+    .aboutImg img
+    {
+        height: auto;
+        width: 100%;
+    }
+
+
+
+/************************************
+*   Reward Style Widget Overrides   *
+************************************/
+.ltkwidget-widget
 {
-    height: auto;
-    width: 100%
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 15px;
+    margin: 50px 25px;
 }
-
-/* info and errors */
-.message-info
-{
-    border: 1px solid;
-    clear: both;
-    padding: 10px 20px;
-}
-
-.message-error
-{
-    clear: both;
-    color: #e80c4d;
-    font-size: 1.1em;
-    font-weight: bold;
-    margin: 20px 0 10px 0;
-}
-
-.message-success
-{
-    color: #7ac0da;
-    font-size: 1.3em;
-    font-weight: bold;
-    margin: 20px 0 10px 0;
-}
-
-.error
-{
-    color: #e80c4d;
-}
-
-/* styles for validation helpers */
-.field-validation-error
-{
-    color: #e80c4d;
-    font-weight: bold;
-}
-
-.field-validation-valid
-{
-    display: none;
-}
-
-input.input-validation-error
-{
-    border: 1px solid #e80c4d;
-}
-
-input[type="checkbox"].input-validation-error
-{
-    border: 0 none;
-}
-
-.validation-summary-errors
-{
-    color: #e80c4d;
-    font-weight: bold;
-    font-size: 1.1em;
-}
-
-.validation-summary-valid
-{
-    display: none;
-}
-
-
 
 
 
@@ -865,15 +826,15 @@ input[type="checkbox"].input-validation-error
         margin: 0 10% 0 10%;
     }
 
-    .Portals .topLeft
-    {
-        margin: 0 1% 1% 0;
-    }
+        .Portals .topLeft
+        {
+            margin: 0 1% 1% 0;
+        }
 
-    .Portals .bottomLeft
-    {
-        margin-right: 1%;
-    }
+        .Portals .bottomLeft
+        {
+            margin-right: 1%;
+        }
 
     footer
     {
@@ -882,19 +843,6 @@ input[type="checkbox"].input-validation-error
     }
 }
 
-
-/************************************
-*   Reward Style Widget Overrides   *
-************************************/
-.ltkwidget-widget
-{
-    /*width: 50%;
-    display: inline-block;*/
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    padding: 15px;       
-    margin: 50px 25px;
-}
 
 
 /********************
