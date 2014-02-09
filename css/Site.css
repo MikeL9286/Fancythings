@@ -543,7 +543,7 @@ footer
     text-align: center;
     font-family: Segoe UI, Raleway, Arial, sans-serif;
     border-top: 1px solid black;
-    padding: 2px 0;
+    padding-top: 2px;
 }
 
     footer .innerFooter
