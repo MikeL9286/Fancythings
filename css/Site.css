@@ -639,13 +639,13 @@ ul
     {
         display: inline;
         margin: 0 5px 0 5px;
-        color: white;
     }
 
 .SocialIcons a
 {
     display: inline-block;
     font-size: 1.35em;
+    color: white;
 }
 
     .SocialIcons a:hover
