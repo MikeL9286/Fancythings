@@ -582,6 +582,7 @@ footer
     .footerLinks li
     {
         display: inline-block;
+        margin-right: 10px;
     }
 
     .footerLinks a
