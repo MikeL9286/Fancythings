@@ -18,7 +18,9 @@
     </div>
 
 <script type="text/javascript">
-    $('.SlideContainer .live').imagesLoaded(function () {
-        Slideshow.Start();
+    $(window).load(function () {
+        $('.SlideContainer .live').imagesLoaded(function () {
+            Slideshow.Start();
+        });
     });
 </script>
