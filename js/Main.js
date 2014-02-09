@@ -1,9 +1,9 @@
 ﻿(function (Main, $, undefined) {
     
-    $(function () {
+    $(window).load(function() {
         if (navigator.userAgent.indexOf('Safari') != -1 &&
             navigator.userAgent.indexOf('Chrome') == -1) {
-            $(".Portals").attr("max-width", "33.83%");
+            $(".Portals").attr("style", "max-width:33.83%");
         }
     });
 
