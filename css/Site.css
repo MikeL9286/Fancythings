@@ -25,7 +25,7 @@ body
 div.ContentWrapper
 {
     height: 100%;
-    margin: 30px auto 0 auto;
+    margin: 40px auto 0 auto;
 }
 
     div.ContentWrapper:before, div.ContentWrapper:after
