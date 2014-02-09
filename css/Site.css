@@ -608,10 +608,11 @@ ul
 {
     position: fixed;
     top: 0px;
-    height: 30px;
+    height: 40px;
     width: 100%;
     text-align: center;
     z-index: 2000;
+    background-color: black;
 }
 
 .SocialIconsBG
@@ -623,7 +624,7 @@ ul
 
 .SocialIcons ul
 {
-    padding-top: 7px;
+    padding-top: 10px;
     list-style-type: none;
     -webkit-padding-start: 0;
     -webkit-margin-before: 0;
@@ -638,12 +639,8 @@ ul
     {
         display: inline;
         margin: 0 5px 0 5px;
+        color: white;
     }
-
-        .SocialIcons ul > li:hover
-        {
-            opacity: .85;
-        }
 
 .SocialIcons a
 {
