@@ -118,6 +118,7 @@
     <Content Include="img\stacked_socialmeeds2.png" />
     <Content Include="img\tulips.JPG" />
     <Content Include="img\welcome_slide.jpeg" />
+    <Content Include="img\white_monogram.png" />
     <Content Include="img\zara_pumps.JPG" />
     <Content Include="js\Blog.js" />
     <Content Include="js\ContentLoader.js" />
