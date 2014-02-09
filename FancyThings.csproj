@@ -82,8 +82,10 @@
     <Content Include="img\aboutArmParty.jpg" />
     <Content Include="img\aboutEspresso.jpg" />
     <Content Include="img\aboutImg.jpg" />
+    <Content Include="img\aboutNotes.jpg" />
     <Content Include="img\aboutPeonies.jpg" />
     <Content Include="img\aboutRocky.jpg" />
+    <Content Include="img\aboutWishlist.jpg" />
     <Content Include="img\about_image.png" />
     <Content Include="img\about_photo.jpg" />
     <Content Include="img\about_portal2.png" />
