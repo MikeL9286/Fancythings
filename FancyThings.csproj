@@ -119,11 +119,12 @@
     <Content Include="img\shop_portal3.png" />
     <Content Include="img\slidePurse.jpeg" />
     <Content Include="img\slideSweater.jpeg" />
+    <Content Include="img\slideWelcome.jpeg" />
     <Content Include="img\socialIcons.png" />
     <Content Include="img\socialmeeds.png" />
     <Content Include="img\stacked_socialmeeds2.png" />
     <Content Include="img\tulips.JPG" />
-    <Content Include="img\slideWelcome.jpeg" />
+    <Content Include="img\slideWelcome2.jpeg" />
     <Content Include="img\white_monogram.png" />
     <Content Include="img\zara_pumps.JPG" />
     <Content Include="js\Blog.js" />
