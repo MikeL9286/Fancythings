@@ -106,6 +106,8 @@
     <Content Include="img\leopard_armparty.JPG" />
     <Content Include="img\logo_site.png" />
     <Content Include="img\nailpolishes.jpg" />
+    <Content Include="img\slideDesk.jpeg" />
+    <Content Include="img\slideLipstick.jpeg" />
     <Content Include="img\slidePencil.jpeg" />
     <Content Include="img\services_portal2.jpg" />
     <Content Include="img\services_portal3.jpg" />
@@ -115,6 +117,8 @@
     <Content Include="img\shop_image_oldest.png" />
     <Content Include="img\shop_portal2.png" />
     <Content Include="img\shop_portal3.png" />
+    <Content Include="img\slidePurse.jpeg" />
+    <Content Include="img\slideSweater.jpeg" />
     <Content Include="img\socialIcons.png" />
     <Content Include="img\socialmeeds.png" />
     <Content Include="img\stacked_socialmeeds2.png" />
