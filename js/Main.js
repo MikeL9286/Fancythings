@@ -6,13 +6,13 @@
             $(".Portals").attr("style", "max-width:33.83%");
         }
 
-        //load slideshow after portal images are finished loading
-        $('.Portals').imagesLoaded(function () {
-            $('.Slideshow').removeAttr('style');
-        });
+        ////load slideshow after portal images are finished loading
+        //$('.Portals').imagesLoaded(function () {
+        //    $('.Slideshow').removeAttr('style');
+        //});
 
         $('.Slideshow').imagesLoaded(function () {
-            Main.LoadRewardStyle();
+            $('ltkwidget-widget').removeAttr('style');
         });
     });
 
