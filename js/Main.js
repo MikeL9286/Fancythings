@@ -6,14 +6,11 @@
             $(".Portals").attr("style", "max-width:33.83%");
         }
 
-        ////load slideshow after portal images are finished loading
-        //$('.Portals').imagesLoaded(function () {
-        //    $('.Slideshow').removeAttr('style');
-        //});
-
         $('.Slideshow').imagesLoaded(function () {
             $('.ltkwidget-widget').removeAttr('style');
         });
+
+        $('footer').removeAttr('style');
     });
 
     Main.LoadRewardStyle = function() {
