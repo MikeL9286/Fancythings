@@ -12,7 +12,7 @@
         //});
 
         $('.Slideshow').imagesLoaded(function () {
-            $('ltkwidget-widget').removeAttr('style');
+            $('.ltkwidget-widget').removeAttr('style');
         });
     });
 
