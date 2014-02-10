@@ -5,15 +5,16 @@
             navigator.userAgent.indexOf('Chrome') == -1) {
             $(".Portals").attr("style", "max-width:33.83%");
         }
+
+        //load slideshow after portal images are finished loading
+        $('.Portals').imagesLoaded(function () {
+            $('.Slideshow').removeAttr('style');
+        });
+
+        $('.Slideshow').imagesLoaded(function () {
+            Main.LoadRewardStyle();
+        });
     });
-
-    //load portals
-
-    //load slideshow
-
-    //load reward style
-
-    //load about images
 
     Main.LoadRewardStyle = function() {
         !function (d, s, id) {

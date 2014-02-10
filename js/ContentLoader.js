@@ -9,19 +9,19 @@
 
     ContentLoader.Load = function () {
         var currentUrl = window.location.href;
-        var index = $("div#body");
+        var body = $("div#body");
 
         if (currentUrl.indexOf("Blog") != -1) {
-            index.load("views/blog/Index.html");
+            body.load("views/blog/Index.html");
         }
         else if (currentUrl.indexOf("Services") != -1) {
-            index.load("views/services/index.html");
+            body.load("views/services/index.html");
         }
         else if (currentUrl.indexOf("About") != -1) {
-            index.load("views/about/index.html");
+            body.load("views/about/index.html");
         }
         else {
-            index.load("views/home/Index.html");
+            body.load("views/home/Index.html");
         }
     };
 
