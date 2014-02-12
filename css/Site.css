@@ -610,7 +610,7 @@ ul
 {
     position: fixed;
     top: 0px;
-    height: 35px;
+    height: 40px;
     width: 100%;
     text-align: center;
     z-index: 2000;
@@ -626,7 +626,7 @@ ul
 
 .SocialIcons ul
 {
-    padding-top: 10px;
+    padding-top: 12px;
     list-style-type: none;
     -webkit-padding-start: 0;
     -webkit-margin-before: 0;
