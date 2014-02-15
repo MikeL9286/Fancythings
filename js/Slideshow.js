@@ -97,12 +97,8 @@
         var newWidth = $('.SlideContainer div.live').width();
         $('.SlideContainer div.filler').width(newWidth);
 
-        //if safari
-        if (navigator.userAgent.indexOf('Safari') != -1 &&
-            navigator.userAgent.indexOf('Chrome') == -1)
-        {
+        if (Main.IsSafari())
             resizePortalsForSafari();
-        }
     }
 
     function resizePortalsForSafari()
@@ -111,16 +107,15 @@
 
         if (length > 0)
             $(".Portals").attr("style", "max-width:33.83%");
-        else if (length <= 0)
+        else
             $(".Portals").removeAttr("style");
     }
 
-    window.addEventListener('resize', setSlideshowSize, false);
-
     $(window).on("orientationchange", function (event) {
-        if (Main.IsSafari) {
+        if (Main.IsSafari())
             resizePortalsForSafari
-        }
     });
+
+    window.addEventListener('resize', setSlideshowSize, false);
 
 } (window.Slideshow = window.Slideshow || {}, jQuery))

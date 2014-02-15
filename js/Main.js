@@ -25,6 +25,11 @@
         $('footer').height(footerHeight);
     }
 
-    window.addEventListener('resize', Main.ResizeFooter, false);
+    $(window).on("orientationchange", function (event) {
+        if (Main.IsSafari())
+            resizePortalsForSafari
+    });
+
+    $(window).bind('resize, orientationchange', Main.ResizeFooter);
 
 } (window.Main = window.Main || {}, jQuery))
