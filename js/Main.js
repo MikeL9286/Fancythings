@@ -21,8 +21,10 @@
         var footerHeight = windowHeight - (socialHeight + contentHeight) - footerMargin;
         $('.footerSize').html('ws: ' + windowHeight + ' ss: ' + socialHeight + ' cs: ' + contentHeight + ' fs: ' + footerHeight);
 
-        if (windowHeight > 1000)
-            $('footer').height(footerHeight);
+        if (window.devicePixelRatio > 1)
+            footerHeight = footerHeight / 2;
+
+        $('footer').height(footerHeight);
     }
 
     window.addEventListener('resize', Main.ResizeFooter, false);
