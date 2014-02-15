@@ -98,6 +98,6 @@
         $('.SlideContainer div.filler').width(newWidth);
     }
 
-    window.onresize = setSlideshowSize;
+    window.addEventListener('resize', setSlideshowSize, false);
 
 } (window.Slideshow = window.Slideshow || {}, jQuery))

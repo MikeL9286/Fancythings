@@ -14,13 +14,13 @@
     });
 
     Main.ResizeFooter = function () {
-        var socailHeight = $('.SocialIcons').height();
+        var socialHeight = $('.SocialIcons').height();
         var contentHeight = $('.Content').height();
         
         var footerHeight = $(window).height - (socialHeight + contentHeight);
         $('footer').height(footerHeight);
     }
 
-    window.onresize = Main.ResizeFooter;
+    window.addEventListener('resize', Main.ResizeFooter, false);
 
 } (window.Main = window.Main || {}, jQuery))
