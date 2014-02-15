@@ -17,7 +17,7 @@
         var socialHeight = $('.SocialIcons').height();
         var contentHeight = $('.Content').height();
         
-        var footerHeight = $(window).height - (socialHeight + contentHeight);
+        var footerHeight = $(window).height() - (socialHeight + contentHeight);
         $('footer').height(footerHeight);
     }
 
