@@ -19,6 +19,7 @@
         
         var footerHeight = $(window).height() - (socialHeight + contentHeight) - footerMargin;
         $('footer').height(footerHeight);
+        $('.footerSize').html(footerHeight);
     }
 
     window.addEventListener('resize', Main.ResizeFooter, false);
