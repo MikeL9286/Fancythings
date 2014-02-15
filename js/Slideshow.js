@@ -118,8 +118,7 @@
     window.addEventListener('resize', setSlideshowSize, false);
 
     $(window).on("orientationchange", function (event) {
-        if (navigator.userAgent.indexOf('Safari') != -1 &&
-            navigator.userAgent.indexOf('Chrome') == -1) {
+        if (Main.IsSafari) {
             resizePortalsForSafari
         }
     });

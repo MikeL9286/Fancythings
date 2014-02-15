@@ -5,6 +5,12 @@
         Main.ResizeFooter();
     });
 
+    Main.IsSafari = function () {
+        if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1)
+            return true;
+        return false;
+    }
+
     Main.ResizeFooter = function () {
         var windowHeight = $(window).height();
         var socialHeight = $('.SocialIcons').height();
