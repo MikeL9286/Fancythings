@@ -19,11 +19,7 @@
         footerMargin = footerMargin.substring(0, (footerMargin - 2));
         
         var footerHeight = windowHeight - (socialHeight + contentHeight) - footerMargin;
-        $('.footerSize').html('ws: ' + windowHeight + ' ss: ' + socialHeight + ' cs: ' + contentHeight + ' fs: ' + footerHeight + ' pr: ' + window.devicePixelRatio);
-
-        if (window.devicePixelRatio > 1) {
-            footerHeight = footerHeight / 2;
-        }
+        $('.footerSize').html('wh: ' + windowHeight + ' ww: ' + window.width() + ' s: ' + socialHeight + ' c: ' + contentHeight + ' f: ' + footerHeight);
 
         $('footer').height(footerHeight);
     }
