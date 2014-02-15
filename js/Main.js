@@ -21,8 +21,11 @@
         var footerHeight = windowHeight - (socialHeight + contentHeight) - footerMargin;
         $('.footerSize').html('ws: ' + windowHeight + ' ss: ' + socialHeight + ' cs: ' + contentHeight + ' fs: ' + footerHeight);
 
-        if (window.devicePixelRatio > 1)
+        if (window.devicePixelRatio > 1) {
             footerHeight = footerHeight / 2;
+            $('.footerSize').html('ws: ' + windowHeight + ' ss: ' + socialHeight + ' cs: ' + contentHeight + ' fs: ' + footerHeight);
+            alert('retina');
+        }
 
         $('footer').height(footerHeight);
     }
