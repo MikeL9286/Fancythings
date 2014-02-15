@@ -6,11 +6,8 @@
             $(".Portals").attr("style", "max-width:33.83%");
         }
 
-        $('.Slideshow').imagesLoaded(function () {
-            $('.ltkwidget-widget').removeAttr('style');
-        });
-
         $('footer').removeAttr('style');
+        Main.ResizeFooter();
     });
 
     Main.ResizeFooter = function () {
