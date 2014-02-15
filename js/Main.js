@@ -1,12 +1,6 @@
 ﻿(function (Main, $, undefined) {
     
     $(window).load(function() {
-        if (navigator.userAgent.indexOf('Safari') != -1 &&
-            navigator.userAgent.indexOf('Chrome') == -1 &&
-            $('.Slideshow:visible').length > 0) {
-            $(".Portals").attr("style", "max-width:33.83%");
-        }
-
         $('footer').removeAttr('style');
         Main.ResizeFooter();
     });
@@ -20,7 +14,7 @@
         footerMargin = footerMargin.substring(0, (footerMargin - 2));
         
         var footerHeight = windowHeight - (socialHeight + contentHeight) - footerMargin;
-        $('.footerSize').html('wh: ' + windowHeight + ' ww: ' + $(window).width() + ' s: ' + socialHeight + ' c: ' + contentHeight + ' f: ' + footerHeight);
+        $('.footerSize').html('wh: ' + windowHeight + ' ww: ' + $(window).width() + ' s: ' + socialHeight + ' c: ' + contentHeight + ' m: ' + footerMargin + ' f: ' + footerHeight);
 
         $('footer').height(footerHeight);
     }
