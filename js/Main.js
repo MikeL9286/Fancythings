@@ -19,7 +19,7 @@
         footerMargin = footerMargin.substring(0, (footerMargin - 2));
         
         var footerHeight = windowHeight - (socialHeight + contentHeight) - footerMargin;
-        $('.footerSize').html('wh: ' + windowHeight + ' ww: ' + window.width() + ' s: ' + socialHeight + ' c: ' + contentHeight + ' f: ' + footerHeight);
+        $('.footerSize').html('wh: ' + windowHeight + ' ww: ' + $(window).width() + ' s: ' + socialHeight + ' c: ' + contentHeight + ' f: ' + footerHeight);
 
         $('footer').height(footerHeight);
     }
