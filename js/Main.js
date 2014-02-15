@@ -2,7 +2,8 @@
     
     $(window).load(function() {
         if (navigator.userAgent.indexOf('Safari') != -1 &&
-            navigator.userAgent.indexOf('Chrome') == -1) {
+            navigator.userAgent.indexOf('Chrome') == -1 &&
+            $('.Slideshow:visible').length > 0) {
             $(".Portals").attr("style", "max-width:33.83%");
         }
 
