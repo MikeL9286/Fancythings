@@ -96,6 +96,23 @@
 
         var newWidth = $('.SlideContainer div.live').width();
         $('.SlideContainer div.filler').width(newWidth);
+
+        //if safari
+        if (navigator.userAgent.indexOf('Safari') != -1 &&
+            navigator.userAgent.indexOf('Chrome') == -1)
+        {
+            resizePortalsForSafari();
+        }
+    }
+
+    function resizePortalsForSafari()
+    {
+        var length = $('.Slideshow:visible');
+
+        if (length > 0)
+            $(".Portals").attr("style", "max-width:33.83%");
+        else if (length <= 0)
+            $(".Portals").removeAttr("style");
     }
 
     window.addEventListener('resize', setSlideshowSize, false);
