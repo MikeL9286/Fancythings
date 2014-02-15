@@ -13,8 +13,11 @@
     Main.ResizeFooter = function () {
         var socialHeight = $('.SocialIcons').height();
         var contentHeight = $('.Content').height();
+
+        var footerMargin = $('footer').css('margin-top');
+        footerMargin = footerMargin.substring(0, (footerMargin - 2));
         
-        var footerHeight = $(window).height() - (socialHeight + contentHeight);
+        var footerHeight = $(window).height() - (socialHeight + contentHeight) - footerMargin;
         $('footer').height(footerHeight);
     }
 
