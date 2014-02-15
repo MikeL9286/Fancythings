@@ -30,6 +30,6 @@
             resizePortalsForSafari
     });
 
-    $(window).bind('resize, orientationchange', Main.ResizeFooter);
+    $(window).bind('resize orientationchange', Main.ResizeFooter);
 
 } (window.Main = window.Main || {}, jQuery))
