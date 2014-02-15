@@ -546,11 +546,14 @@ footer
     padding-top: 2px;
     margin-top: 25px;
     height: 150px;
+    display: flex;
+    width: 100%;
 }
 
     footer .innerFooter
     {
         height: inherit;
+        width: inherit;
         background-color: black;
         color: #e1e1e1;
         text-transform: uppercase;
