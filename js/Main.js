@@ -20,6 +20,7 @@
         var footerHeight = $(window).height() - (socialHeight + contentHeight) - footerMargin;
         $('footer').height(footerHeight);
         $('.footerSize').html('ws: ' + $(window).height() + ' ss: ' + socialHeight + ' cs: ' + contentHeight + ' fs: ' + footerHeight);
+        alert('resized footer');
     }
 
     window.addEventListener('resize', Main.ResizeFooter, false);
