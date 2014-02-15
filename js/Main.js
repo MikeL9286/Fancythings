@@ -11,16 +11,18 @@
     });
 
     Main.ResizeFooter = function () {
+        var windowHeight = $(window).height();
         var socialHeight = $('.SocialIcons').height();
         var contentHeight = $('.Content').height();
 
         var footerMargin = $('footer').css('margin-top');
         footerMargin = footerMargin.substring(0, (footerMargin - 2));
         
-        var footerHeight = $(window).height() - (socialHeight + contentHeight) - footerMargin;
-        $('footer').height(footerHeight);
-        $('.footerSize').html('ws: ' + $(window).height() + ' ss: ' + socialHeight + ' cs: ' + contentHeight + ' fs: ' + footerHeight);
-        alert('resized footer');
+        var footerHeight = windowHeight - (socialHeight + contentHeight) - footerMargin;
+        $('.footerSize').html('ws: ' + windowHeight + ' ss: ' + socialHeight + ' cs: ' + contentHeight + ' fs: ' + footerHeight);
+
+        if (windowHeight > 1000)
+            $('footer').height(footerHeight);
     }
 
     window.addEventListener('resize', Main.ResizeFooter, false);

@@ -96,8 +96,6 @@
 
         var newWidth = $('.SlideContainer div.live').width();
         $('.SlideContainer div.filler').width(newWidth);
-
-        alert('resized slideshow');
     }
 
     window.addEventListener('resize', setSlideshowSize, false);
