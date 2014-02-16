@@ -12,6 +12,8 @@
         $('.footerSize').html('calc: ' + windowHeight + ' - ' + socialHeight + ' - ' + contentHeight + ' - ' + footerMargin + ' = ' + footerHeight);
 
         $('footer').height(footerHeight);
+
+        console.log('resized');
     }
 
     window.addEventListener('resize orientationchange', Footer.Resize, false);
