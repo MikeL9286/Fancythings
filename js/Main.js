@@ -1,9 +1,9 @@
 ﻿(function (Main, $, undefined) {
     
-    $(window).load(function() {
-        $('footer').removeAttr('style');
-        Main.ResizeFooter();
-    });
+    //$(window).load(function() {
+    //    $('footer').removeAttr('style');
+    //    Main.ResizeFooter();
+    //});
 
     Main.IsSafari = function () {
         if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1)
@@ -25,11 +25,11 @@
         $('footer').height(footerHeight);
     }
 
-    $(window).on("orientationchange", function (event) {
-        if (Main.IsSafari())
-            resizePortalsForSafari
-    });
+    //$(window).on("orientationchange", function (event) {
+    //    if (Main.IsSafari())
+    //        resizePortalsForSafari
+    //});
 
-    $(window).bind('resize orientationchange', Main.ResizeFooter);
+    //$(window).bind('resize orientationchange', Main.ResizeFooter);
 
 } (window.Main = window.Main || {}, jQuery))

@@ -97,6 +97,8 @@
         var newWidth = $('.SlideContainer div.live').width();
         $('.SlideContainer div.filler').width(newWidth);
 
+        Main.ResizeFooter();
+
         if (Main.IsSafari())
             resizePortalsForSafari();
     }
@@ -111,11 +113,11 @@
             $(".Portals").removeAttr("style");
     }
 
-    $(window).on("orientationchange", function (event) {
-        if (Main.IsSafari())
-            resizePortalsForSafari
-    });
+    //$(window).on("orientationchange", function (event) {
+    //    if (Main.IsSafari())
+    //        resizePortalsForSafari
+    //});
 
-    window.addEventListener('resize', setSlideshowSize, false);
+    window.addEventListener('resize orientationchange', setSlideshowSize, false);
 
 } (window.Slideshow = window.Slideshow || {}, jQuery))
