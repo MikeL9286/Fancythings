@@ -6,8 +6,8 @@
         return false;
     }
 
-    window.addEventListener('load', function () {
-        $('footer').removeAttr('style');
-    }, false);
+    //window.addEventListener('load', function () {
+    //    $('footer').removeAttr('style');
+    //}, false);
 
 } (window.Main = window.Main || {}, jQuery))

@@ -12,8 +12,10 @@
         $('.footerSize').html('calc: ' + windowHeight + ' - ' + socialHeight + ' - ' + contentHeight + ' - ' + footerMargin + ' = ' + footerHeight);
 
         $('footer').height(footerHeight);
+
+        console.log('resizing');
     }
 
-    window.addEventListener('resize orientationchange', Footer.Resize, false);
+    //window.addEventListener('resize orientationchange', Footer.Resize, false);
 
 }(window.Footer = window.Footer || {}, jQuery))
