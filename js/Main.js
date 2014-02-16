@@ -1,9 +1,4 @@
 ﻿(function (Main, $, undefined) {
-    
-    $(window).load(function() {
-        $('footer').removeAttr('style');
-        Main.ResizeFooter();
-    });
 
     Main.IsSafari = function () {
         if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1)
@@ -30,6 +25,9 @@
             resizePortalsForSafari
     });
 
-    $(window).bind('resize orientationchange', Main.ResizeFooter);
+    $(window).bind('load resize orientationchange', function () {
+        $('footer').removeAttr('style');
+        Main.ResizeFooter();
+    });
 
 } (window.Main = window.Main || {}, jQuery))
