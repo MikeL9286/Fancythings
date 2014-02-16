@@ -1,4 +1,9 @@
 ﻿(function (Main, $, undefined) {
+    
+    $(window).load(function() {
+        $('footer').removeAttr('style');
+        Main.ResizeFooter();
+    });
 
     Main.IsSafari = function () {
         if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1)
@@ -25,13 +30,6 @@
             resizePortalsForSafari
     });
 
-    $(window).bind('load resize orientationchange', function () {
-        Main.ResizeFooter();
-    });
-
-    $('.SlideContainer .live').imagesLoaded(function () {
-        $('footer').removeAttr('style');
-        Main.ResizeFooter();
-    });
+    $(window).bind('resize orientationchange', Main.ResizeFooter);
 
 } (window.Main = window.Main || {}, jQuery))
