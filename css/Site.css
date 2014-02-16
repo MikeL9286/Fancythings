@@ -443,7 +443,6 @@ div.broken > a
 
 .Slideshow .Slideleft, .Slideshow .Slideright
 {
-    display: none;
     position: absolute;
     top: 50%;
     z-index: 50;
@@ -456,7 +455,6 @@ div.broken > a
     .Slideshow .Slideleft:hover, .Slideshow .Slideright:hover
     {
         opacity: .5;
-        display: block;
         cursor: pointer;
     }
 
