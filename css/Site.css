@@ -754,6 +754,11 @@ ul
     text-transform: uppercase;
 }
 
+.columnWrapper
+{
+    text-align:center;
+}
+
 .leftColumn
 {
     display: inline-block;
@@ -775,6 +780,7 @@ ul
     text-transform: uppercase;
     margin-bottom: 3%;
     font-family: Montserrat;
+    text-align: center;
 }
 
 .aboutProfileImg
