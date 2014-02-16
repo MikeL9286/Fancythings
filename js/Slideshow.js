@@ -97,8 +97,6 @@
         var newWidth = $('.SlideContainer div.live').width();
         $('.SlideContainer div.filler').width(newWidth);
 
-        Footer.Resize();
-
         if (Main.IsSafari())
             resizePortalsForSafari();
     }

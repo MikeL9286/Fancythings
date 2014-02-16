@@ -14,8 +14,6 @@
         $('footer').height(footerHeight);
     }
 
-    window.addEventListener('load', function () {
-        $('footer').removeAttr('style');
-    }, false);
+    window.addEventListener('resize orientationchange', Footer.Resize, false);
 
 }(window.Footer = window.Footer || {}, jQuery))
