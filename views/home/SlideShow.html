@@ -27,8 +27,11 @@
 </div>
 
 <script type="text/javascript">
-    $('.SlideContainer .live').imagesLoaded(function () {
+    //$('.SlideContainer .live').imagesLoaded(function () {
+    //    Slideshow.Start();
+    //    $('footer').removeAttr('style');
+    //});
+    window.addEventListener('load', function () {
         Slideshow.Start();
-        $('footer').removeAttr('style');
-    });
+    }, false);
 </script>

@@ -32,4 +32,8 @@
 
     //$(window).bind('resize orientationchange', Main.ResizeFooter);
 
+    window.addEventListener('load', function () {
+        $('footer').removeAttr('style');
+    }, false);
+
 } (window.Main = window.Main || {}, jQuery))
