@@ -729,7 +729,6 @@ ul
 
 #aboutContainer
 {
-    text-align: center;
     padding: 0 20% 0 20%;
 }
 
@@ -780,7 +779,7 @@ ul
     text-transform: uppercase;
     margin-bottom: 3%;
     font-family: Montserrat;
-    text-align: center;
+    text-align: left;
 }
 
 .aboutProfileImg
