@@ -29,7 +29,7 @@
         Main.ResizeFooter();
     });
 
-    $('.Content').imagesLoaded(function () {
+    $('.SlideContainer .live').imagesLoaded(function () {
         $('footer').removeAttr('style');
         Main.ResizeFooter();
     });
