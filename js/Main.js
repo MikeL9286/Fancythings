@@ -26,6 +26,10 @@
     });
 
     $(window).bind('load resize orientationchange', function () {
+        Main.ResizeFooter();
+    });
+
+    $('.Content').imagesLoaded(function () {
         $('footer').removeAttr('style');
         Main.ResizeFooter();
     });
