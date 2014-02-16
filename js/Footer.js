@@ -12,10 +12,7 @@
         $('.footerSize').html('calc: ' + windowHeight + ' - ' + socialHeight + ' - ' + contentHeight + ' - ' + footerMargin + ' = ' + footerHeight);
 
         $('footer').height(footerHeight);
-
-        console.log('resizing');
+        $('footer').css('display', 'block');
     }
-
-    //window.addEventListener('resize orientationchange', Footer.Resize, false);
 
 }(window.Footer = window.Footer || {}, jQuery))
