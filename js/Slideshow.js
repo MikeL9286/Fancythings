@@ -12,7 +12,7 @@
     /*** Public methods ***/
 
     Slideshow.Start = function () {
-        setSlideshowSize();
+        Slideshow.Resize();
         slideTimer = window.setInterval(function () {
             Slideshow.InitSlide('right')
         }, delayTime);
@@ -90,7 +90,7 @@
         $('.Slideright').attr('onclick', "Slideshow.InitSlide('right')");
     }
 
-    function setSlideshowSize() {
+    Slideshow.Resize = function() {
         var newHeight = $('.SlideContainer div.live').height();
         $('.SlideContainer div.filler').height(newHeight);
 
@@ -111,10 +111,10 @@
             $(".Portals").removeAttr("style");
     }
 
-    window.addEventListener('resize orientationchange', setSlideshowSize, false);
+    //window.addEventListener('resize orientationchange', Slideshow.Resize, false);
 
-    window.addEventListener('load', function () {
-        Slideshow.Start();
-    }, false);
+    //window.addEventListener('load', function () {
+    //    Slideshow.Start();
+    //}, false);
 
 } (window.Slideshow = window.Slideshow || {}, jQuery))

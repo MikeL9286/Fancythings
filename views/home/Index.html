@@ -5,4 +5,13 @@
 <script type="text/javascript">
     $("section.Portals").load("views/home/Portals.html");
     $("section.Slideshow").load("views/home/SlideShow.html");
+
+    window.addEventListener('resize orientationchange', function () {
+        Slideshow.Resize();
+        Footer.Resize();
+    }, false);
+
+    window.addEventListener('load', function () {
+        Slideshow.Start();
+    }, false);
 </script>
