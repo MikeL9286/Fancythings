@@ -8,15 +8,18 @@
 
     $(function() {
         $(window).bind('resize orientationchange', function () {
+            alert('resize');
             Slideshow.Resize();
             Footer.Resize();
         });
 
         window.addEventListener('load', function () {
+            alert('load');
             //cleared
         }, false);
 
         $('.Slideshow').imagesLoaded(function () {
+            alert('images');
             Slideshow.Start();
             Footer.Resize();
         });

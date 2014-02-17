@@ -8,6 +8,7 @@
     }
 
     ContentLoader.Load = function () {
+        $('footer').css('display', 'none');
         Main.AttachEventListeners();
 
         var currentUrl = window.location.href;
