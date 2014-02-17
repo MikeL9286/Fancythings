@@ -433,6 +433,11 @@ div.broken > a
         text-decoration: none;
     }
 
+.HomeContainer
+{
+    text-align: center;
+}
+
 /* Slideshow styles
 ------------------------------------*/
 
