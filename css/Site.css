@@ -439,7 +439,7 @@ div.broken > a
 .Slideshow
 {
     float: right;
-    width: 64.25%;
+    width: 66.2%;
 }
 
 .SlideContainer:hover .Slideleft, .SlideContainer:hover .Slideright
@@ -514,7 +514,7 @@ div.broken > a
 {
     float: left;
     /*max-width: 33.75%;*/
-    width: 33.75%;
+    width: 33.7%;
     z-index: 1000;
     display: inline-block;
 }
