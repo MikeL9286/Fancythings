@@ -33,16 +33,12 @@ $(function () {
             Footer.Resize();
         });
 
-        $(window).bind('load', function () {
-            alert('load');
+        $(window).unbind('load');
+
+        $('.Slideshow').imagesLoaded(function () {
+            alert('images');
             Slideshow.Start();
             Footer.Resize();
         });
-
-        //$('.Slideshow').imagesLoaded(function () {
-        //    alert('images');
-        //    Slideshow.Start();
-        //    Footer.Resize();
-        //});
     }());
 </script>
