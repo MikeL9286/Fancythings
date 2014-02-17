@@ -129,11 +129,11 @@
     <Content Include="img\zara_pumps.JPG" />
     <Content Include="js\Blog.js" />
     <Content Include="js\ContentLoader.js" />
+    <Content Include="js\Footer.js" />
     <Content Include="js\imagesloaded.pkgd.min.js" />
     <Content Include="js\Slideshow.js" />
     <Content Include="js\Main.js" />
     <Content Include="js\google.analytics.js" />
-    <Content Include="js\Slideshow_old.js" />
     <Content Include="js\jquery-1.9.1-vsdoc.js" />
     <Content Include="js\jquery-1.9.1.js" />
     <Content Include="js\jquery-1.9.1.min.js" />
