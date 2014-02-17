@@ -7,12 +7,12 @@
     $("section.Slideshow").load("views/home/SlideShow.html");
 
     $(function() {
-        //$(window).resize(function () {
-        //    Slideshow.Resize();
-        //    Footer.Resize();
-        //});
+        $(window).resize(function () {
+            Slideshow.Resize();
+            Footer.Resize();
+        });
 
-        window.addEventListener('resize orientationchange', function () {
+        window.addEventListener('orientationchange', function () {
             Slideshow.Resize();
             Footer.Resize();
         }, false);

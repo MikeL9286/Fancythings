@@ -7,7 +7,11 @@
     }
 
     Main.AttachEventListeners = function () {
-        window.addEventListener('resize orientationchange', function () {
+        $(window).resize(function () {
+            Footer.Resize();
+        });
+
+        window.addEventListener('orientationchange', function () {
             Footer.Resize();
         }, false);
 
