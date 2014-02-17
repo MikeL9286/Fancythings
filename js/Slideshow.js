@@ -101,6 +101,17 @@
             resizePortalsForSafari();
     }
 
+    Slideshow.Resize = function () {
+        var newHeight = $('.SlideContainer div.live').height();
+        $('.Slideshow').height(newHeight);
+
+        var newWidth = $('.SlideContainer div.live').width();
+        $('.Slideshow').width(newWidth);
+
+        if (Main.IsSafari())
+            resizePortalsForSafari();
+    }
+
     function resizePortalsForSafari()
     {
         var length = $('.Slideshow:visible');
