@@ -101,15 +101,24 @@
             resizePortalsForSafari();
     }
 
-    function resizePortalsForSafari()
-    {
+    function resizePortalsForSafari() {
         var length = $('.Slideshow:visible');
 
         if (length > 0)
-            $(".Portals").attr("style", "max-width:33.83%");
+            $(".Slideshow").attr("style", "width:66.1%");
         else
-            $(".Portals").removeAttr("style");
+            $(".Slideshow").removeAttr("style");
     }
+
+    //function resizePortalsForSafari()
+    //{
+    //    var length = $('.Slideshow:visible');
+
+    //    if (length > 0)
+    //        $(".Portals").attr("style", "max-width:33.83%");
+    //    else
+    //        $(".Portals").removeAttr("style");
+    //}
 
     //window.addEventListener('resize orientationchange', Slideshow.Resize, false);
 
