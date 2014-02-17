@@ -15,13 +15,14 @@
 
         window.addEventListener('load', function () {
             alert('load');
-            //cleared
-        }, false);
-
-        $('.Slideshow').imagesLoaded(function () {
-            alert('images');
             Slideshow.Start();
             Footer.Resize();
-        });
+        }, false);
+
+        //$('.Slideshow').imagesLoaded(function () {
+        //    alert('images');
+        //    Slideshow.Start();
+        //    Footer.Resize();
+        //});
     }());
 </script>
