@@ -8,6 +8,8 @@
     }
 
     ContentLoader.Load = function () {
+        Main.AttachEventListeners();
+
         var currentUrl = window.location.href;
         var body = $("div#body");
 

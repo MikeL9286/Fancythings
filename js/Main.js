@@ -6,8 +6,12 @@
         return false;
     }
 
-    window.addEventListener('load resize orientationchange', function () {
-        Footer.Resize();
-    }, false);
+    Main.AttachEventListeners = function () {
+        window.addEventListener('load resize orientationchange', function () {
+            Footer.Resize();
+        }, false);
+    }
+
+    Main.AttachEventListeners();
 
 } (window.Main = window.Main || {}, jQuery))
