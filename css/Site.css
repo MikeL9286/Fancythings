@@ -773,6 +773,11 @@ ul
     vertical-align: top;
 }
 
+.aboutGroup
+{
+    min-height: 332px;
+}
+
 .aboutPoint
 {
     height: 45px;
