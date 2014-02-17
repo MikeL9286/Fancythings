@@ -11,9 +11,9 @@
             Footer.Resize();
         });
 
-        window.addEventListener('load', function () {
+        $(window).bind('load', function () {
             Footer.Resize();
-        }, false);
+        });
     }
 
     Main.AttachEventListeners();

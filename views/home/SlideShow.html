@@ -33,11 +33,11 @@ $(function () {
             Footer.Resize();
         });
 
-        window.addEventListener('load', function () {
+        $(window).bind('load', function () {
             alert('load');
             Slideshow.Start();
             Footer.Resize();
-        }, false);
+        });
 
         //$('.Slideshow').imagesLoaded(function () {
         //    alert('images');
