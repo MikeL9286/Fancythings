@@ -436,6 +436,11 @@ div.broken > a
 /* Slideshow styles
 ------------------------------------*/
 
+.Slideshow
+{
+    width: 66.25%;
+}
+
 .SlideContainer:hover .Slideleft, .SlideContainer:hover .Slideright
 {
     display: block;
@@ -507,7 +512,8 @@ div.broken > a
 .Portals
 {
     float: left;
-    max-width: 33.75%;
+    /*max-width: 33.75%;*/
+    width: 33.75%;
     z-index: 1000;
     display: inline-block;
 }
