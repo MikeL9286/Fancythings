@@ -3,10 +3,10 @@
 <section class="Slideshow" />
 
 <script type="text/javascript">
-    $("section.Portals").load("views/home/Portals.html");
-    $("section.Slideshow").load("views/home/SlideShow.html");
+    $(function () {
+        $("section.Portals").load("views/home/Portals.html");
+        $("section.Slideshow").load("views/home/SlideShow.html");
 
-    $(function() {
         $(window).bind('resize orientationchange', function () {
             alert('resize');
             Slideshow.Resize();
