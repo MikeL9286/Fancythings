@@ -7,6 +7,8 @@
     }
 
     Main.AttachEventListeners = function () {
+        $('footer').css('display', 'block');
+
         $(window).resize(function () {
             Footer.Resize();
         });
