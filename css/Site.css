@@ -442,11 +442,6 @@ div.broken > a
     width: 64.25%;
 }
 
-    .Slideshow:after
-    {
-        clear: both;
-    }
-
 .SlideContainer:hover .Slideleft, .SlideContainer:hover .Slideright
 {
     display: block;
