@@ -438,8 +438,14 @@ div.broken > a
 
 .Slideshow
 {
-    
+    float: right;
+    width: 64.25%;
 }
+
+    .Slideshow:after
+    {
+        clear: both;
+    }
 
 .SlideContainer:hover .Slideleft, .SlideContainer:hover .Slideright
 {
@@ -552,6 +558,7 @@ footer
     margin-top: 25px;
     min-height: 150px;
     width: 100%;
+    clear: both;
 }
 
     footer .innerFooter
