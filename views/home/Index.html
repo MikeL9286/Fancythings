@@ -6,18 +6,20 @@
     $("section.Portals").load("views/home/Portals.html");
     $("section.Slideshow").load("views/home/SlideShow.html");
 
-    $(window).resize(function () {
-        Slideshow.Resize();
-        Footer.Resize();
-    });
+    $(function() {
+        $(window).resize(function () {
+            Slideshow.Resize();
+            Footer.Resize();
+        });
 
-    window.addEventListener('orientationchange', function () {
-        Slideshow.Resize();
-        Footer.Resize();
-    }, false);
+        window.addEventListener('orientationchange', function () {
+            Slideshow.Resize();
+            Footer.Resize();
+        }, false);
 
-    window.addEventListener('load', function () {
-        Slideshow.Start();
-        Footer.Resize();
-    }, false);
+        window.addEventListener('load', function () {
+            Slideshow.Start();
+            Footer.Resize();
+        }, false);
+    }());
 </script>
