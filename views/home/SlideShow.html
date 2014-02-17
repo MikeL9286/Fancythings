@@ -1,5 +1,4 @@
-﻿
-<div class="SlideContainer">
+﻿<div class="SlideContainer">
     <div class="Slideleft fa fa-angle-left" onclick="Slideshow.InitSlide('left')"></div>
     <div class="Slides">
         <div id="slide1" class="live" style="display: block">
@@ -26,17 +25,13 @@
 </div>
 
 <script type="text/javascript">
-$(function () {
+    $(function () {
         $(window).bind('resize orientationchange', function () {
-            alert('resize');
             Slideshow.Resize();
             Footer.Resize();
         });
 
-        $(window).unbind('load');
-
-        $('.Slideshow').imagesLoaded(function () {
-            alert('images');
+        $(window).bind('load', function () {
             Slideshow.Start();
             Footer.Resize();
         });
