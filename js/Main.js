@@ -9,13 +9,9 @@
     Main.AttachEventListeners = function () {
         $('footer').css('display', 'none');
 
-        $(window).resize(function () {
+        $(window).bind('resize orientationchange', function () {
             Footer.Resize();
         });
-
-        window.addEventListener('orientationchange', function () {
-            Footer.Resize();
-        }, false);
 
         window.addEventListener('load', function () {
             Footer.Resize();

@@ -7,17 +7,13 @@
     $("section.Slideshow").load("views/home/SlideShow.html");
 
     $(function() {
-        $(window).resize(function () {
+        $(window).bind('resize orientationchange', function () {
             Slideshow.Resize();
             Footer.Resize();
         });
 
-        window.addEventListener('orientationchange', function () {
-            Slideshow.Resize();
-            Footer.Resize();
-        }, false);
-
         window.addEventListener('load', function () {
+            //cleared
         }, false);
 
         $('.Slideshow').imagesLoaded(function () {
