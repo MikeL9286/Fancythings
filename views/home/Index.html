@@ -18,8 +18,11 @@
         }, false);
 
         window.addEventListener('load', function () {
+        }, false);
+
+        $('.Slideshow').imagesLoaded(function () {
             Slideshow.Start();
             Footer.Resize();
-        }, false);
+        });
     }());
 </script>
