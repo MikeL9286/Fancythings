@@ -6,14 +6,16 @@
     $("section.Portals").load("views/home/Portals.html");
     $("section.Slideshow").load("views/home/SlideShow.html");
 
-    window.addEventListener('resize orientationchange', function () {
-        debugger;
-        Slideshow.Resize();
-        Footer.Resize();
-    }, false);
+    (function () {
+        window.addEventListener('resize orientationchange', function () {
+            debugger;
+            Slideshow.Resize();
+            Footer.Resize();
+        }, false);
 
-    window.addEventListener('load', function () {
-        Slideshow.Start();
-        Footer.Resize();
-    }, false);
+        window.addEventListener('load', function () {
+            Slideshow.Start();
+            Footer.Resize();
+        }, false);
+    }());
 </script>
