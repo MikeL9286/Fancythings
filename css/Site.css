@@ -914,4 +914,9 @@ ul
     {
         min-height: 200px;
     }
+
+    .leftColumn, .rightColumn
+    {
+        width: 90%;
+    }
 }
