@@ -775,7 +775,7 @@ ul
 
 .aboutGroup
 {
-    min-height: 332px;
+    min-height: 279px;
 }
 
 .aboutPoint
@@ -877,14 +877,6 @@ ul
     }
 }
 
-@media only screen and (max-width: 790px)
-{
-    #aboutContainer
-    {
-        
-    }
-}
-
 @media only screen and (max-width: 500px)
 {
     header img
@@ -913,5 +905,13 @@ ul
     .ltkwidget-widget
     {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 490)
+{
+    .aboutGroup
+    {
+        min-height: 200px;
     }
 }
