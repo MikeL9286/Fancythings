@@ -24,3 +24,25 @@
     <div class="filler"></div>
     <div class="Slideright fa fa-angle-right" onclick="Slideshow.InitSlide('right')"></div>
 </div>
+
+<script type="text/javascript">
+$(function () {
+        $(window).bind('resize orientationchange', function () {
+            alert('resize');
+            Slideshow.Resize();
+            Footer.Resize();
+        });
+
+        window.addEventListener('load', function () {
+            alert('load');
+            Slideshow.Start();
+            Footer.Resize();
+        }, false);
+
+        //$('.Slideshow').imagesLoaded(function () {
+        //    alert('images');
+        //    Slideshow.Start();
+        //    Footer.Resize();
+        //});
+    }());
+</script>
