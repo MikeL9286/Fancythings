@@ -722,6 +722,11 @@ ul
         display: none;
     }
 
+        .serviceTile > .serviceDesc > a
+        {
+            text-decoration: underline;
+        }
+
 .inquiryBtn
 {
     background-color: #5ABECC;
