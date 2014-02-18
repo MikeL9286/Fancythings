@@ -722,7 +722,7 @@ ul
         display: none;
     }
 
-        .serviceTile > .serviceDesc > a
+        .serviceTile > .serviceDesc a
         {
             text-decoration: underline;
         }
