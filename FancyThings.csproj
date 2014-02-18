@@ -96,6 +96,7 @@
     <Content Include="favicon.ico" />
     <Content Include="img\blog_image.png" />
     <Content Include="img\blog_portal2.jpg" />
+    <Content Include="img\blog_portal2c.jpg" />
     <Content Include="img\blog_portal3.jpg" />
     <Content Include="img\book_shelves.JPG" />
     <Content Include="img\fancy_pencils.jpg" />
@@ -106,6 +107,7 @@
     <Content Include="img\leopard_armparty.JPG" />
     <Content Include="img\logo_site.png" />
     <Content Include="img\nailpolishes.jpg" />
+    <Content Include="img\services_portal2c.jpg" />
     <Content Include="img\slideDesk.jpeg" />
     <Content Include="img\slideLipstick.jpeg" />
     <Content Include="img\slidePencil.jpeg" />
@@ -120,12 +122,14 @@
     <Content Include="img\slidePurse.jpeg" />
     <Content Include="img\slideSweater.jpeg" />
     <Content Include="img\slideWelcome.jpeg" />
+    <Content Include="img\slideWelcomec.JPG" />
     <Content Include="img\socialIcons.png" />
     <Content Include="img\socialmeeds.png" />
     <Content Include="img\stacked_socialmeeds2.png" />
     <Content Include="img\tulips.JPG" />
     <Content Include="img\slideWelcome2.jpeg" />
     <Content Include="img\white_monogram.png" />
+    <Content Include="img\white_monogramc.png" />
     <Content Include="img\zara_pumps.JPG" />
     <Content Include="js\Blog.js" />
     <Content Include="js\ContentLoader.js" />
@@ -163,6 +167,7 @@
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="blank.htaccess" />
     <None Include="js\jquery-1.9.1.min.map" />
     <Content Include="views\shared\SocialIcons.html" />
     <Content Include="views\blog\Index.html" />
