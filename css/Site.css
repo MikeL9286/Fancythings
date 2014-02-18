@@ -515,6 +515,11 @@ div.broken > a
         z-index: -50;
     }
 
+.slide1
+{
+    background: url('../img/slideWelcomec.JPG');
+}
+
 .Portals
 {
     float: left;
