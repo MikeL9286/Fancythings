@@ -865,7 +865,7 @@ ul
     .Portals
     {
         float: none;
-        max-width: 100%;
+        width: 100%;
         margin: 0 10% 0 10%;
     }
 
