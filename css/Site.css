@@ -628,7 +628,7 @@ ul
     top: 0px;
     height: 40px;
     width: 100%;
-    text-align: center;
+    text-align: right;
     z-index: 2000;
     background-color: black;
 }
@@ -856,6 +856,11 @@ ul
 
 @media only screen and (max-width: 860px)
 {
+    .SocialIcons
+    {
+        text-align: center;
+    }
+
     .Slideshow
     {
         display: none;
