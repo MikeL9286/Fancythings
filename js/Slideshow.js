@@ -110,20 +110,14 @@
             $(".Slideshow").removeAttr("style");
     }
 
-    //function resizePortalsForSafari()
-    //{
-    //    var length = $('.Slideshow:visible');
+    $(window).bind('resize orientationchange', function () {
+        Slideshow.Resize();
+        Footer.Resize();
+    });
 
-    //    if (length > 0)
-    //        $(".Portals").attr("style", "max-width:33.83%");
-    //    else
-    //        $(".Portals").removeAttr("style");
-    //}
-
-    //window.addEventListener('resize orientationchange', Slideshow.Resize, false);
-
-    //window.addEventListener('load', function () {
-    //    Slideshow.Start();
-    //}, false);
+    $(window).bind('load', function () {
+        Slideshow.Start();
+        Footer.Resize();
+    });
 
 } (window.Slideshow = window.Slideshow || {}, jQuery))
