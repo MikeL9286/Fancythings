@@ -175,7 +175,9 @@
     <Content Include="views\home\Portals.html" />
     <Content Include="views\blog\BlogAdds.html" />
     <Content Include="Index.html" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="less\bordered-pulled.less" />
     <Content Include="less\core.less" />
     <Content Include="less\fixed-width.less" />
