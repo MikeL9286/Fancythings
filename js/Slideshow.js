@@ -116,8 +116,9 @@
     });
 
     $(window).bind('load', function () {
-        Slideshow.Start();
         Footer.Resize();
     });
+
+    Slideshow.Start();
 
 } (window.Slideshow = window.Slideshow || {}, jQuery))
