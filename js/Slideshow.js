@@ -90,10 +90,10 @@
     }
 
     Slideshow.Resize = function() {
-        var newHeight = $('.SlideContainer div.live').height();
+        var newHeight = $('.SlideContainer div.live img').height();
         $('.SlideContainer div.filler').height(newHeight);
 
-        var newWidth = $('.SlideContainer div.live').width();
+        var newWidth = $('.SlideContainer div.live img').width();
         $('.SlideContainer div.filler').width(newWidth);
 
         if (Main.IsSafari())
