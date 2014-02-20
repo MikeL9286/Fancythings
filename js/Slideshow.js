@@ -116,9 +116,8 @@
 
     $(window).bind('load', function () {
         Footer.Resize();
+        Slideshow.Resize();
         Slideshow.Start();
     });
-
-    Slideshow.Resize();
 
 } (window.Slideshow = window.Slideshow || {}, jQuery))
