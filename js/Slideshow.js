@@ -89,12 +89,14 @@
         $('.Slideright').attr('onclick', "Slideshow.InitSlide('right')");
     }
 
-    Slideshow.Resize = function() {
-        var newHeight = $('.SlideContainer div.live img').height();
-        $('.SlideContainer div.filler').height(newHeight);
+    Slideshow.Resize = function () {
+        $('.SlideContainer div.live').imagesLoaded(function () {
+            var newHeight = $('.SlideContainer div.live').height();
+            $('.SlideContainer div.filler').height(newHeight);
 
-        var newWidth = $('.SlideContainer div.live img').width();
-        $('.SlideContainer div.filler').width(newWidth);
+            var newWidth = $('.SlideContainer div.live').width();
+            $('.SlideContainer div.filler').width(newWidth);
+        });
 
         if (Main.IsSafari())
             resizePortalsForSafari();
