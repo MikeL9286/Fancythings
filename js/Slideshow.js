@@ -12,7 +12,6 @@
     /*** Public methods ***/
 
     Slideshow.Start = function () {
-        Slideshow.Resize();
         slideTimer = window.setInterval(function () {
             Slideshow.InitSlide('right')
         }, delayTime);
@@ -117,8 +116,9 @@
 
     $(window).bind('load', function () {
         Footer.Resize();
+        Slideshow.Start();
     });
 
-    Slideshow.Start();
+    Slideshow.Resize();
 
 } (window.Slideshow = window.Slideshow || {}, jQuery))
