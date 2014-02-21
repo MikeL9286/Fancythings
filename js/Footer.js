@@ -12,7 +12,7 @@
         //$('.footerSize').html('calc: ' + windowHeight + ' - ' + socialHeight + ' - ' + contentHeight + ' - ' + footerMargin + ' = ' + footerHeight);
 
         //$('footer').height(footerHeight);
-        //$('footer').css('display', 'block');
+        $('footer').css('display', 'block');
     }
 
 }(window.Footer = window.Footer || {}, jQuery))
