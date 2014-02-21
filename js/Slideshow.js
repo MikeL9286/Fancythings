@@ -113,11 +113,11 @@
 
     $(window).bind('resize orientationchange', function () {
         Slideshow.Resize();
-        Footer.Resize();
+        //Footer.Resize();
     });
 
     $(window).bind('load', function () {
-        Footer.Resize();
+        //Footer.Resize();
         Slideshow.Resize();
         Slideshow.Start();
     });
