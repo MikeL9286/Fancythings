@@ -564,6 +564,7 @@ div.broken > a
 .footerContainer
 {
     position: relative;
+    margin-top: 30px;
 }
 
     .footerContainer > div
