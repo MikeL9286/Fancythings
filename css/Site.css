@@ -568,7 +568,7 @@ div.broken > a
 
     .footerContainer > div
     {
-        margin-bottom: 150px;
+        height: 150px;
     }
 
 footer
@@ -577,10 +577,8 @@ footer
     font-family: Segoe UI, Raleway, Arial, sans-serif;
     border-top: 1px solid black;
     padding-top: 2px;
-    margin-top: 25px;
     height: 150px;
     width: 100%;
-    clear: both;
     position: absolute;
     bottom: 0;
 }
