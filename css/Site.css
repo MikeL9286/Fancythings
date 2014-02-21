@@ -561,6 +561,16 @@ div.broken > a
     clear: both;
 }*/
 
+.footerContainer
+{
+    position: relative;
+}
+
+    .footerContainer > div
+    {
+        margin-bottom: 150px;
+    }
+
 footer
 {
     text-align: center;
@@ -571,6 +581,8 @@ footer
     height: 150px;
     width: 100%;
     clear: both;
+    position: absolute;
+    bottom: 0;
 }
 
     footer .innerFooter
