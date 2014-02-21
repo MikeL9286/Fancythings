@@ -577,7 +577,6 @@ footer
     font-family: Segoe UI, Raleway, Arial, sans-serif;
     border-top: 1px solid black;
     padding-top: 2px;
-    height: 150px;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -585,9 +584,6 @@ footer
 
     footer .innerFooter
     {
-        height: inherit;
-        width: inherit;
-        min-height: inherit;
         background-color: black;
         color: #e1e1e1;
         text-transform: uppercase;
