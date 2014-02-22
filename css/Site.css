@@ -921,9 +921,9 @@ ul
         margin: 0 0 2% 0;
     }
 
-    copyrightInfo span
+    .copyrightInfo span
     {
-        display: inline-block;
+        display: block;
     }
 
     .footerRight

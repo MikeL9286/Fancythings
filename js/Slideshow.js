@@ -114,10 +114,11 @@
     });
 
     $(window).bind('load', function () {
-        $('.SlideContainer div.live').imagesLoaded(function () {
+        $('.SlideContainer').imagesLoaded(function () {
             Slideshow.Resize();
-            Slideshow.Start();
         });
+
+        Slideshow.Start();
     });
 
 }(window.Slideshow = window.Slideshow || {}, jQuery))
