@@ -604,14 +604,9 @@ footer
 .footerRight
 {
     position: relative;
-    display: inline-block;
+    display: inline;
     width: 49%;
     text-align: right;
-}
-
-.copyrightInfo
-{
-    /*float: left;*/
 }
 
 .monogram
@@ -621,7 +616,6 @@ footer
 
 .footerLinks
 {
-    /*float: right;*/
     list-style-type: none;
     -webkit-padding-start: 0;
     -webkit-margin-before: 0;
