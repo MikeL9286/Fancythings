@@ -98,6 +98,9 @@
 
         if (Main.IsSafari())
             resizePortalsForSafari();
+
+        console.log(newHeight);
+        console.log(newWidth);
     }
 
     function resizePortalsForSafari() {
