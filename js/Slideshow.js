@@ -91,19 +91,19 @@
 
     Slideshow.Resize = function () {
         var newHeight = $('.SlideContainer div.live').height();
-        $('.SlideContainer div.filler').height(newHeight);
-
         var newWidth = $('.SlideContainer div.live').width();
+
+        $('.SlideContainer div.filler').height(newHeight);
         $('.SlideContainer div.filler').width(newWidth);
 
         if (Main.IsSafari())
             resizePortalsForSafari();
 
-        console.log('hit');
+        //console.log('hit');
 
-        if (newHeight == null || newWidth == null) {
-            Slideshow.Resize();
-        }
+        //if (newHeight == null) {
+        //    Slideshow.Resize();
+        //}
     }
 
     function resizePortalsForSafari() {
