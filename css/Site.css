@@ -842,6 +842,11 @@ ul
 
 @media only screen and (max-width: 1160px)
 {
+    .innerFooter
+    {
+        padding: 0;
+    }
+
     .footerLeft
     {
         text-align: center;
