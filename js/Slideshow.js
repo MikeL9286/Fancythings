@@ -119,9 +119,9 @@
         var slideshowHeight = null;
         var timer = window.setInterval(function () {
             slideshowHeight = Slideshow.Resize();
-            if (slideshowHeight != null)
+            if (slideshowHeight != null && slideshowHeight > 250)
                 clearInterval(timer);
-        }, 20);
+        }, 100);
 
         Slideshow.Start();
     });
