@@ -17,26 +17,18 @@
     }
 
     Footer.ChangePosition = function () {
-        //var content = $('.Content');
-        //var bottomOfContent = content.offset().top + content.height();
-        //var footer = $('footer');
-        //var topOfFooter = footer.offset().top;
-
-        //if (topOfFooter >= bottomOfContent && footer.attr('style') == 'position:absolute') {
-        //    footer.attr('style', 'position:fixed');
-        //}
-        //else {
-        //    footer.attr('style', 'position:absolute');
-        //}
-
+        var content = $('.Content');
+        var bottomOfContent = content.offset().top + content.height();
         var footer = $('footer');
+        var topOfFooter = footer.offset().top;
         var bottomOfFooter = footer.offset().top + footer.height();
 
-        if (bottomOfFooter <= window.innerHeight) {
-            footer.attr('style', 'position:fixed');
-        }
-        else {
+        if (topOfFooter <= bottomOfContent) {
             footer.attr('style', 'position:absolute');
+        }
+
+        if (bottomOfFooter < window.innerHeight) {
+            footer.attr('style', 'position:fixed');
         }
     }
 
