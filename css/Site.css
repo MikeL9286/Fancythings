@@ -596,15 +596,9 @@ footer
     float: left;
 }
 
-.monogram
-{
-    padding: 15px;
-}
-
 .monogram img
 {
     width: 50px;
-    display: inline-block;
 }
 
 .footerLinks
