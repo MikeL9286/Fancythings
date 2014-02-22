@@ -23,11 +23,10 @@
         var topOfFooter = footer.offset().top;
         var bottomOfFooter = footer.offset().top + footer.height();
 
-        if (topOfFooter <= bottomOfContent) {
+        if (topOfFooter <= bottomOfContent && footer.attr('style') == 'position:fixed') {
             footer.attr('style', 'position:absolute');
         }
-
-        if (bottomOfFooter < window.innerHeight) {
+        else if (bottomOfFooter < window.innerHeight && footer.attr('style') == 'position:absolute') {
             footer.attr('style', 'position:fixed');
         }
     }
