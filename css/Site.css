@@ -509,8 +509,7 @@ div.broken > a
 .Portals
 {
     float: left;
-    /*max-width: 33.75%;*/
-    width: 33.7%;
+    width: 33.75%;
     z-index: 1000;
     display: inline-block;
 }
