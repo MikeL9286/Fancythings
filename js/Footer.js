@@ -1,12 +1,12 @@
 ﻿(function (Footer, $, undefined) {
     
     Footer.Resize = function () {
-        $('footer').css('display', 'absolute');
-
         $('.Content').imagesLoaded(Footer.ChangePosition);
     }
 
     Footer.ChangePosition = function () {
+        $('footer').css('display', 'absolute');
+
         var content = $('.Content');
         var bottomOfContent = content.offset().top + content.height();
         var footer = $('footer');
