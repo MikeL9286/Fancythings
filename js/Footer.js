@@ -13,6 +13,21 @@
 
         //$('footer').height(footerHeight);
         $('footer').css('display', 'block');
+        Footer.ChangePosition();
+    }
+
+    Footer.ChangePosition = function () {
+        var content = $('.Content');
+        var bottomOfContent = content.offset().top + content.height();
+        var footer = $('footer');
+        var topOfFooter = footer.offset().top;
+
+        if (bottomOfContent <= topOfFooter) {
+            footer.attr('style', 'position:absolute');
+        }
+        else {
+            footer.attr('style', 'position:fixed');
+        }
     }
 
 }(window.Footer = window.Footer || {}, jQuery))
