@@ -8,11 +8,11 @@
 
     Main.AttachEventListeners = function () {
         $(window).bind('resize orientationchange', function () {
-            Footer.Resize();
+            $('footer').css('display', 'block');
         });
 
         $(window).bind('load', function () {
-            Footer.Resize();
+            $('footer').css('display', 'block');
         });
     }
 

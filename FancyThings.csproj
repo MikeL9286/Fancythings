@@ -134,7 +134,6 @@
     <Content Include="img\zara_pumps.JPG" />
     <Content Include="js\Blog.js" />
     <Content Include="js\ContentLoader.js" />
-    <Content Include="js\Footer.js" />
     <Content Include="js\imagesloaded.pkgd.min.js" />
     <Content Include="js\Slideshow.js" />
     <Content Include="js\Main.js" />

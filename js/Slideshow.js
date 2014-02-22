@@ -19,7 +19,7 @@
 
     Slideshow.Stop = function () {
         clearInterval(slideTimer);
-    }    
+    }
 
     Slideshow.InitSlide = function (slideDirection) {
         //Unbind the onclick event for each blob during transition
@@ -90,13 +90,11 @@
     }
 
     Slideshow.Resize = function () {
-        $('.SlideContainer div.live').imagesLoaded(function () {
-            var newHeight = $('.SlideContainer div.live').height();
-            $('.SlideContainer div.filler').height(newHeight);
+        var newHeight = $('.SlideContainer div.live').height();
+        $('.SlideContainer div.filler').height(newHeight);
 
-            var newWidth = $('.SlideContainer div.live').width();
-            $('.SlideContainer div.filler').width(newWidth);
-        });
+        var newWidth = $('.SlideContainer div.live').width();
+        $('.SlideContainer div.filler').width(newWidth);
 
         if (Main.IsSafari())
             resizePortalsForSafari();
@@ -116,8 +114,10 @@
     });
 
     $(window).bind('load', function () {
-        Slideshow.Resize();
-        Slideshow.Start();
+        $('.SlideContainer div.live').imagesLoaded(function () {
+            Slideshow.Resize();
+            Slideshow.Start();
+        });
     });
 
-} (window.Slideshow = window.Slideshow || {}, jQuery))
+}(window.Slideshow = window.Slideshow || {}, jQuery))
