@@ -103,7 +103,7 @@
     }
 
     function resizePortalsForSafari() {
-        var length = $('.Slideshow:visible');
+        var length = $('.Slideshow:visible').length;
 
         if (length > 0)
             $(".Slideshow").attr("style", "width:66.1%");
