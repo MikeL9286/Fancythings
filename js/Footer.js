@@ -19,8 +19,9 @@
     Footer.ChangePosition = function () {
         var content = $('.Content');
         var bottomOfContent = content.offset().top + content.height();
+            //6595
         var footer = $('footer');
-        var topOfFooter = footer.offset().top;
+        var topOfFooter = footer.offset().top + footer.parent().css('margin-top');
         var bottomOfFooter = footer.offset().top + footer.height();
 
         if (topOfFooter <= bottomOfContent && footer.attr('style') == 'position:fixed') {
