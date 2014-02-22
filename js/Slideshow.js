@@ -123,7 +123,6 @@
                 clearInterval(timer);
         }, 20);
 
-        Slideshow.Resize();
         Slideshow.Start();
     });
 
