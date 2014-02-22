@@ -20,7 +20,7 @@
         var content = $('.Content');
         var bottomOfContent = content.offset().top + content.height();
         var footer = $('footer');
-        var topOfFooter = footer.offset().top + $('.footerContainer').css('margin-top');
+        var topOfFooter = footer.offset().top;
         var bottomOfFooter = footer.offset().top + footer.height();
 
         if (topOfFooter <= bottomOfContent && footer.attr('style') == 'position:fixed') {
