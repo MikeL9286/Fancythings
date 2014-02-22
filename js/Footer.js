@@ -2,7 +2,8 @@
     
     Footer.Resize = function () {
         $('footer').css('display', 'absolute');
-        Footer.ChangePosition();
+
+        $('.Content').imagesLoaded(Footer.ChangePosition);
     }
 
     Footer.ChangePosition = function () {
