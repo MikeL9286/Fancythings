@@ -22,7 +22,7 @@
         var footer = $('footer');
         var topOfFooter = footer.offset().top;
 
-        if (topOfFooter <= bottomOfContent) {
+        if (topOfFooter <= bottomOfContent && footer.attr('style') == 'position:absolute') {
             footer.attr('style', 'position:fixed');
         }
         else {
