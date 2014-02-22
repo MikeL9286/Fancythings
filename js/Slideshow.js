@@ -99,9 +99,7 @@
         if (Main.IsSafari())
             resizePortalsForSafari();
 
-        window.setInterval(function () {
-            Slideshow.Resize();
-        }, 20);
+        return newHeight;
     }
 
     function resizePortalsForSafari() {
@@ -118,6 +116,13 @@
     });
 
     $(window).bind('load', function () {
+        var slideshowHeight = null;
+        var timer = window.setInterval(function () {
+            slideshowHeight = Slideshow.Resize();
+            if (slideshowHeight != null)
+                clearInterval(timer);
+        }, 20);
+
         Slideshow.Resize();
         Slideshow.Start();
     });
