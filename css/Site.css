@@ -549,18 +549,6 @@ div.broken > a
     clear: both;
 }
 
-/*footer
-{
-    text-align: center;
-    font-family: Segoe UI, Raleway, Arial, sans-serif;
-    border-top: 1px solid black;
-    padding-top: 2px;
-    margin-top: 25px;
-    min-height: 150px;
-    width: 100%;
-    clear: both;
-}*/
-
 .footerContainer
 {
     position: relative;
@@ -572,7 +560,7 @@ div.broken > a
         height: 150px;
     }
 
-footer
+/*footer
 {
     text-align: center;
     font-family: Segoe UI, Raleway, Arial, sans-serif;
@@ -581,12 +569,21 @@ footer
     width: 100%;
     position: absolute;
     bottom: 0;
+}*/
+
+footer
+{
+    text-align: center;
+    font-family: Segoe UI, Raleway, Arial, sans-serif;
+    padding-top: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
     footer .innerFooter
     {
-        background-color: black;
-        color: #e1e1e1;
+        color: #666;
         text-transform: uppercase;
         font-family: Montserrat;
         letter-spacing: .1em;
@@ -624,7 +621,7 @@ footer
 
     .footerLinks a
     {
-        color: #eee;
+        color: #666;
     }
 
         .footerLinks a:hover
