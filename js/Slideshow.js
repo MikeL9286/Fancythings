@@ -99,7 +99,9 @@
         if (Main.IsSafari())
             resizePortalsForSafari();
 
-        if (newheight == null || newWidth == null) {
+        console.log('hit');
+
+        if (newHeight == null || newWidth == null) {
             Slideshow.Resize();
         }
     }
@@ -118,10 +120,7 @@
     });
 
     $(window).bind('load', function () {
-        $('.SlideContainer').imagesLoaded(function () {
-            Slideshow.Resize();
-        });
-
+        Slideshow.Resize();
         Slideshow.Start();
     });
 
