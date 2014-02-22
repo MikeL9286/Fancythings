@@ -845,6 +845,14 @@ ul
     .footerLeft
     {
         text-align: center;
+        width: 100%;
+    }
+
+    .footerRight
+    {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -881,11 +889,6 @@ ul
         {
             margin-right: 1%;
         }
-
-    .footerRight
-    {
-        display: none;
-    }
 }
 
 @media only screen and (max-width: 500px)
