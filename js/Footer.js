@@ -26,7 +26,7 @@
         if (topOfFooter <= bottomOfContent && footer.attr('style') == 'position:fixed') {
             footer.attr('style', 'position:absolute');
         }
-        else if (bottomOfFooter < window.innerHeight && footer.attr('style') == 'position:absolute') {
+        else if (bottomOfFooter < window.innerHeight) {
             footer.attr('style', 'position:fixed');
         }
     }
