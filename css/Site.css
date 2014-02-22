@@ -549,28 +549,6 @@ div.broken > a
     clear: both;
 }
 
-.footerContainer
-{
-    position: relative;
-    margin-top: 30px;
-}
-
-    .footerContainer > div
-    {
-        height: 150px;
-    }
-
-/*footer
-{
-    text-align: center;
-    font-family: Segoe UI, Raleway, Arial, sans-serif;
-    border-top: 1px solid black;
-    padding-top: 2px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-}*/
-
 footer
 {
     text-align: center;
@@ -599,6 +577,7 @@ footer
     display: inline-block;
     width: 50%;
     text-align: left;
+    margin-bottom: 10px;
 }
 
 .footerRight
