@@ -1,14 +1,4 @@
 ﻿
-@media screen and (-webkit-min-device-pixel-ratio:0)
-{
-    @font-face
-    {
-        font-family: 'FontAwesome';
-        font-size: 1.35em;
-        src: url('fonts/fontawesome-webfont.svg') format('svg');
-    }
-}
-
 body
 {
     color: #000;
@@ -632,13 +622,6 @@ ul
     text-align: right;
     z-index: 2000;
     background-color: black;
-}
-
-.SocialIconsBG
-{
-    background-color: white;
-    opacity: .4;
-    z-index: 99;
 }
 
 .SocialIcons ul
