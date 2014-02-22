@@ -871,6 +871,11 @@ ul
         float: none;
         display: block;
     }
+
+    .innerFooter
+    {
+        padding: 20px 30px 50px 30px;
+    }
 }
 
 @media only screen and (max-width: 860px)
