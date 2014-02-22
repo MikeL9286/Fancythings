@@ -508,6 +508,7 @@ div.broken > a
     .SlideContainer div.live
     {
         z-index: 9;
+        width: 100%;
     }
 
     .SlideContainer div.filler
