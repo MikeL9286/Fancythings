@@ -116,14 +116,13 @@
     });
 
     $(window).bind('load', function () {
-        //var slideshowHeight = null;
-        //var timer = window.setInterval(function () {
-        //    slideshowHeight = Slideshow.Resize();
-        //    if (slideshowHeight != null)
-        //        clearInterval(timer);
-        //}, 20);
+        var slideshowHeight = null;
+        var timer = window.setInterval(function () {
+            slideshowHeight = Slideshow.Resize();
+            if (slideshowHeight != null)
+                clearInterval(timer);
+        }, 20);
 
-        Slideshow.Resize();
         Slideshow.Start();
     });
 
