@@ -99,8 +99,9 @@
         if (Main.IsSafari())
             resizePortalsForSafari();
 
-        console.log(newHeight);
-        console.log(newWidth);
+        if (newheight == null || newWidth == null) {
+            Slideshow.Resize();
+        }
     }
 
     function resizePortalsForSafari() {
