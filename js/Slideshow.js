@@ -99,11 +99,9 @@
         if (Main.IsSafari())
             resizePortalsForSafari();
 
-        //console.log('hit');
-
-        //if (newHeight == null) {
-        //    Slideshow.Resize();
-        //}
+        window.setInterval(function () {
+            Slideshow.Resize();
+        }, 20);
     }
 
     function resizePortalsForSafari() {
