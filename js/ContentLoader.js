@@ -1,9 +1,8 @@
 ﻿(function (ContentLoader, $, undefined) {
 
     ContentLoader.Redirect = function(route) {
-        // var baseUrl = "http://localhost:34503/Index.html/";
-		var baseUrl = "http://mikel9286.github.io/Fancythings";
-		// var baseUrl = "file:///C:/Users/Michael/Documents/Visual%20Studio%202012/Projects/FancyThings/Fancythings/";
+        var baseUrl = "http://thefancythings.com";
+		//var baseUrl = "http://mikel9286.github.io/Fancythings";
         window.location.href = baseUrl + "?route=" + route;
     }
 
