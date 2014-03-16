@@ -2,7 +2,7 @@
 
     ContentLoader.Redirect = function(route) {
         var baseUrl = "http://thefancythings.com";
-		//var baseUrl = "http://mikel9286.github.io/Fancythings";
+        //var baseUrl = "http://localhost:34503";
         window.location.href = baseUrl + "?route=" + route;
     }
 

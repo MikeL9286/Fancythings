@@ -773,29 +773,18 @@ ul
     vertical-align: top;
 }
 
-.aboutRow
-{
-    
-}
-
 .aboutGroup
 {
-    display: inline-block;
-    width: 47%;
-    vertical-align: top;
+    min-height: 279px;
 }
-
-    .aboutGroup:first-child
-    {
-        margin-right: 2%;
-    }
 
 .aboutPoint
 {
+    height: 45px;
     text-transform: uppercase;
+    margin-bottom: 3%;
     font-family: Montserrat;
     text-align: left;
-    margin-bottom: 10px;
 }
 
 .aboutProfileImg
@@ -804,7 +793,12 @@ ul
     text-align: center;
 }
 
-    .aboutGroup img
+.aboutImg
+{
+    margin-bottom: 5px;
+}
+
+    .aboutImg img
     {
         height: auto;
         width: 100%;
@@ -919,9 +913,17 @@ ul
     {
         display: none;
     }
+}
 
+@media only screen and (max-width: 490px)
+{
     .aboutGroup
     {
-        width: 80%;
+        min-height: 200px;
+    }
+
+    .leftColumn, .rightColumn
+    {
+        width: 90%;
     }
 }
