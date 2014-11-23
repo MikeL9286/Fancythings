@@ -1,0 +1,135 @@
+﻿<section id="homeContainer" class="container">
+    <script>
+        Blogger.GetPosts();
+    </script>
+
+    <div class="row">
+        <div class="column-left col-xs-12 col-md-9">
+            <div class="slideshow hidden-xs">
+                <script id="slideshow-template" type="text/x-handlebars-template">
+                    <ul class="rslides">
+                        {{#slideshowPosts}}
+                        <li>
+                            <img class="img-responsive" src="{{{slideshowImage content}}}" />
+                            <div class="content content-blurred">
+                                <a href="blogpost.html?post={{{id}}}"><h5>{{title}}</h5></a>
+                                <a href="blogpost.html?post={{{id}}}"><em>read more...</em></a>
+                            </div>
+                            <div class="content">
+                                <a href="blogpost.html?post={{{id}}}"><h5>{{title}}</h5></a>
+                                <a href="blogpost.html?post={{{id}}}"><em>read more...</em></a>
+                            </div>
+                        </li>
+                        {{/slideshowPosts}}
+                    </ul>
+                </script>
+            </div>
+
+            <div class="trending-items widget">
+                <div class="shopthepost-widget hidden-xs" data-widget-id="303944">
+                    <script type="text/javascript">!function (d, s, id) { var e, p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { e = d.createElement(s); e.id = id; e.src = p + '://' + 'widgets.rewardstyle.com' + '/js/shopthepost.js'; d.body.appendChild(e); } if (typeof window.__stp === 'object') if (d.readyState === 'complete') { window.__stp.init(); } }(document, 'script', 'shopthepost-script');</script><div class="rs-adblock"><img src="//assets.rewardstyle.com/images/search/350.gif" onerror="                            this.parentNode.innerHTML = 'Disable your ad blocking software to view this content.'" style="width: 15px; height: 15px;" /><noscript>JavaScript is currently disabled in this browser. Reactivate it to view this content.</noscript></div>
+                </div>
+            </div>
+
+            <hr class="hidden-xs" />
+
+            <div class="posts">
+                <script id="home-posts-template" type="text/x-handlebars-template">
+                    {{#homePosts}}
+                    <div class="post panel panel-default">
+                        <div class="post-inner panel-body">
+                            <div class="header">
+                                <a href="blogpost.html?post={{{id}}}" target="_blank"><h4 class="title">{{title}}</h4></a>
+                                <div>{{formattedDate publishedDate}}</div>
+                            </div>
+                            <div>{{{content}}}</div>
+                        </div>
+                        <div class="post-share">
+                            <a href="{{{twitterShareLink this}}}" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="{{{pinterestShareLink this}}}" target="_blank"><i class="fa fa-pinterest"></i></a>
+                            <a href="{{{emailShareLink this}}}"><i class="fa fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <ul class="ft-sig">
+                        <li class="divider hidden-xs"><hr /></li>
+                        <li><img src="./img/logo250x250.png" /></li>
+                        <li class="divider hidden-xs"><hr /></li>
+                    </ul>
+                    {{/homePosts}}
+                </script>
+            </div>
+
+            <div class="more-posts row">
+                <script id="more-posts-template" type="text/x-handlebars-template">
+                    {{#morePosts}}
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                        <div class="post panel panel-default rounded">
+                            <div class="post-inner panel-body">
+                                <div class="more-posts-title">
+                                    <a href="blogpost.html?post={{{id}}}" target="_blank"><h5>{{title}}</h5></a>
+                                </div>
+                                <a href="blogpost.html?post={{{id}}}" target="_blank">
+                                    <img class="img-responsive rounded" src="{{{thumbnailUrl}}}" alt="post thumbnail">
+                                </a>
+                                <div class="more-posts-summary"><small>{{relativeDate published}} - </small> {{summary content 200}}</div>
+                                <div class="share">
+                                    <span><a class="read-more-link" href="blogpost.html?post={{{id}}}" target="_blank"><small>read more...</small></a></span>
+                                    <span class="post-feed-share pull-right">
+                                        <a href="{{{twitterShareLink this}}}" target="_blank"><i class="fa fa-twitter"></i></a>
+                                        <a href="{{{pinterestShareLink this}}}" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                        <a href="{{{emailShareLink this}}}"><i class="fa fa-envelope"></i></a>
+                                    </span>
+                                </div>
+                                <div class="disqus-count">
+                                    <a class="disqus-count-shown" href="blogpost.html?post={{id}}"></a>
+                                    <a class="disqus-count-hidden" href="{{url}}#disqus_thread"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/morePosts}}
+                </script>
+            </div>
+
+            <div class="view-more-posts">
+                <a href="./archive.html" class="btn btn-primary ft-link-btn">
+                    View Older Posts
+                </a>
+            </div>
+        </div>
+        <div class="column-right hidden-xs hidden-sm col-md-3">
+            <script>
+                $('.column-right').load('views/partials/rightColumn.html');
+            </script>
+        </div>
+    </div>
+</section>
+
+<div class="ft-grams container-fluid">
+    <div class="ltkwidget-widget row" data-rows="2" data-cols="8" data-show-frame="false" data-user-id="18622" data-padding="2">
+        <script type="text/javascript">!function (d, s, id) { var e, p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { e = d.createElement(s); e.id = id; e.src = p + '://' + 'widgets.rewardstyle.com' + '/js/ltkwidget.js'; d.body.appendChild(e); } if (typeof (window.__ltkwidget) === 'object') { if (document.readyState === 'complete') { __ltkwidget.init(); } } }(document, 'script', 'ltkwidget-script');</script><div class="rs-adblock"><img src="//assets.rewardstyle.com/images/search/350.gif" onerror="                this.parentNode.innerHTML = 'Disable your ad blocking software to view this content.'" /><noscript>JavaScript is currently disabled in this browser. Reactivate it to view this content.</noscript></div>
+    </div>
+</div>
+
+<script src="Scripts/templates/slideshowTemplate.js"></script>
+<script src="Scripts/templates/homePostsTemplate.js"></script>
+<script src="Scripts/templates/morePostsTemplate.js"></script>
+<script src="Scripts/home.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    var disqus_shortname = 'fancythingsblog';
+    var disqus_homepage_url = 'http://thefancythings.com';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = false;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+
+    $('.disqus-count-shown').each(function (index) {
+        var count = $(this).parent().find('.disqus-count-hidden').html();
+        $(this).html(count);
+    });
+</script>
