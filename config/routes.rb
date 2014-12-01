@@ -9,8 +9,17 @@ Fancythings::Application.routes.draw do
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
+  get 'search' => 'blog#search'
+  get 'search/:key' => 'blog#search'
+  get 'archive' => 'blog#archive'
+
   get 'services' => 'services#index'
 
+  get 'about' => 'application#about'
+  get 'press' => 'application#press'
+  get 'liketoknowit' => 'application#liketoknowit'
+
+ 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 

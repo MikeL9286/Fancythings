@@ -7,7 +7,11 @@ class BlogController < ActionController::Base
   	
   end
 
-  def post
+  def search
+  	key = params[:key]
+  end
+
+  def archive
 
   end
 end

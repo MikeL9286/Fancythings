@@ -33,11 +33,9 @@
             </div>
         </div>
         <div class="column-right hidden-xs hidden-sm col-md-3">
-            <script>
-                $('.column-right').load('views/partials/rightColumn.html');
-            </script>
+            <%= render partial: 'shared/rightColumn' %>
         </div>
     </div>
 </section>
 
-<script src="Scripts/templates/archivePostsTemplate.js"></script>
+<%= javascript_include_tag 'templates/archivePostsTemplate' %>
