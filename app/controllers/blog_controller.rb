@@ -7,6 +7,10 @@ class BlogController < ActionController::Base
   	
   end
 
+  def blogpost
+  	key = params[:id]
+  end
+
   def search
   	key = params[:key]
   end

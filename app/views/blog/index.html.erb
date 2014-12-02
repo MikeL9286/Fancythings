@@ -12,12 +12,12 @@
                         <li>
                             <img class="img-responsive" src="{{{slideshowImage content}}}" />
                             <div class="content content-blurred">
-                                <a href="blogpost.html?post={{{id}}}"><h5>{{title}}</h5></a>
-                                <a href="blogpost.html?post={{{id}}}"><em>read more...</em></a>
+                                <a href="blogpost?post={{{id}}}"><h5>{{title}}</h5></a>
+                                <a href="blogpost?post={{{id}}}"><em>read more...</em></a>
                             </div>
                             <div class="content">
-                                <a href="blogpost.html?post={{{id}}}"><h5>{{title}}</h5></a>
-                                <a href="blogpost.html?post={{{id}}}"><em>read more...</em></a>
+                                <a href="blogpost?post={{{id}}}"><h5>{{title}}</h5></a>
+                                <a href="blogpost?post={{{id}}}"><em>read more...</em></a>
                             </div>
                         </li>
                         {{/slideshowPosts}}
@@ -39,7 +39,7 @@
                     <div class="post panel panel-default">
                         <div class="post-inner panel-body">
                             <div class="header">
-                                <a href="blogpost.html?post={{{id}}}" target="_blank"><h4 class="title">{{title}}</h4></a>
+                                <a href="blogpost?post={{{id}}}" target="_blank"><h4 class="title">{{title}}</h4></a>
                                 <div>{{formattedDate publishedDate}}</div>
                             </div>
                             <div>{{{content}}}</div>
@@ -66,14 +66,14 @@
                         <div class="post panel panel-default rounded">
                             <div class="post-inner panel-body">
                                 <div class="more-posts-title">
-                                    <a href="blogpost.html?post={{{id}}}" target="_blank"><h5>{{title}}</h5></a>
+                                    <a href="blogpost?post={{{id}}}" target="_blank"><h5>{{title}}</h5></a>
                                 </div>
-                                <a href="blogpost.html?post={{{id}}}" target="_blank">
+                                <a href="blogpost?post={{{id}}}" target="_blank">
                                     <img class="img-responsive rounded" src="{{{thumbnailUrl}}}" alt="post thumbnail">
                                 </a>
                                 <div class="more-posts-summary"><small>{{relativeDate published}} - </small> {{summary content 200}}</div>
                                 <div class="share">
-                                    <span><a class="read-more-link" href="blogpost.html?post={{{id}}}" target="_blank"><small>read more...</small></a></span>
+                                    <span><a class="read-more-link" href="blogpost?post={{{id}}}" target="_blank"><small>read more...</small></a></span>
                                     <span class="post-feed-share pull-right">
                                         <a href="{{{twitterShareLink this}}}" target="_blank"><i class="fa fa-twitter"></i></a>
                                         <a href="{{{pinterestShareLink this}}}" target="_blank"><i class="fa fa-pinterest"></i></a>
@@ -81,7 +81,7 @@
                                     </span>
                                 </div>
                                 <div class="disqus-count">
-                                    <a class="disqus-count-shown" href="blogpost.html?post={{id}}"></a>
+                                    <a class="disqus-count-shown" href="blogpost?post={{id}}"></a>
                                     <a class="disqus-count-hidden" href="{{url}}#disqus_thread"></a>
                                 </div>
                             </div>
