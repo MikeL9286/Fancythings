@@ -24,6 +24,10 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+.modal-dialog {
+    z-index: 1100;
+}
+
 .loading-overlay {
     z-index: 9999;
     background-color: white;
@@ -187,9 +191,18 @@ hr {
     padding: 5px;
 
     ul {
-        li a {
+        li a, 
+        li .btn-link {
             color: #444;
             padding: 15px;
+        }
+
+        li .btn-link {
+            font-family: Montserrat;
+            text-transform: uppercase;
+            letter-spacing: .15em;
+            font-size: 1em;
+            text-decoration: none;
         }
 
         &.social-media-icons li {
@@ -212,8 +225,12 @@ hr {
         font-size: 1.4em;
     }
 
-    .navbar-brand, a:hover, .active > a {
+    .navbar-brand, a:hover, .active > a, .btn-link:hover {
         color: $blue-color;
+    }
+
+    .btn-link:focus {
+        outline: none;
     }
 
     .thumbnail {

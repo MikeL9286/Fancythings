@@ -16,6 +16,8 @@ gem 'bootstrap-sass', '~> 3.3.1.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
+gem 'rest-client', '~> 1.7.2'
+
 # Use momentjs for date parsing
 # gem 'momentjs-rails', '~> 2.8.3'
 

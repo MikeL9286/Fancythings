@@ -33,4 +33,14 @@ Fancythings::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+  address:              'smtp.gmail.com',
+  port:                 587,
+  domain:               'fancythingsblog.com',
+  user_name:            'kristin@fancythingsblog.com',
+  password:             'iloverocky430',
+  authentication:       'plain',
+  enable_starttls_auto: true  }
 end

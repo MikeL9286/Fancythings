@@ -1,35 +1,73 @@
 ﻿<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-<div id="navContainer" class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div id="mobileNav" class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href=".">Fancy Things</a>
-    </div>
+    <div id="navContainer" class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div id="mobileNav" class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href=".">Fancy Things</a>
+        </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-            <li id="servicesLink"><a href="services">Services</a></li>
-            <li id="aboutLink"><a href="about">About</a></li>
-            <li id="pressLink"><a href="press">Press</a></li>
-            <li id="contactLink"><a href="mailto:kristin@fancythingsblog.com">Contact</a></li>
-            <li id="ltkLink"><a href="liketoknowit">LIKETOKNOW.IT</a></li>
-        </ul>
-        
-        <ul class="nav navbar-nav navbar-right social-media-icons">
-            <li><a href="https://www.facebook.com/pages/fancy-things-the-blog/213692045319671?sk=wall" class="fa fa-facebook"></a></li>
-            <li><a href="https://twitter.com/#!/fancythingsblog" class="fa fa-twitter"></a></li>
-            <li><a href="http://pinterest.com/fancythingsk/" class="fa fa-pinterest"></a></li>
-            <li><a href="http://www.bloglovin.com/blog/3322677/fancy-things" class="fa fa-heart"></a></li>
-            <li><a href="http://instagram.com/fancythingsblog" class="fa fa-instagram"></a></li>
-            <li><a href="https://plus.google.com/112197907108350187716?prsrc=5" class="fa fa-plus"></a></li>
-        </ul>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li id="servicesLink"><a href="services">Services</a></li>
+                <li id="aboutLink"><a href="about">About</a></li>
+                <li id="pressLink"><a href="press">Press</a></li>
+                <!-- <li id="contactLink"><a href="mailto:kristin@fancythingsblog.com">Contact</a></li> -->
+                <li id="contactLink"><button type="button" class="btn btn-link" data-toggle="modal" data-target="#contactModal">Contact</button></li>
+                <li id="ltkLink"><a href="liketoknowit">LIKETOKNOW.IT</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right social-media-icons">
+                <li><a href="https://www.facebook.com/pages/fancy-things-the-blog/213692045319671?sk=wall" class="fa fa-facebook"></a></li>
+                <li><a href="https://twitter.com/#!/fancythingsblog" class="fa fa-twitter"></a></li>
+                <li><a href="http://pinterest.com/fancythingsk/" class="fa fa-pinterest"></a></li>
+                <li><a href="http://www.bloglovin.com/blog/3322677/fancy-things" class="fa fa-heart"></a></li>
+                <li><a href="http://instagram.com/fancythingsblog" class="fa fa-instagram"></a></li>
+                <li><a href="https://plus.google.com/112197907108350187716?prsrc=5" class="fa fa-plus"></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="contactModalLabel">Contact Me</h4>
+    </div>
+    <div class="modal-body">     
+        <%= form_tag('contact', remote: true, class: 'form') do %>
+            <div class="form-group">
+                <label for="contact-email">Email: </label>
+                <input id="contact-email" name="email" type="email" class="form-control" placeholder="your@email.com" />
+            </div>
+            <div class="form-group">
+                <label for="contact-message">Message: </label>
+                <textarea id="contact-message" name="message" class="form-control" rows="5"></textarea>
+            </div>
+            <button class="btn btn-default">Send</button>
+        <% end %>
     </div>
 </div>
-</nav>
+</div>
+</div>
+
+<script>
+    var closeModel = function() {
+        $('#contactModal').hide();
+    }
+
+    $('form').submit(function() {  
+        MailerService.SendEmail($(this), closeModel);
+        return false; // prevents normal behaviour
+    });
+</script>
+
+<%= javascript_include_tag "services/mailerService" %>
 <%= javascript_include_tag "navbar" %>
