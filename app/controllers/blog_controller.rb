@@ -4,11 +4,16 @@ class BlogController < ActionController::Base
   protect_from_forgery with: :exception
 
   def index
-  	
+  	@ogUrl = ''
+    @ogImage = 'logo250x250.png'
+    @ogTitle = 'Fancy Things'
   end
 
   def blogpost
   	key = params[:id]
+    @ogUrl = 'blogpost?post=1713259370747007918'
+    @ogImage = 'meetKristin.jpg'
+    @ogTitle = 'Fancy Things - Blog Post Title'
   end
 
   def search
@@ -16,6 +21,8 @@ class BlogController < ActionController::Base
   end
 
   def archive
-
+    @ogUrl = 'archive'
+    @ogImage = 'logo250x250.png'
+    @ogTitle = 'Fancy Things - Archive'
   end
 end
