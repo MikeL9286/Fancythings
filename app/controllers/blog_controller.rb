@@ -1,12 +1,16 @@
 class BlogController < ActionController::Base
-  # Prevent CSRF attacks by raising an exception.
-  # For APIs, you may want to use :null_session instead.
+  require 'blogger_service'
+
   protect_from_forgery with: :exception
 
+  @@blogger_service = BloggerService.new
+  
   def index
   	@ogUrl = ''
     @ogImage = 'logo250x250.png'
     @ogTitle = 'Fancy Things'
+    @posts = @@blogger_service.GetAllPosts
+    @slideshowPosts = @posts.take(4)
   end
 
   def blogpost
@@ -25,4 +29,6 @@ class BlogController < ActionController::Base
     @ogImage = 'logo250x250.png'
     @ogTitle = 'Fancy Things - Archive'
   end
+
+
 end

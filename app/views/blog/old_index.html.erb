@@ -1,22 +1,28 @@
 <section id="homeContainer" class="container">
+    <script>
+        Blogger.GetPosts();
+    </script>
+
     <div class="row">
         <div class="column-left col-xs-12 col-md-9">
             <div class="slideshow hidden-xs">
-                <ul class="rslides">
-                <% @slideshowPosts.each do |post| %>
-                    <li>
-                        <img class="img-responsive" src="<%= post.slideshowImageUrl %>" />
-                        <div class="content content-blurred">
-                            <a href="blogpost?post=<%= post.id %>"><h5><%= post.title %></h5></a>
-                            <a href="blogpost?post=<%= post.id %>"><em>read more...</em></a>
-                        </div>
-                        <div class="content">
-                            <a href="blogpost?post=<%= post.id %>"><h5><%= post.title %></h5></a>
-                            <a href="blogpost?post=<%= post.id %>"><em>read more...</em></a>
-                        </div>
-                    </li>
-                <% end %>
-                </ul>
+                <script id="slideshow-template" type="text/x-handlebars-template">
+                    <ul class="rslides">
+                        {{#slideshowPosts}}
+                        <li>
+                            <img class="img-responsive" src="{{{slideshowImage content}}}" />
+                            <div class="content content-blurred">
+                                <a href="blogpost?post={{{id}}}"><h5>{{title}}</h5></a>
+                                <a href="blogpost?post={{{id}}}"><em>read more...</em></a>
+                            </div>
+                            <div class="content">
+                                <a href="blogpost?post={{{id}}}"><h5>{{title}}</h5></a>
+                                <a href="blogpost?post={{{id}}}"><em>read more...</em></a>
+                            </div>
+                        </li>
+                        {{/slideshowPosts}}
+                    </ul>
+                </script>
             </div>
 
             <div class="trending-items widget">
@@ -103,6 +109,9 @@
     </div>
 </div>
 
+<%= javascript_include_tag 'templates/slideshowTemplate' %>
+<%= javascript_include_tag 'templates/homePostsTemplate' %>
+<%= javascript_include_tag 'templates/morePostsTemplate' %>
 <%= javascript_include_tag 'home' %>
 
 <script type="text/javascript">

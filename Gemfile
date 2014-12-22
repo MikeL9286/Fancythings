@@ -46,8 +46,8 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem "mongo_mapper"
-gem "bson_ext"
+# gem "mongo_mapper"
+# gem "bson_ext"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
