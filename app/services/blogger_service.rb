@@ -4,18 +4,30 @@ class BloggerService
 	require 'post_mapper'
 
 	@@post_mapper = PostMapper.new
+	@@bloggerUrl = 'https://www.googleapis.com/blogger/v3/blogs/5073145937869562696/'
+	@@bloggerApiKey = '?key=AIzaSyBxl86QJ7gRccq_egFmP3J6Zhy3cQLluIk'
 
 	def GetAllPosts
 		begin
-			response = RestClient.get('https://www.googleapis.com/blogger/v3/blogs/5073145937869562696/posts?maxResults=50&key=AIzaSyBxl86QJ7gRccq_egFmP3J6Zhy3cQLluIk')
+			response = RestClient.get(@@bloggerUrl + 'posts' + @@bloggerApiKey + '&maxResults=9')
 			json = JSON.parse(response)			
-			
+
 			posts = Array.new
 			for item in json['items']
 				post = @@post_mapper.to_model(item)
 				posts.push(post)
 			end
 			return posts
+		rescue => e
+			print e
+		end
+	end
+
+	def GetPostById(postId)
+		begin
+			response = RestClient.get(@@bloggerUrl + 'posts/' + postId + @@bloggerApiKey)
+			json = JSON.parse(response)		
+			return @@post_mapper.to_model(json)	
 		rescue => e
 			print e
 		end
@@ -33,17 +45,6 @@ end
 	# 	@blogId = '5073145937869562696'
  #    end
 
-	# def GetAllPosts
-	# 	# result = client.execute(
-	# 	# 	:api_method => blogger.posts.list,
-	# 	# 	:parameters => {'blogId' => @blogId, 'maxResults' => 2})
-
-	# 	result = @blogger.posts.list(
-	# 		:blogId => @blogId,
-	# 		:maxResults => 2)
-
-	# 	return result.data
-	# end
 
 	# def GetPost
 	# 	result = @blogger.posts.get(

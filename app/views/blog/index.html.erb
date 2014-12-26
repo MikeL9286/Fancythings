@@ -28,20 +28,23 @@
             <hr class="hidden-xs" />
 
             <div class="posts">
-                <script id="home-posts-template" type="text/x-handlebars-template">
-                    {{#homePosts}}
+                <% @posts.each do |post| %>
                     <div class="post panel panel-default">
                         <div class="post-inner panel-body">
                             <div class="header">
-                                <a href="blogpost?post={{{id}}}" target="_blank"><h4 class="title">{{title}}</h4></a>
-                                <div>{{formattedDate publishedDate}}</div>
+                                <a href="blogpost?post=<%= post.id %>" target="_blank"><h4 class="title"><%= post.title %></h4></a>
+                                <div><%= post.publishedDate %></div>
                             </div>
-                            <div>{{{content}}}</div>
+                            <div><%= post.content %></div>
                         </div>
                         <div class="post-share">
                             <a href="{{{twitterShareLink this}}}" target="_blank"><i class="fa fa-twitter"></i></a>
                             <a href="{{{pinterestShareLink this}}}" target="_blank"><i class="fa fa-pinterest"></i></a>
                             <a href="{{{emailShareLink this}}}"><i class="fa fa-envelope"></i></a>
+                        </div>
+                        <div class="disqus-count">
+                            <a class="disqus-count-shown" href="blogpost?post={{id}}"></a>
+                            <a class="disqus-count-hidden" href="{{url}}#disqus_thread"></a>
                         </div>
                     </div>
                     <ul class="ft-sig">
@@ -49,11 +52,10 @@
                         <li><%= image_tag 'logo250x250.png' %></li>
                         <li class="divider hidden-xs"><hr /></li>
                     </ul>
-                    {{/homePosts}}
-                </script>
+                <% end %>
             </div>
 
-            <div class="more-posts row">
+            <!-- <div class="more-posts row">
                 <script id="more-posts-template" type="text/x-handlebars-template">
                     {{#morePosts}}
                     <div class="col-xs-12 col-sm-6 col-lg-4">
@@ -83,7 +85,7 @@
                     </div>
                     {{/morePosts}}
                 </script>
-            </div>
+            </div> -->
 
             <div class="view-more-posts">
                 <a href="./archive.html" class="btn btn-primary ft-link-btn">

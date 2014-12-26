@@ -4,6 +4,12 @@ class PostMapper
 		post = Post.new(jsonPost['id'], jsonPost['title'], jsonPost['content'])
 		post.slideshowImageUrl = get_slideshow_image_url(jsonPost)
 		post.thumbnailUrl = get_thumbnail_url(jsonPost)
+		post.publishedDate = jsonPost['published']
+		post.twitterShareLink = get_twitter_share_link
+		post.pinterestShareLink = get_pinterest_share_link
+		post.emailShareLink = get_email_share_link
+		post.facebookShareLink = get_facebook_share_link
+		post.googlePlusShareLink = get_google_plus_share_link
 		return post
 	end
 
@@ -25,6 +31,30 @@ class PostMapper
 		end
 			
 		return matches[0].scan(/http.*jpg|http.*png|http.*jpeg/)[0]
+	end
+
+	def get_twitter_share_link
+		return ''
+		# return 'https://twitter.com/intent/tweet?text=' + post['title'] + '&via=fancythingsblog&url=' + 'selfLink';
+	end
+
+	def get_pinterest_share_link
+		return ''
+		# return 'http://pinterest.com/pin/create/button/?url=' + 'selfLink' + '&media=' + post['thumbnailUrl'] + '&description=' + post['title'];
+	end
+
+	def get_email_share_link
+		return ''
+		# return 'mailto:?body=I thought you might enjoy reading this post called ' + post['title'] + ' on fancy things! ' + 'selfLink';
+	end
+
+	def get_google_plus_share_link
+		return ''
+		# return 'https://plus.google.com/share?url=' + 'selfLink';
+	end
+
+	def get_facebook_share_link
+		return ''
 	end
 
 	# todo: finish if needed
