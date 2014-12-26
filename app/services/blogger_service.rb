@@ -5,11 +5,13 @@ class BloggerService
 
 	@@post_mapper = PostMapper.new
 	@@bloggerUrl = 'https://www.googleapis.com/blogger/v3/blogs/5073145937869562696/'
-	@@bloggerApiKey = '?key=AIzaSyBxl86QJ7gRccq_egFmP3J6Zhy3cQLluIk'
+	@@bloggerApiKey = '&key=AIzaSyBxl86QJ7gRccq_egFmP3J6Zhy3cQLluIk'
 
 	def GetAllPosts
 		begin
-			response = RestClient.get(@@bloggerUrl + 'posts' + @@bloggerApiKey + '&maxResults=9')
+			method = 'posts'
+			params = '?maxResults=9'
+			response = RestClient.get(@@bloggerUrl + method + params + @@bloggerApiKey)
 			json = JSON.parse(response)			
 
 			posts = Array.new
@@ -23,15 +25,29 @@ class BloggerService
 		end
 	end
 
-	def GetPostById(postId)
+	def GetPostByPath(path)
 		begin
-			response = RestClient.get(@@bloggerUrl + 'posts/' + postId + @@bloggerApiKey)
+			method = 'posts/bypath'
+			params = '?path=' + path
+			response = RestClient.get(@@bloggerUrl + 'posts/bypath' + params + @@bloggerApiKey)
 			json = JSON.parse(response)		
 			return @@post_mapper.to_model(json)	
 		rescue => e
 			print e
 		end
 	end
+
+	# def GetPostById(postId)
+	# 	begin
+	# 		method = 'posts/'
+	# 		params = '?path=' + url.scan(/.com(.*)/)[0][0]
+	# 		response = RestClient.get(@@bloggerUrl + 'posts/' + postId + @@bloggerApiKey)
+	# 		json = JSON.parse(response)		
+	# 		return @@post_mapper.to_model(json)	
+	# 	rescue => e
+	# 		print e
+	# 	end
+	# end
 end
 
 

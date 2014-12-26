@@ -1,16 +1,26 @@
 class PostMapper
+	include ActiveSupport::Inflector
 	
 	def to_model(jsonPost)
 		post = Post.new(jsonPost['id'], jsonPost['title'], jsonPost['content'])
+		post.path = jsonPost['url'].scan(/.com(.*)/)[0][0]
 		post.slideshowImageUrl = get_slideshow_image_url(jsonPost)
 		post.thumbnailUrl = get_thumbnail_url(jsonPost)
-		post.publishedDate = jsonPost['published']
+		post.publishedDate = get_formatted_date(jsonPost['published'])
 		post.twitterShareLink = get_twitter_share_link
 		post.pinterestShareLink = get_pinterest_share_link
 		post.emailShareLink = get_email_share_link
 		post.facebookShareLink = get_facebook_share_link
 		post.googlePlusShareLink = get_google_plus_share_link
 		return post
+	end
+
+	private
+
+	def get_formatted_date(dateString)
+		date = Date.parse(dateString)
+		formattedDate = date.strftime('%B day, %Y').sub!(/day/, ordinalize(date.day))
+		return formattedDate
 	end
 
 	def get_thumbnail_url(post)

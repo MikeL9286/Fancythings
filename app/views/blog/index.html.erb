@@ -7,12 +7,12 @@
                     <li>
                         <img class="img-responsive" src="<%= post.slideshowImageUrl %>" />
                         <div class="content content-blurred">
-                            <a href="blogpost?post=<%= post.id %>"><h5><%= post.title %></h5></a>
-                            <a href="blogpost?post=<%= post.id %>"><em>read more...</em></a>
+                            <a href="<%= post.path %>"><h5><%= post.title %></h5></a>
+                            <a href="<%= post.path %>"><em>read more...</em></a>
                         </div>
                         <div class="content">
-                            <a href="blogpost?post=<%= post.id %>"><h5><%= post.title %></h5></a>
-                            <a href="blogpost?post=<%= post.id %>"><em>read more...</em></a>
+                            <a href="<%= post.path %>"><h5><%= post.title %></h5></a>
+                            <a href="<%= post.path %>"><em>read more...</em></a>
                         </div>
                     </li>
                 <% end %>
@@ -32,7 +32,7 @@
                     <div class="post panel panel-default">
                         <div class="post-inner panel-body">
                             <div class="header">
-                                <a href="blogpost?post=<%= post.id %>" target="_blank"><h4 class="title"><%= post.title %></h4></a>
+                                <a href="<%= post.path %>" target="_blank"><h4 class="title"><%= post.title %></h4></a>
                                 <div><%= post.publishedDate %></div>
                             </div>
                             <div><%= post.content %></div>

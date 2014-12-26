@@ -8,16 +8,18 @@ class BlogController < ActionController::Base
   def index
   	@ogUrl = ''
     @ogImage = 'logo250x250.png'
-    @ogTitle = 'Fancy Things'
+    @title = 'Fancy Things'
     @posts = @@blogger_service.GetAllPosts
     @slideshowPosts = @posts.take(4)
   end
 
   def blogpost
-  	key = params[:id]
-    @ogUrl = 'blogpost?post=1713259370747007918'
+  	path = '/' + params[:year] + '/' + params[:month] + '/' + params[:title] + '.html'
+    @post = @@blogger_service.GetPostByPath(path)
+
+    @ogUrl = path
     @ogImage = 'meetKristin.jpg'
-    @ogTitle = 'Fancy Things - Blog Post Title'
+    @title = @post.title
   end
 
   def search
@@ -27,7 +29,7 @@ class BlogController < ActionController::Base
   def archive
     @ogUrl = 'archive'
     @ogImage = 'logo250x250.png'
-    @ogTitle = 'Fancy Things - Archive'
+    @title = 'Archive'
   end
 
 

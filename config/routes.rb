@@ -9,7 +9,7 @@ Fancythings::Application.routes.draw do
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
-  get 'blogpost' => 'blog#blogpost'
+  get '/:year/:month/:title' => 'blog#blogpost'
   get 'search' => 'blog#search'
   get 'search/:key' => 'blog#search'
   get 'archive' => 'blog#archive'
