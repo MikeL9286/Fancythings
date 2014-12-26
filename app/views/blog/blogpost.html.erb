@@ -14,11 +14,7 @@
                 <%= @post.content %>
             </div>
             <div class="post-social">
-                <a href="https://www.facebook.com/dialog/share?
-                app_id=622972777808767
-                &display=popup
-                &href=http://salty-refuge-8767.herokuapp.com<%= @post.path %>
-                &redirect_uri=http://salty-refuge-8767.herokuapp.com<%= @post.path %>"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.facebook.com/dialog/share?app_id=622972777808767&display=popup&href=http://salty-refuge-8767.herokuapp.com<%= @post.path %>&redirect_uri=http://salty-refuge-8767.herokuapp.com<%= @post.path %>"><i class="fa fa-facebook"></i></a>
                 <a href="<%= @post.twitterShareLink %>" target="_blank"><i class="fa fa-twitter"></i></a>
                 <a href="<%= @post.pinterestShareLink %>" target="_blank"><i class="fa fa-pinterest"></i></a>
                 <a href="<%= @post.emailShareLink %>"><i class="fa fa-envelope"></i></a>

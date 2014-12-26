@@ -1,6 +1,7 @@
 class PostMapper
 	include ActiveSupport::Inflector
-	
+	include ActionView::Helpers::SanitizeHelper
+
 	def to_model(jsonPost)
 		post = Post.new(jsonPost['id'], jsonPost['title'], jsonPost['content'])
 		post.path = jsonPost['url'].scan(/.com(.*)/)[0][0]
@@ -12,6 +13,7 @@ class PostMapper
 		post.emailShareLink = get_email_share_link
 		post.facebookShareLink = get_facebook_share_link
 		post.googlePlusShareLink = get_google_plus_share_link
+		post.summary = get_summary(jsonPost['content'])
 		return post
 	end
 
@@ -21,6 +23,34 @@ class PostMapper
 		date = Date.parse(dateString)
 		formattedDate = date.strftime('%B day, %Y').sub!(/day/, ordinalize(date.day))
 		return formattedDate
+	end
+
+	def get_summary(content)
+		matches = content.scan(/<div class="post-summary">(.*)<\/div>/)
+
+		if (matches.length != 0)
+			return matches[0]
+		end
+
+		centerTextToRemove = content.scan(/<center>.*<\/center>/)[0]
+		smallTextToRemove = content.scan(/<span.*<\/span>/)[0]
+
+		if !centerTextToRemove.nil?
+			content.sub!(centerTextToRemove, '')
+		end
+
+		if !smallTextToRemove.nil?
+			content.sub!(smallTextToRemove, '')
+		end
+
+		# removing html tags
+		content = strip_tags(content)
+
+		if content.length > 200
+			return content[0, 200]
+		else 
+			return content
+		end
 	end
 
 	def get_thumbnail_url(post)

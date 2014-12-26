@@ -12,6 +12,7 @@ class Post
 		@facebookShareLink = ''
 		@googlePlusShareLink = ''
 		@emailShareLink = ''
+		@summary = ''
 	end
 
 	attr_accessor :id
@@ -26,4 +27,5 @@ class Post
 	attr_accessor :emailShareLink
 	attr_accessor :facebookShareLink
 	attr_accessor :googlePlusShareLink
+	attr_accessor :summary
 end

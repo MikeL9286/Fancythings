@@ -9,6 +9,7 @@ class BlogController < ActionController::Base
   	@ogUrl = ''
     @ogImage = 'logo250x250.png'
     @title = 'Fancy Things'
+    @description = 'Welcome to Fancy Things! The number one guide to fashion, beauty, home decor, and more...'
     @posts = @@blogger_service.GetAllPosts
     @slideshowPosts = @posts.take(4)
   end
@@ -20,6 +21,7 @@ class BlogController < ActionController::Base
     @ogUrl = path
     @ogImage = 'meetKristin.jpg'
     @title = @post.title
+    @description = @post.summary
   end
 
   def search
