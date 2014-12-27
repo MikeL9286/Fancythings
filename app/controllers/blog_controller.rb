@@ -52,7 +52,7 @@ class BlogController < ActionController::Base
 
   def set_image(image)
     if image == '/assets/logo250x250.png'
-      @ogImage = get_domain_url(request.domain) + image
+      @ogImage = get_domain_url(request.host) + image
     else 
       @ogImage = image
     end
@@ -62,7 +62,7 @@ class BlogController < ActionController::Base
     if url == 'localhost'
       return 'http://localhost:3000'
     else 
-      return 'http://' + url
+      return request.protocol + url
     end
   end
 end
