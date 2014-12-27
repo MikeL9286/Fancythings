@@ -15,7 +15,7 @@
             <div class="post-social">
                 <a href="https://www.facebook.com/dialog/share?app_id=622972777808767&display=popup&href=<%= request.url %>&redirect_uri=<%= request.url %>"><i class="fa fa-facebook"></i></a>
                 <a href="https://twitter.com/intent/tweet?text=<%= @post.title %>&via=fancythingsblog&url=<%= request.url %>" target="_blank"><i class="fa fa-twitter"></i></a>
-                <a href="http://pinterest.com/pin/create/button/?url=<%= request.url %>&media=<%= @post.thumbnailUrl %>&description='<%= @post.title %>'" target="_blank"><i class="fa fa-pinterest"></i></a>
+                <a href="http://pinterest.com/pin/create/button/?url=<%= request.url %>&media=<%= @post.thumbnailUrl %>&description=<%= @post.title %>" target="_blank"><i class="fa fa-pinterest"></i></a>
                 <a href="https://plus.google.com/share?url=<%= request.url %>" target="_blank"><i class="fa fa-google-plus"></i></a>
                 <a href="mailto:?body=I thought you might enjoy reading this post called <%= @post.title %> on fancy things! <%= request.url %>"><i class="fa fa-envelope"></i></a>
             </div>

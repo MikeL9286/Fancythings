@@ -8,7 +8,6 @@ class PostMapper
 		post.slideshowImageUrl = get_slideshow_image_url(jsonPost)
 		post.thumbnailUrl = get_thumbnail_url(jsonPost)
 		post.publishedDate = get_formatted_date(jsonPost['published'])
-		post.googlePlusShareLink = get_google_plus_share_link
 		post.summary = get_summary(jsonPost['content'])
 		return post
 	end
@@ -66,11 +65,6 @@ class PostMapper
 		end
 			
 		return matches[0].scan(/http.*jpg|http.*png|http.*jpeg/)[0]
-	end
-
-	def get_google_plus_share_link
-		return ''
-		# return 'https://plus.google.com/share?url=' + 'selfLink';
 	end
 
 	# todo: finish if needed

@@ -31,6 +31,11 @@ class BlogController < ActionController::Base
     set_meta_values('Archive')
   end
 
+  helper_method :get_url_for_path
+  def get_url_for_path(path)
+    return get_domain_url + path
+  end
+
   private
 
   def set_meta_values(
@@ -52,17 +57,19 @@ class BlogController < ActionController::Base
 
   def set_image(image)
     if image == '/assets/logo250x250.png'
-      @ogImage = get_domain_url(request.host) + image
+      @ogImage = get_domain_url + image
     else 
       @ogImage = image
     end
   end
 
-  def get_domain_url(url)
-    if url == 'localhost'
-      return 'http://localhost:3000'
+  def get_domain_url
+    if request.host == 'localhost'
+      return request.protocol + request.host + ':' + request.port.to_s
     else 
-      return request.protocol + url
+      return request.protocol + request.host
     end
   end
+
+  
 end

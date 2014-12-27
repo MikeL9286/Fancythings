@@ -7,7 +7,6 @@ class Post
 		@slideshowImageUrl = ''
 		@thumbnailUrl = ''
 		@publishedDate = ''
-		@googlePlusShareLink = ''
 		@summary = ''
 	end
 
@@ -18,6 +17,5 @@ class Post
 	attr_accessor :slideshowImageUrl
 	attr_accessor :thumbnailUrl
 	attr_accessor :publishedDate
-	attr_accessor :googlePlusShareLink
 	attr_accessor :summary
 end
