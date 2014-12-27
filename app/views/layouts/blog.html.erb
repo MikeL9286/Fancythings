@@ -5,7 +5,7 @@
 	<meta http-equiv="Content-language" content="en">
 	<meta name="author" content="Kristin Brophy" />
 	<meta name="keywords" content="Fashion,Food,Beauty,Style,Home,Blog,Fancy,Life,Miami,South,Florida,FancyThings,TheFancyThings">
-	<meta name="description" content="Welcome to Fancy Things! The number one guide to fashion, beauty, home decor, and more...">
+	<meta name="description" content="<%= @description %>">
 
 	<link href="/assets/logo32x32.png" rel="shortcut icon" type="image/x-icon" />
 	<meta name="viewport" content="width=470,initial-scale=1" />
@@ -19,10 +19,10 @@
 
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@fancythingsblog">
-	<meta name="twitter:url" content="http://thefancythings.com">
-	<meta name="twitter:title" content="Fancy Things">
-	<meta name="twitter:description" content="Welcome to Fancy Things! The number one guide to fashion, beauty, home decor, and more...">
-	<meta name="twitter:image" content="/assets/logo250x250.png">
+	<meta name="twitter:url" content="<%= request.original_url %>">
+	<meta name="twitter:title" content="<%= @title %>">
+	<meta name="twitter:description" content="<%= @description %>">
+	<meta name="twitter:image" content="<%= @ogImage %>">
 	<meta name="twitter:creator" content="@fancythingsblog">
 
 	<%= javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js' %>

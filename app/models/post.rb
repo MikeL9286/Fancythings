@@ -7,11 +7,7 @@ class Post
 		@slideshowImageUrl = ''
 		@thumbnailUrl = ''
 		@publishedDate = ''
-		@pinterestSharLink = ''
-		@twitterShareLink = ''
-		@facebookShareLink = ''
 		@googlePlusShareLink = ''
-		@emailShareLink = ''
 		@summary = ''
 	end
 
@@ -22,10 +18,6 @@ class Post
 	attr_accessor :slideshowImageUrl
 	attr_accessor :thumbnailUrl
 	attr_accessor :publishedDate
-	attr_accessor :pinterestShareLink
-	attr_accessor :twitterShareLink
-	attr_accessor :emailShareLink
-	attr_accessor :facebookShareLink
 	attr_accessor :googlePlusShareLink
 	attr_accessor :summary
 end
