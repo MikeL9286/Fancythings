@@ -9,10 +9,7 @@ class BlogController < ActionController::Base
     @posts = @@blogger_service.GetAllPosts
     @slideshowPosts = @posts.take(4)
 
-    set_meta_values(
-      'Fancy Things', 
-      'Welcome to Fancy Things! The number one guide to fashion, beauty, home decor, and more...', 
-      '/assets/logo250x250.png')
+    set_meta_values()
   end
 
   def blogpost
@@ -27,32 +24,45 @@ class BlogController < ActionController::Base
 
   def search
   	key = params[:key]
-
-    set_meta_values(
-      'Fancy Things - Search', 
-      'Welcome to Fancy Things! The number one guide to fashion, beauty, home decor, and more...', 
-      '/assets/logo250x250.png')
+    set_meta_values('Search')
   end
 
   def archive
-    set_meta_values(
-      'Fancy Things - Archive', 
-      'Welcome to Fancy Things! The number one guide to fashion, beauty, home decor, and more...', 
-      '/assets/logo250x250.png')
+    set_meta_values('Archive')
   end
 
   private
 
-  def set_meta_values(title, description, image)
-    @title = title
+  def set_meta_values(
+    title = 'Fancy Things', 
+    description = 'Welcome to Fancy Things! The number one guide to fashion, beauty, home decor, and more...', 
+    image = '/assets/logo250x250.png')
+    @title = set_title(title)
     @description = description
-    @ogImage = image
+    @ogImage = set_image(image)
   end
 
-  def get_domain_root(url)
+  def set_title(title)
+    if title == 'Fancy Things'
+      return title
+    else
+      return title + ' - Fancy Things'
+    end
+  end
+
+  def set_image(image)
+    if image == '/assets/logo250x250.png'
+      @ogImage = get_domain_url(request.domain) + image
+    else 
+      @ogImage = image
+    end
+  end
+
+  def get_domain_url(url)
     if url == 'localhost'
       return 'http://localhost:3000'
+    else 
+      return 'http://' + url
     end
-    return url
   end
 end
