@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Fancy Things - <%= @title %></title>
+	<title><%= @title %></title>
 	<meta charset="utf-8" />
 	<meta http-equiv="Content-language" content="en">
 	<meta name="author" content="Kristin Brophy" />
@@ -12,10 +12,9 @@
 
 	<meta property="og:site_name" content="Fancy Things">
 	<meta property="og:description" content="<%= @description %>">
-	
 	<meta property="og:title" content="<%= @title %>" />
-    <meta property="og:url" content="http://salty-refuge-8767.herokuapp.com<%= @ogUrl %>">
-    <meta property="og:image" content="http://salty-refuge-8767.herokuapp.com/assets/<%= @ogImage %>">
+    <meta property="og:url" content="<%= request.original_url %>">
+    <meta property="og:image" content="<%= @ogImage %>">
 	<meta property="fb:app_id" content="622972777808767">
 
 	<meta name="twitter:card" content="summary">
