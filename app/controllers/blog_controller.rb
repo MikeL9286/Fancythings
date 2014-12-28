@@ -70,6 +70,4 @@ class BlogController < ActionController::Base
       return request.protocol + request.host
     end
   end
-
-  
 end

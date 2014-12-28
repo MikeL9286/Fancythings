@@ -8,6 +8,7 @@ class Post
 		@thumbnailUrl = ''
 		@publishedDate = ''
 		@summary = ''
+		@blogger_url = ''
 	end
 
 	attr_accessor :id
@@ -18,4 +19,5 @@ class Post
 	attr_accessor :thumbnailUrl
 	attr_accessor :publishedDate
 	attr_accessor :summary
+	attr_accessor :blogger_url
 end

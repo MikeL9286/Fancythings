@@ -59,8 +59,8 @@
 <script>
     //load disqus comments. doesnt work when in blogpost.js for some reason
     var disqus_shortname = 'fancythingsblog';
-    var disqus_title = Blogger.posts.title;
-    var disqus_url = Blogger.posts.url;
+    var disqus_title = <%= @post.title %>;
+    var disqus_url = <%= @post.blogger_url %>;
     var disqus_homepage_url = 'http://thefancythings.com';
 
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

@@ -9,6 +9,7 @@ class PostMapper
 		post.thumbnailUrl = get_thumbnail_url(jsonPost)
 		post.publishedDate = get_formatted_date(jsonPost['published'])
 		post.summary = get_summary(jsonPost['content'])
+		post.blogger_url = jsonPost['url']
 		return post
 	end
 

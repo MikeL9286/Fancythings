@@ -51,6 +51,15 @@ body {
     }
 }
 
+.disqus {
+    .fa-comment {
+        color: $blue-color;
+        vertical-align: text-top;
+    }
+    text-align: center;
+    margin: 15px 0;
+}
+
 @-webkit-keyframes rotate {
     to {
         -webkit-transform: rotateZ(360deg);
