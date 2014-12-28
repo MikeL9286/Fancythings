@@ -21,12 +21,7 @@ class BlogController < ActionController::Base
       @post.summary, 
       @post.thumbnailUrl)
 
-    @relatedPosts = Array.new
-    for label in @post.labels
-      posts = @@blogger_service.GetPostsByLabel(label)
-      @relatedPosts.push(*posts)
-    end
-    @relatedPosts.sort_by { |post| Date.parse(post.publishedDate) }.reverse!
+    @relatedPosts = get_related_posts(@post)
   end
 
   def search
@@ -76,5 +71,17 @@ class BlogController < ActionController::Base
     else 
       return request.protocol + request.host
     end
+  end
+
+  def get_related_posts(post)
+    aggregatedPosts = Array.new
+    for label in post.labels
+      posts = @@blogger_service.GetPostsByLabel(label)
+      aggregatedPosts.push(*posts)
+    end
+    aggregatedPosts.sort_by { |p| Date.parse(p.publishedDate) }.reverse!
+    aggregatedPosts.delete_if { |p| p.id == post.id } 
+    aggregatedPosts.uniq! { |p| p.id }
+    return aggregatedPosts.take(6)
   end
 end
