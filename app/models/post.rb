@@ -9,6 +9,7 @@ class Post
 		@publishedDate = ''
 		@summary = ''
 		@blogger_url = ''
+		@labels = []
 	end
 
 	attr_accessor :id
@@ -20,4 +21,5 @@ class Post
 	attr_accessor :publishedDate
 	attr_accessor :summary
 	attr_accessor :blogger_url
+	attr_accessor :labels
 end

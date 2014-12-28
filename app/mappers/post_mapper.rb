@@ -10,6 +10,7 @@ class PostMapper
 		post.publishedDate = get_formatted_date(jsonPost['published'])
 		post.summary = get_summary(jsonPost['content'])
 		post.blogger_url = jsonPost['url']
+		post.labels = jsonPost['labels']
 		return post
 	end
 

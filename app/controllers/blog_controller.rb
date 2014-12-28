@@ -20,6 +20,13 @@ class BlogController < ActionController::Base
       @post.title, 
       @post.summary, 
       @post.thumbnailUrl)
+
+    @relatedPosts = Array.new
+    for label in @post.labels
+      posts = @@blogger_service.GetPostsByLabel(label)
+      @relatedPosts.push(*posts)
+    end
+    @relatedPosts.sort_by { |post| Date.parse(post.publishedDate) }.reverse!
   end
 
   def search
