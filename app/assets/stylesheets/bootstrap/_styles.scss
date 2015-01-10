@@ -24,8 +24,38 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.modal-dialog {
-    z-index: 1100;
+#lean_overlay {
+    position: fixed;
+    z-index:10000;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+#contactModal {
+    position: fixed;
+    left: 50%;
+    top: 20%;
+    opacity: 1;
+    background: white;
+    display: none;
+    border-radius: 3px;
+
+    .lean-modal-header {
+        padding-top: 15px;
+
+        #lean-modal-close {
+            padding: 7px;
+            font-size: 1.2em;
+        }
+    }
+
+    form {
+        margin-top: 25px;
+    }
 }
 
 .loading-overlay {
