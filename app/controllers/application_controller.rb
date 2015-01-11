@@ -18,7 +18,8 @@ class ApplicationController < ActionController::Base
 
   def contact
     @email = params[:email]
+    @name = params[:name]
     @message = params[:message]
-    ContactMailer.contact_email(@email, @message)
+    ContactMailer.contact_email(@email, @name, @message)
   end
 end

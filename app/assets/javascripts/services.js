@@ -25,8 +25,22 @@
         }
     };
 
+    var closeModal = function() {
+        $('#inquiryModal, #lean_overlay').hide();
+        $('#inquiryModal form')[0].reset();
+    };
+
+    $('form[action="inquiry"]').submit(function() {  
+        MailerService.SendEmail($(this), closeModal);
+        return false; // prevents normal behaviour
+    });
+
     $(document).ready(function() {
         resizeServices();
+        
+        $('.servicePitch a').leanModal({closeButton: "#inquiryModal #lean-modal-close"});
     });
+
+
 
 }(window.Services = window.Services || {}, jQuery))

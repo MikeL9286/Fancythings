@@ -3,6 +3,6 @@ class ContactMailer < ActionMailer::Base
   	@email = email
   	@name = name
   	@message = message
-  	mail(from: @email, to: 'kristin@fancythingsblog.com', subject: 'New Inquiry - ' + @name).deliver
+  	mail(from: @email, to: 'kristin@fancythingsblog.com', subject: 'New email - ' + @name).deliver
   end
 end

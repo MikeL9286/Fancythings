@@ -41,8 +41,34 @@
     <div class="row servicePitch">
         <div class="col-xs-12">
             <h5>Interested in any of our services?</h5>
-            <a href="https://docs.google.com/forms/d/1uTBZqoY5HjB4N2MQNdZlbz2pW0zRmKUxG8SIp_9BqyM/viewform" class="btn btn-primary ft-link-btn">Submit an Inquiry</a>
+            <!-- <a href="https://docs.google.com/forms/d/1uTBZqoY5HjB4N2MQNdZlbz2pW0zRmKUxG8SIp_9BqyM/viewform" class="btn btn-primary ft-link-btn">Submit an Inquiry</a> -->
+            <a id="go" href="#inquiryModal" name="inquiryModal" rel="leanModal" class="btn btn-primary ft-link-btn">Submit an Inquiry</a>
             <em>I can't wait to hear from you!</em>
         </div>
     </div>
 </section>
+
+<div class="col-xs-10 col-xs-offset-1 col-sm-6" id="inquiryModal" tabindex="-1" role="dialog">
+    <div class="lean-modal-header">
+        <a id="lean-modal-close" href="#" class="pull-right"><i class="fa fa-times-circle"></i></a>
+    </div>
+    <%= form_tag('inquiry', remote: true, class: 'form') do %>
+    <div class="form-group">
+        <label for="contact-email">Your e-mail: </label>
+        <input id="contact-email" name="email" type="email" class="form-control" placeholder="your@email.com" />
+    </div>
+    <div class="form-group">
+        <label for="contact-name">Name: </label>
+        <input id="contact-name" name="name" class="form-control" placeholder="name" />
+    </div>
+    <div class="form-group">
+        <label for="contact-name">Website: </label>
+        <input id="contact-name" name="name" type="url" class="form-control" placeholder="website" />
+    </div>
+    <div class="form-group">
+        <label for="contact-message">What services are you interested in?</label>
+        <textarea id="contact-message" name="message" class="form-control" rows="5"></textarea>
+    </div>
+    <button class="btn btn-default">Send</button>
+    <% end %>
+</div>
