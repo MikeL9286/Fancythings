@@ -1,34 +1,30 @@
 ﻿<section id="archiveContainer" class="container">
-    <script>
-        Blogger.GetArchivePosts();
-    </script>
-
     <div class="row">
         <div class="col-xs-12 col-md-9">
             <div class="post-feed">
                 <div class="panel-group" id="accordian">
-                    <script id="archive-posts-template" type="text/x-handlebars-template">
-                        {{#archivePosts}}
-                        <div class="panel panel-default">
+                    
+                    <% @grouped_posts.each_with_index do |(date, group), index| %>
+                    <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{@index}}">{{group}} <small>({{posts.length}} posts)</small></a>
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse<%= index %>"><%= date %> <small>(<%= group.length %> posts)</small></a>
                                 </h4>
                             </div>
-                            <div id="collapse{{@index}}" class="panel-collapse collapse">
-                                {{#posts}}
+                            <div id="collapse<%= index %>" class="panel-collapse collapse">
+                                <% group.each do |post| %>
                                 <div class="panel-body">
                                     <div class="content">
-                                        <a href="blogpost.html?post={{{id}}}"><h5>{{title}} <small>({{formattedDate published}})</small></h5></a>
-                                        <div>{{summary content 200}}</div>
+                                        <a href="<%= post.path %>"><h5><%= post.title %> <small>(<%= post.publishedDate %>)</small></h5></a>
+                                        <div><%= post.summary %></div>
                                     </div>
-                                    <a href="blogpost.html?post={{{id}}}"><small class="read-more-link">read more...</small></a>
+                                    <a href="<%= post.path %>"><small class="read-more-link">read more...</small></a>
                                 </div>
-                                {{/posts}}
+                                <% end %>
                             </div>
                         </div>
-                        {{/archivePosts}}
-                    </script>
+                    <% end %>
+
                 </div>
             </div>
         </div>
@@ -37,5 +33,3 @@
         </div>
     </div>
 </section>
-
-<%= javascript_include_tag 'templates/archivePostsTemplate' %>

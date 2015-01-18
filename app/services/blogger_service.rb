@@ -29,7 +29,7 @@ class BloggerService
 		begin
 			method = 'posts/bypath'
 			params = '?path=' + path
-			response = RestClient.get(@@bloggerUrl + 'posts/bypath' + params + @@bloggerApiKey)
+			response = RestClient.get(@@bloggerUrl + method + params + @@bloggerApiKey)
 			json = JSON.parse(response)		
 			return @@post_mapper.to_model(json)	
 		rescue => e
@@ -56,39 +56,40 @@ class BloggerService
 		end
 	end
 
-	# def GetPostById(postId)
-	# 	begin
-	# 		method = 'posts/'
-	# 		params = '?path=' + url.scan(/.com(.*)/)[0][0]
-	# 		response = RestClient.get(@@bloggerUrl + 'posts/' + postId + @@bloggerApiKey)
-	# 		json = JSON.parse(response)		
-	# 		return @@post_mapper.to_model(json)	
-	# 	rescue => e
-	# 		print e
-	# 	end
-	# end
+	def GetPostsBySearchKey(searchKey)
+		begin
+			method = 'posts/search'
+			params = '?q=' + searchKey
+			response = RestClient.get(@@bloggerUrl + method + params + @@bloggerApiKey)
+			json = JSON.parse(response)			
+
+			posts = Array.new
+			for item in json['items']
+				post = @@post_mapper.to_model(item)
+				posts.push(post)
+			end
+			return posts
+		rescue => e
+			print e
+		end
+	end
+
+	def GetArchivePosts
+		begin
+			method = 'posts'
+			params = '?maxResults=500&fetchImages=false'
+			response = RestClient.get(@@bloggerUrl + method + params + @@bloggerApiKey)
+			json = JSON.parse(response)			
+
+			posts = Array.new
+			for item in json['items']
+				post = @@post_mapper.to_model(item)
+				posts.push(post)
+			end
+
+			return posts.group_by(&:publishedDateGroup)
+		rescue => e
+			print e
+		end
+	end
 end
-
-
-
-
-	# def GetArchivedPosts
-	# 	result = @blogger.posts.list(
-	# 		:@blogId => @blogId,
-	# 		:maxResults => 500,
-	# 		:fetchImages => false,
-	# 		:key => key)
-
-	# 	print result.data
-	# end
-
-	# def Search
-	# 	result = @blogger.posts.search(
-	# 		:@blogId => @blogId,
-	# 		:q => searchKey,
-	# 		:key => key)
-	# end
-
-	# def GetRelatedPosts
-	# 	
-	# end

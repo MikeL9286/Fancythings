@@ -25,12 +25,14 @@ class BlogController < ActionController::Base
   end
 
   def search
-  	key = params[:key]
+  	@searchKey = params[:key]
+    @posts = @@blogger_service.GetPostsBySearchKey(@searchKey)
     set_meta_values('Search')
   end
 
   def archive
     set_meta_values('Archive')
+    @grouped_posts = @@blogger_service.GetArchivePosts
   end
 
   helper_method :get_url_for_path

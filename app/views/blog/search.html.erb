@@ -1,32 +1,34 @@
 ﻿<section id="searchContainer" class="container">
-    <script>
-        Blogger.GetSearchedPosts(window.location.href.match('searchKey=(.*)')[1]);
-    </script>
-
     <div class="row">
         <div class="col-xs-12 col-md-9">
             <div class="search-description">
+                <% if @posts %>
+                <h4>Top search results for: <%= @searchKey %></h4> (<%= @posts.length %> results)
+                <% else %>
+                <h4>No results found for: <%= @searchKey %></h4>
+                <% end %>
+                
                 <hr />
             </div>
             <div class="post-feed">
-                <script id="search-posts-template" type="text/x-handlebars-template">
-                    {{#if searchPosts}}
-                    {{#searchPosts}}
-                    <div class="panel panel-default post">
-                        <div class="panel-body">
-                            <div class="content">
-                                <a href="blogpost.html?post={{{id}}}"><h5>{{title}}</h5></a>
-                                <div><small>{{relativeDate published}} - </small> {{{summary content 200}}}</div>
-                            </div>
-                            <a href="blogpost.html?post={{{id}}}"><small class="read-more-link">read more...</small></a>
+
+                <% if @posts %>
+                <% @posts.each do |post| %>
+                <div class="panel panel-default post">
+                    <div class="panel-body">
+                        <div class="content">
+                            <a href="<%= post.path %>"><h5><%= post.title %></h5></a>
+                            <div><small><%= post.publishedDate %> - </small> <%= post.summary %></div>
                         </div>
+                        <a href="<%= post.path %>"><small class="read-more-link">read more...</small></a>
                     </div>
-                    {{/searchPosts}}
-                    <div class="archive">
-                        <span>Didn't find what you're looking for?</span><span>Try the <a href="../archive.html">Archive</a> instead!</span>
-                    </div>
-                    {{/if}}
-                </script>
+                </div>
+                <% end %>
+                <% end %>
+
+                <div class="archive">
+                    <span>Didn't find what you're looking for?</span><span>Try the <a href="../archive.html">Archive</a> instead!</span>
+                </div>
             </div>
         </div>
         <div class="column-right hidden-xs hidden-sm col-md-3">
@@ -34,5 +36,3 @@
         </div>
     </div>
 </section>
-
-<%= javascript_include_tag 'templates/searchPostsTemplate' %>

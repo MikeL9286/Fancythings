@@ -7,6 +7,7 @@ class Post
 		@slideshowImageUrl = ''
 		@thumbnailUrl = ''
 		@publishedDate = ''
+		@publishedDateGroup = ''
 		@summary = ''
 		@blogger_url = ''
 		@labels = []
@@ -19,6 +20,7 @@ class Post
 	attr_accessor :slideshowImageUrl
 	attr_accessor :thumbnailUrl
 	attr_accessor :publishedDate
+	attr_accessor :publishedDateGroup
 	attr_accessor :summary
 	attr_accessor :blogger_url
 	attr_accessor :labels

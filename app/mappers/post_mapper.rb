@@ -8,6 +8,7 @@ class PostMapper
 		post.slideshowImageUrl = get_slideshow_image_url(jsonPost)
 		post.thumbnailUrl = get_thumbnail_url(jsonPost)
 		post.publishedDate = get_formatted_date(jsonPost['published'])
+		post.publishedDateGroup = get_formatted_date_group(jsonPost['published'])
 		post.summary = get_summary(jsonPost['content'])
 		post.blogger_url = jsonPost['url']
 		post.labels = jsonPost['labels']
@@ -19,6 +20,12 @@ class PostMapper
 	def get_formatted_date(dateString)
 		date = Date.parse(dateString)
 		formattedDate = date.strftime('%B day, %Y').sub!(/day/, ordinalize(date.day))
+		return formattedDate
+	end
+
+	def get_formatted_date_group(dateString)
+		date = Date.parse(dateString)
+		formattedDate = date.strftime('%B %Y')
 		return formattedDate
 	end
 
