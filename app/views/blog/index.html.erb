@@ -28,7 +28,7 @@
             <hr class="hidden-xs" />
 
             <div class="posts">
-                <% @posts.each do |post| %>
+                <% @posts.each_with_index do |post, index| %>
                     <div class="post panel panel-default">
                         <div class="post-inner panel-body">
                             <div class="header">
@@ -49,11 +49,13 @@
                             <a class="disqus-count" href="<%= get_url_for_path(post.path) %>" data-disqus-url="<%= post.blogger_url %>"></a>
                         </div>
                     </div>
+                    <% if index < (@posts.length - 1) %>
                     <ul class="ft-sig">
                         <li class="divider hidden-xs"><hr /></li>
                         <li><%= image_tag 'logo250x250.png' %></li>
                         <li class="divider hidden-xs"><hr /></li>
                     </ul>
+                    <% end %>
                 <% end %>
             </div>
 
@@ -99,7 +101,17 @@
     </div>
 </section>
 
+<ul class="ft-sig">
+    <li class="divider hidden-xs"><hr class="wide" /></li>
+    <li><%= image_tag 'logo250x250.png' %></li>
+    <li class="divider hidden-xs"><hr class="wide" /></li>
+</ul>
+
+
 <div class="ft-grams container-fluid">
+    <div class="ltk-header">
+        <h4>Shop Fancy Things on Instagram</h4>
+    </div>
     <div class="ltkwidget-widget row" data-rows="2" data-cols="8" data-show-frame="false" data-user-id="18622" data-padding="2">
         <script type="text/javascript">!function (d, s, id) { var e, p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { e = d.createElement(s); e.id = id; e.src = p + '://' + 'widgets.rewardstyle.com' + '/js/ltkwidget.js'; d.body.appendChild(e); } if (typeof (window.__ltkwidget) === 'object') { if (document.readyState === 'complete') { __ltkwidget.init(); } } }(document, 'script', 'ltkwidget-script');</script><div class="rs-adblock"><img src="//assets.rewardstyle.com/images/search/350.gif" onerror="                this.parentNode.innerHTML = 'Disable your ad blocking software to view this content.'" /><noscript>JavaScript is currently disabled in this browser. Reactivate it to view this content.</noscript></div>
     </div>
