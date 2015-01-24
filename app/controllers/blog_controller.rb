@@ -19,7 +19,7 @@ class BlogController < ActionController::Base
     set_meta_values(
       @post.title, 
       @post.summary, 
-      @post.thumbnailUrl)
+      @post.facebookImageUrl)
 
     @relatedPosts = get_related_posts(@post)
   end
