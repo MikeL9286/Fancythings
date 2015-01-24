@@ -1,7 +1,8 @@
 ﻿(function (Home, $, undefined) {
 
     $(".rslides").responsiveSlides({
-        nav: true
+        nav: true,
+        manualControls: $('.rslides-nav')
     });
 
     $('.search input').focus(function () {

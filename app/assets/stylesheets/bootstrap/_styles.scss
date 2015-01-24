@@ -245,29 +245,20 @@ hr {
 #navContainer {
     font-family: 'Lato';
     text-transform: uppercase;
-    letter-spacing: .15em;
-    padding: 5px;
+    letter-spacing: .16em;
+    font-size: .9em;
 
     ul {
-        li a, 
-        li .btn-link {
+        li a {
             color: #444;
             padding: 15px;
         }
 
-        li .btn-link {
-            font-family: 'Lato';
-            text-transform: uppercase;
-            letter-spacing: .15em;
-            font-size: 1em;
-            text-decoration: none;
-        }
-
         &.social-media-icons li {
             float: left;
+            font-size: 1.35em;
 
             a {
-                font-size: 1.3em;
                 padding: 15px 7px;
             }
 
@@ -280,7 +271,7 @@ hr {
     }
 
     .navbar-brand {
-        font-size: 1.4em;
+        font-size: 1.5em;
     }
 
     .navbar-brand, a:hover, .active > a, .btn-link:hover {
@@ -788,19 +779,26 @@ h5 {
     position: absolute;
     bottom: 42%;
     z-index: 100;
-    opacity: .5;
+    opacity: .3;
     text-indent: -9999px;
     height: 61px;
     width: 38px;
+    transition: opacity linear .3s;
+}
+
+.rslides_nav:hover {
+    opacity: .6;
 }
 
 .prev {
-    background: transparent url("/assets/rslidesNav.gif") no-repeat left top;
+    background: transparent url("/assets/chev-right.png") no-repeat left top;
+    left: 10;
+    transform: rotate(180deg);
 }
 
 .next {
-    background: transparent url("/assets/rslidesNav.gif") no-repeat right top;
-    right: 0;
+    background: transparent url("/assets/chev-right.png") no-repeat right top;
+    right: 10;
 }
 
 
