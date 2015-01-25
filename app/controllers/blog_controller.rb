@@ -19,7 +19,7 @@ class BlogController < ActionController::Base
     set_meta_values(
       @post.title, 
       @post.summary, 
-      @post.facebookImageUrl)
+      @post.openGraphImages)
 
     @relatedPosts = get_related_posts(@post)
   end
@@ -45,10 +45,10 @@ class BlogController < ActionController::Base
   def set_meta_values(
     title = 'Fancy Things', 
     description = 'Welcome to Fancy Things! The number one guide to fashion, beauty, home decor, and more...', 
-    image = '/assets/logo250x250.png')
+    images = '/assets/logo250x250.png')
     @title = set_title(title)
     @description = description
-    @ogImage = set_image(image)
+    @ogImages = set_images(images)
   end
 
   def set_title(title)
@@ -59,12 +59,22 @@ class BlogController < ActionController::Base
     end
   end
 
-  def set_image(image)
-    if image == '/assets/logo250x250.png'
-      @ogImage = get_domain_url + image
-    else 
-      @ogImage = image
+  def set_images(images)
+    if (images.respond_to?('each'))
+      ogImageTags = ''
+      images.each do |image|
+        ogImageTags += get_og_image_markup(image.first)
+      end
+      return ogImageTags
     end
+
+    if images == '/assets/logo250x250.png'
+      return get_og_image_markup(get_domain_url + images)
+    end
+  end
+
+  def get_og_image_markup(url)
+    return '<meta name="og:image" content="' + url + '" />'
   end
 
   def get_domain_url

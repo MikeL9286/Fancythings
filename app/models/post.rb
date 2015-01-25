@@ -11,7 +11,7 @@ class Post
 		@summary = ''
 		@blogger_url = ''
 		@labels = []
-		@facebookImageUrl = ''
+		@openGraphImages = ''
 	end
 
 	attr_accessor :id
@@ -25,5 +25,5 @@ class Post
 	attr_accessor :summary
 	attr_accessor :blogger_url
 	attr_accessor :labels
-	attr_accessor :facebookImageUrl
+	attr_accessor :openGraphImages
 end

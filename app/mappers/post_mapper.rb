@@ -12,7 +12,7 @@ class PostMapper
 		post.summary = get_summary(jsonPost['content'])
 		post.blogger_url = jsonPost['url']
 		post.labels = jsonPost['labels']
-		post.facebookImageUrl = get_facebook_image_url(jsonPost)
+		post.openGraphImages = get_open_graph_images(jsonPost)
 		return post
 	end
 
@@ -67,29 +67,14 @@ class PostMapper
 		return matches[0].scan(/http.*jpg|http.*png|http.*jpeg/)[0]
 	end
 
-	def get_facebook_image_url(post)
-		thumbnailUrl = get_thumbnail_url(post)
-
-		puts '--- start ---'
-		puts thumbnailUrl
-
-		if (thumbnailUrl != '/assets/logo250x250.png')
-			return thumbnailUrl
-		end
-
-		matches = post['content'].scan(/<img.*\/>/)
-
-		puts '--- matches ---'
-		puts matches.length
-
-		if (matches.length == 0)
-			return thumbnailUrl
-		end
-
-		puts '--- return ---'
-		puts matches[0].scan(/http.*jpg|http.*png|http.*jpeg/)[0]
+	def get_open_graph_images(post)
+		matches = post['content'].scan(/<img.*(http.*jpg|http.*png|http.*jpeg).*\/>/)
 		
-		return matches[0].scan(/http.*jpg|http.*png|http.*jpeg/)[0]
+		if (matches.length == 0)
+			return '/assets/logo250x250.png'
+		end	
+		
+		return matches
 	end
 
 	def get_slideshow_image_url(post)
