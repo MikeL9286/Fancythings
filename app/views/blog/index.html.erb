@@ -58,45 +58,15 @@
                 <% end %>
             </div>
 
-            <!-- <div class="more-posts row">
-                <script id="more-posts-template" type="text/x-handlebars-template">
-                    {{#morePosts}}
-                    <div class="col-xs-12 col-sm-6 col-lg-4">
-                        <div class="post panel panel-default rounded">
-                            <div class="post-inner panel-body">
-                                <div class="more-posts-title">
-                                    <a href="blogpost?post={{{id}}}" target="_blank"><h5>{{title}}</h5></a>
-                                </div>
-                                <a href="blogpost?post={{{id}}}" target="_blank">
-                                    <img class="img-responsive rounded" src="{{{thumbnailUrl}}}" alt="post thumbnail">
-                                </a>
-                                <div class="more-posts-summary"><small>{{relativeDate published}} - </small> {{summary content 200}}</div>
-                                <div class="share">
-                                    <span><a class="read-more-link" href="blogpost?post={{{id}}}" target="_blank"><small>read more...</small></a></span>
-                                    <span class="post-feed-share pull-right">
-                                        <a href="{{{twitterShareLink this}}}" target="_blank"><i class="fa fa-twitter"></i></a>
-                                        <a href="{{{pinterestShareLink this}}}" target="_blank"><i class="fa fa-pinterest"></i></a>
-                                        <a href="{{{emailShareLink this}}}"><i class="fa fa-envelope"></i></a>
-                                    </span>
-                                </div>
-                                <div class="disqus-count">
-                                    <a class="disqus-count-shown" href="blogpost?post={{id}}"></a>
-                                    <a class="disqus-count-hidden" href="{{url}}#disqus_thread"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {{/morePosts}}
-                </script>
-            </div> -->
-
             <div class="view-more-posts">
-                <a href="./archive.html" class="btn btn-primary ft-link-btn">
+                <a href="./archive" class="btn btn-primary ft-link-btn">
                     View Older Posts
                 </a>
             </div>
         </div>
-        <div class="column-right hidden-xs hidden-sm col-md-3"><%=render('shared/rightColumn')%></div>
+        <div class="column-right hidden-xs hidden-sm col-md-3">
+            <%=render('shared/rightColumn')%>
+        </div>
     </div>
 </section>
 

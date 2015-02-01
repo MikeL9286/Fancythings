@@ -10,7 +10,9 @@
     font-style: normal;
 }
 
-
+.partial-compensation {
+    margin-top: -20px;
+}
 
 // Fancy things styles
 // -------------------------
@@ -19,7 +21,7 @@ body {
     font-size: 100%;
     letter-spacing: .1em;
     line-height: 1.5em;
-    margin-top: 100px;
+    margin-top: 75px; //Should be 100px. Compensating for whitespace injected by rails.
     font-size: 1.3em;
     color: black !important;
     -webkit-font-smoothing: antialiased;
@@ -88,7 +90,8 @@ body {
         vertical-align: text-top;
     }
     text-align: center;
-    margin: 15px 0;
+    margin-bottom: 15px;
+    font-size: 1.1em;
 }
 
 @-webkit-keyframes rotate {
@@ -382,10 +385,9 @@ h5 {
             .post {
                 .post-share {
                     text-align: center;
-                    margin-bottom: 15px;
 
                     i {
-                        font-size: 2em;
+                        font-size: 1.7em;
                         padding: 10px;
                     }
                 }
@@ -398,10 +400,6 @@ h5 {
                 .header {
                     text-align: center;
                     margin: 15px;
-
-                    .title {
-                        margin-bottom: 0;
-                    }
                 }
 
                 img {
@@ -690,6 +688,10 @@ h5 {
 #searchContainer, #archiveContainer {
     .search-description {
         text-align: center;
+
+        h4 {
+            margin-top: 0;
+        }
     }
 
     .post-feed {
@@ -706,6 +708,7 @@ h5 {
 
 #homeContainer, #searchContainer, #archiveContainer, #ltkContainer {
     .column-right {
+        margin-top: -19px; //Compensating for whitespace injected by rails.
         text-align: center;
 
         > div {
@@ -780,38 +783,40 @@ h5 {
     bottom: 42%;
     z-index: 100;
     opacity: .3;
-    text-indent: -9999px;
+    //text-indent: -9999px;
     height: 61px;
     width: 38px;
     transition: opacity linear .3s;
-}
+    color: transparent;
 
-.rslides_nav:hover {
-    opacity: .6;
-}
+    &:hover {
+      opacity: .6;
+      color: transparent;
+    }
 
-.prev {
-    background: transparent url("/assets/chev-right.png") no-repeat left top;
-    left: 10;
-    transform: rotate(180deg);
-}
+    &:focus {
+      color: transparent;
+    }
 
-.next {
-    background: transparent url("/assets/chev-right.png") no-repeat right top;
-    right: 10;
-}
+    &.prev {
+        background: transparent url("/assets/chev-right.png") no-repeat left top;
+        left: 10;
+        transform: rotate(180deg);
+    }
 
+    &.next {
+        background: transparent url("/assets/chev-right.png") no-repeat right top;
+        right: 10;
+    }
+}
 
 footer {
-    padding: 30px;
     text-align: center;
     font: normal .9em Arial;
-    position: absolute;
-    width: 100%;
     padding: 30px 30px 0 30px;
 
     > * {
-        padding: 10px;
+        padding: 5px;
     }
 
     .stylist-logo {
