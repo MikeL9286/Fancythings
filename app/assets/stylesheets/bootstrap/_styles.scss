@@ -249,7 +249,7 @@ hr {
     font-family: 'Lato';
     text-transform: uppercase;
     letter-spacing: .16em;
-    font-size: .9em;
+    font-size: .8em;
 
     ul {
         li a {
@@ -311,6 +311,13 @@ hr {
             font-size: 18px;
         }
     }
+}
+
+.snapwidget-widget {
+    border:none; 
+    overflow:hidden; 
+    width:100%; 
+    height:268px
 }
 
 .headroom--top {
@@ -726,6 +733,7 @@ h5 {
                 list-style-type: none;
                 padding: 0;
                 margin: auto;
+                font-size: .9em;
 
                 li {
                     padding: 6px;

@@ -25,12 +25,9 @@
     <meta name="twitter:image" content="/assets/logo250x250.png">
     <meta name="twitter:creator" content="@fancythingsblog">
 
+    <%= stylesheet_link_tag 'bootstrap/_styles'%>
     <%= javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js' %>
     <%= javascript_include_tag 'application' %>
-    <%= javascript_include_tag 'jquery.leanModal.min' %>
-    <%= javascript_include_tag 'bootstrap.min'%>
-    <%= stylesheet_link_tag 'bootstrap/_styles'%>
-
     <%= csrf_meta_tags %>
 </head>
 <body>
@@ -42,6 +39,8 @@
         <%= render partial: 'shared/footer' %>
     </div>
 
+    <%= javascript_include_tag 'bootstrap.min'%>
+    <%= javascript_include_tag 'jquery.leanModal.min' %>
     <%= javascript_include_tag 'main' %> 
 </body>
 </html>
