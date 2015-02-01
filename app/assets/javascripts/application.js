@@ -13,9 +13,5 @@
 
 
 //= require thirdPartyJsBundle
-//= require headroom
 //= require main
-//= require moment.min
-//= require imagesloaded.pkgd.min
-//= require underscore-min
 //= require_tree .
