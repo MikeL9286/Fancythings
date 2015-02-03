@@ -11,7 +11,9 @@
 // about supported directives.
 //
 
-
+//= require bootstrap.min
 //= require thirdPartyJsBundle
+//= require_directory ./services
 //= require main
-//= require_tree .
+
+// require_tree .
