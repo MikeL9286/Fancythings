@@ -1,19 +1,8 @@
-<html>
-<head>
-	<title><%= @title %></title>
-	<meta charset="utf-8N" />
-	<meta http-equiv="Content-language" content="en">
-	<meta name="author" content="Kristin Brophy" />
-	<meta name="keywords" content="Fashion,Food,Beauty,Style,Home,Blog,Fancy,Life,Miami,South,Florida,FancyThings,TheFancyThings">
-	<meta name="description" content="<%= @description %>">
-
-	<link href="/assets/logo32x32.png" rel="shortcut icon" type="image/x-icon" />
-	<meta name="viewport" content="initial-scale=1" />
-
+<% content_for :head do %>
 	<meta property="og:site_name" content="Fancy Things">
 	<meta property="og:description" content="<%= @description %>">
 	<meta property="og:title" content="<%= @title %>" />
-    <meta property="og:url" content="<%= request.original_url %>">
+	<meta property="og:url" content="<%= request.original_url %>">
 	<meta property="fb:app_id" content="622972777808767">
 	<%= @ogImages.html_safe %>
 
@@ -25,16 +14,12 @@
 	<meta name="twitter:image" content="<%= @ogImage %>">
 	<meta name="twitter:creator" content="@fancythingsblog">
 
-	<%= stylesheet_link_tag 'bootstrap/_styles'%>
+	<%= stylesheet_link_tag 'application'%>
 	<%= javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js' %>
 	<%= javascript_include_tag 'application' %>
 	<%= csrf_meta_tags %>
-</head>
-<body>
-	<div class="container-fluid" role="main">
-		<%= render 'shared/navbar' %>
-		<%= yield %>
-		<%= render 'shared/footer' %>
-	</div>
-</body>
-</html>
+<% end %>
+
+<%= yield %>
+
+<%= render template: "layouts/master" %>

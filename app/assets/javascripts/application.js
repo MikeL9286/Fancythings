@@ -12,8 +12,6 @@
 //
 
 //= require bootstrap.min
-//= require thirdPartyJsBundle
+//= require thirdPartyJsBundle.min
 //= require_directory ./services
 //= require main
-
-// require_tree .
