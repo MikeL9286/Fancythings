@@ -1,25 +1,20 @@
-<% content_for :head do %>
-	<meta property="og:site_name" content="Fancy Things">
-	<meta property="og:description" content="<%= @description %>">
-	<meta property="og:title" content="<%= @title %>" />
-	<meta property="og:url" content="<%= request.original_url %>">
-	<meta property="fb:app_id" content="622972777808767">
-	<%= @ogImages.html_safe %>
+<%= render 'shared/globalMetaTags' %>
+<html>
+	<head>
+		<% if content_for? :meta %>
+	    	<%= yield :meta %>
+	  	<% end %>
 
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="@fancythingsblog">
-	<meta name="twitter:url" content="<%= request.original_url %>">
-	<meta name="twitter:title" content="<%= @title %>">
-	<meta name="twitter:description" content="<%= @description %>">
-	<meta name="twitter:image" content="<%= @ogImage %>">
-	<meta name="twitter:creator" content="@fancythingsblog">
-
-	<%= stylesheet_link_tag 'application'%>
-	<%= javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js' %>
-	<%= javascript_include_tag 'application' %>
-	<%= csrf_meta_tags %>
-<% end %>
-
-<%= yield %>
-
-<%= render template: "layouts/master" %>
+		<%= stylesheet_link_tag 'application'%>
+		<%= javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js' %>
+		<%= javascript_include_tag 'application' %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
+		<div class="container-fluid" role="main">
+			<%= render 'shared/navbar' %>
+			<%= yield %>
+			<%= render 'shared/footer' %>
+		</div>
+	</body>
+</html>

@@ -1,5 +1,4 @@
-<html>
-<head>
+﻿<% content_for :meta do %>
 	<title><%= @title %></title>
 	<meta charset="utf-8N" />
 	<meta http-equiv="Content-language" content="en">
@@ -23,14 +22,4 @@
 	<meta name="twitter:description" content="<%= @description %>">
 	<meta name="twitter:image" content="<%= @ogImage %>">
 	<meta name="twitter:creator" content="@fancythingsblog">
-
-	<% yield :head %>
-</head>
-<body>
-<div class="container-fluid" role="main">
-	<%= render 'shared/navbar' %>
-	<%= yield %>
-	<%= render 'shared/footer' %>
-</div>
-</body>
-</html>
+<% end %>
