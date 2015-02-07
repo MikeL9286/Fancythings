@@ -1,0 +1,33 @@
+﻿<% content_for :head do %>
+<title><%= @title %></title>
+
+<meta charset="utf-8N" />
+<meta http-equiv="Content-language" content="en">
+<meta name="author" content="Kristin Brophy" />
+<meta name="keywords" content="Fashion,Food,Beauty,Style,Home,Blog,Fancy,Life,Miami,South,Florida,FancyThings,TheFancyThings">
+<meta name="description" content="<%= @description %>">
+<meta name="viewport" content="initial-scale=1" />
+
+<meta property="fb:app_id" content="622972777808767">
+
+<meta property="og:site_name" content="Fancy Things">
+<meta property="og:description" content="<%= @description %>">
+<meta property="og:title" content="<%= @title %>" />
+<meta property="og:url" content="<%= request.original_url %>">
+<%= @ogImages.html_safe %>
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@fancythingsblog">
+<meta name="twitter:url" content="<%= request.original_url %>">
+<meta name="twitter:title" content="<%= @title %>">
+<meta name="twitter:description" content="<%= @description %>">
+<meta name="twitter:image" content="<%= @ogImage %>">
+<meta name="twitter:creator" content="@fancythingsblog">
+
+<link href="/assets/logo32x32.png" rel="shortcut icon" type="image/x-icon" />
+
+<%= stylesheet_link_tag 'application'%>
+<%= javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js' %>
+<%= javascript_include_tag 'application' %>
+<%= csrf_meta_tags %>
+<% end %>

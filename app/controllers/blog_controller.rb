@@ -1,4 +1,4 @@
-class BlogController < ActionController::Base
+class BlogController < ApplicationController
   require 'blogger_service'
 
   protect_from_forgery with: :exception
@@ -25,9 +25,9 @@ class BlogController < ActionController::Base
   end
 
   def search
+    set_meta_values('Search')
   	@searchKey = params[:key]
     @posts = @@blogger_service.GetPostsBySearchKey(@searchKey)
-    set_meta_values('Search')
   end
 
   def archive
@@ -41,49 +41,6 @@ class BlogController < ActionController::Base
   end
 
   private
-
-  def set_meta_values(
-    title = 'Fancy Things', 
-    description = 'Welcome to Fancy Things! The number one guide to fashion, beauty, home decor, and more...', 
-    images = '/assets/logo250x250.png')
-    @title = set_title(title)
-    @description = description
-    @ogImages = set_images(images)
-  end
-
-  def set_title(title)
-    if title == 'Fancy Things'
-      return title
-    else
-      return title + ' - Fancy Things'
-    end
-  end
-
-  def set_images(images)
-    if (images.respond_to?('each'))
-      ogImageTags = ''
-      images.each do |image|
-        ogImageTags += get_og_image_markup(image.first)
-      end
-      return ogImageTags
-    end
-
-    if images == '/assets/logo250x250.png'
-      return get_og_image_markup(get_domain_url + images)
-    end
-  end
-
-  def get_og_image_markup(url)
-    return '<meta name="og:image" content="' + url + '" />'
-  end
-
-  def get_domain_url
-    if request.host == 'localhost'
-      return request.protocol + request.host + ':' + request.port.to_s
-    else 
-      return request.protocol + request.host
-    end
-  end
 
   def get_related_posts(post)
     aggregatedPosts = Array.new

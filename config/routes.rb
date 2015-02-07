@@ -14,14 +14,14 @@ Fancythings::Application.routes.draw do
   get 'search/:key' => 'blog#search'
   get 'archive' => 'blog#archive'
 
-  get 'services' => 'services#index'
+  get 'services' => 'application#services'
 
   get 'about' => 'application#about'
   get 'press' => 'application#press'
   get 'liketoknowit' => 'application#liketoknowit'
 
   post 'contact' => 'application#contact'
-  post 'inquiry' => 'services#inquiry'
+  post 'inquiry' => 'application#service_inquiry'
  
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

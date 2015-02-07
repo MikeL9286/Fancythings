@@ -1,14 +1,7 @@
-<%= render 'shared/globalMetaTags' %>
+<%= render 'shared/head' %>
 <html>
 	<head>
-		<% if content_for? :meta %>
-	    	<%= yield :meta %>
-	  	<% end %>
-
-		<%= stylesheet_link_tag 'application'%>
-		<%= javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js' %>
-		<%= javascript_include_tag 'application' %>
-		<%= csrf_meta_tags %>
+	    <%= yield :head %>
 	</head>
 	<body>
 		<div class="container-fluid" role="main">
