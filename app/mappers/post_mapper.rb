@@ -93,7 +93,7 @@ class PostMapper
 		matches = content.scan(/<img .* class="post-image" \/>/)
 
 		if (matches.length == 0)
-			return 'http://placehold.it/848x477'
+			return '/assets/logo848x477.png'
 		end
 			
 		return matches[0].scan(/http.*jpg|http.*png|http.*jpeg/)[0]

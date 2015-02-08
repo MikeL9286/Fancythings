@@ -58,6 +58,11 @@ body {
 
     form {
         margin-top: 25px;
+
+        .email-link {
+            float: right;
+            margin-top: 10px;
+        }
     }
 }
 
@@ -260,7 +265,7 @@ hr {
 
         &.social-media-icons li {
             float: left;
-            font-size: 1.35em;
+            font-size: 1.4em;
 
             a {
                 padding: 15px 7px;
@@ -448,6 +453,11 @@ h5 {
 
             .more-posts-summary {
                 margin: 10px 0;
+                font-size: .9em;
+            }
+
+            .disqus-count {
+                font-weight: 700;
                 font-size: .9em;
             }
 
@@ -762,6 +772,7 @@ h5 {
     width: 100%;
     padding: 0;
     margin: 0;
+    border: 1px solid #ddd;
 
     li {
         -webkit-backface-visibility: hidden;

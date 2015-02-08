@@ -27,7 +27,7 @@ class ApplicationController < ActionController::Base
     set_meta_values('Services')
   end
 
-  def service_inquiry
+  def inquiry
     @email = params[:email]
     @name = params[:name]
     @website = params[:website]
