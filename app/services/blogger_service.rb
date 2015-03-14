@@ -39,17 +39,23 @@ class BloggerService
 
 	def GetPostsByLabel(label)
 		begin
+			puts '-------Service start--------'
+
 			label.sub!(' ', '+')
-			method = 'posts/search'
-			params = '?q=' + label + '&fields=items(id%2Cpublished%2Ctitle%2Ccontent%2Curl)'
+			method = 'posts'
+			params = '?labels=' + label + '&orderBy=published&maxResults=6'
 			response = RestClient.get(@@bloggerUrl + method + params + @@bloggerApiKey)
-			json = JSON.parse(response)			
+			json = JSON.parse(response)	
 
 			posts = Array.new
 			for item in json['items']
+				puts '-----HIT------'
 				post = @@post_mapper.to_model(item)
 				posts.push(post)
+				puts '-----HIT3------'
 			end
+			puts '---------------'
+			puts posts.length
 			return posts
 		rescue => e
 			print e
